@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		654E48E52BE04B8900604945 /* Tailor_Your_TalesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E48E42BE04B8900604945 /* Tailor_Your_TalesApp.swift */; };
-		654E48E72BE04B8900604945 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E48E62BE04B8900604945 /* ContentView.swift */; };
+		654E48E72BE04B8900604945 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E48E62BE04B8900604945 /* Login.swift */; };
 		654E48E92BE04B8C00604945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 654E48E82BE04B8C00604945 /* Assets.xcassets */; };
 		654E48EC2BE04B8C00604945 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 654E48EB2BE04B8C00604945 /* Preview Assets.xcassets */; };
 		654E48F62BE04B8C00604945 /* Tailor_Your_TalesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E48F52BE04B8C00604945 /* Tailor_Your_TalesTests.swift */; };
@@ -21,6 +21,8 @@
 		654E491D2BE8B41000604945 /* CharacterEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E491C2BE8B41000604945 /* CharacterEdit.swift */; };
 		654E491F2BE8CDB000604945 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E491E2BE8CDB000604945 /* CharacterView.swift */; };
 		654E49212BE8D8F300604945 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E49202BE8D8F300604945 /* Settings.swift */; };
+		654E49232BE8F3B900604945 /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E49222BE8F3B900604945 /* AppEntry.swift */; };
+		654E49252BE8F8FD00604945 /* AgeVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E49242BE8F8FD00604945 /* AgeVerifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +45,7 @@
 /* Begin PBXFileReference section */
 		654E48E12BE04B8900604945 /* Tailor Your Tales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tailor Your Tales.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		654E48E42BE04B8900604945 /* Tailor_Your_TalesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tailor_Your_TalesApp.swift; sourceTree = "<group>"; };
-		654E48E62BE04B8900604945 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		654E48E62BE04B8900604945 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		654E48E82BE04B8C00604945 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		654E48EB2BE04B8C00604945 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		654E48F12BE04B8C00604945 /* Tailor Your TalesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tailor Your TalesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +60,8 @@
 		654E491C2BE8B41000604945 /* CharacterEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterEdit.swift; sourceTree = "<group>"; };
 		654E491E2BE8CDB000604945 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 		654E49202BE8D8F300604945 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		654E49222BE8F3B900604945 /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
+		654E49242BE8F8FD00604945 /* AgeVerifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeVerifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,13 +157,15 @@
 		654E49122BE891B100604945 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				654E48E62BE04B8900604945 /* ContentView.swift */,
+				654E48E62BE04B8900604945 /* Login.swift */,
 				654E49132BE8924200604945 /* StoryRow.swift */,
 				654E49192BE8A26600604945 /* Helper */,
 				654E491A2BE8B14E00604945 /* StoryPage.swift */,
 				654E491C2BE8B41000604945 /* CharacterEdit.swift */,
 				654E491E2BE8CDB000604945 /* CharacterView.swift */,
 				654E49202BE8D8F300604945 /* Settings.swift */,
+				654E49222BE8F3B900604945 /* AppEntry.swift */,
+				654E49242BE8F8FD00604945 /* AgeVerifier.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -302,13 +308,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				654E48E72BE04B8900604945 /* ContentView.swift in Sources */,
+				654E48E72BE04B8900604945 /* Login.swift in Sources */,
 				654E49142BE8924200604945 /* StoryRow.swift in Sources */,
+				654E49232BE8F3B900604945 /* AppEntry.swift in Sources */,
 				654E491B2BE8B14E00604945 /* StoryPage.swift in Sources */,
 				654E48E52BE04B8900604945 /* Tailor_Your_TalesApp.swift in Sources */,
 				654E491D2BE8B41000604945 /* CharacterEdit.swift in Sources */,
 				654E49182BE8A1CF00604945 /* FavoriteButton.swift in Sources */,
 				654E49212BE8D8F300604945 /* Settings.swift in Sources */,
+				654E49252BE8F8FD00604945 /* AgeVerifier.swift in Sources */,
 				654E491F2BE8CDB000604945 /* CharacterView.swift in Sources */,
 				654E49162BE892C400604945 /* Character.swift in Sources */,
 			);

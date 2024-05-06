@@ -11,7 +11,7 @@ import SwiftUI
 struct Tailor_Your_TalesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppEntry()
         }
     }
 }
