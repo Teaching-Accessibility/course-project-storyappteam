@@ -14,7 +14,7 @@ struct Login: View {
                     .font(.title)
                     .padding()
                 HStack {
-                    NavigationLink(destination: CharacterEdit()) {
+                    NavigationLink(destination: AgeVerifier()) {
                         Text("An Adult?")
                             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
                             .background(Color.blue)
@@ -22,7 +22,7 @@ struct Login: View {
                             .cornerRadius(10)
                     }
                     
-                    NavigationLink(destination: CharacterEdit()) {
+                    NavigationLink(destination: StoryList()) {
                         Text("A Child?")
                             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
                             .background(Color.red)

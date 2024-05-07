@@ -9,6 +9,8 @@ import SwiftUI
 
 struct AgeVerifier: View {
     
+    @Environment(\.presentationMode) var presentationMode
+    
     struct Question {
         var text: String
         var answers: [String]
@@ -16,31 +18,30 @@ struct AgeVerifier: View {
     }
     
     let questions: [Question] = [
-            Question(
-                text: "What is the capital of France?",
-                answers: ["Paris", "London", "Rome", "Berlin"],
-                correctAnswerIndex: 0
-            ),
-            Question(
-                text: "What is the largest planet in our solar system?",
-                answers: ["Earth", "Jupiter", "Mars", "Saturn"],
-                correctAnswerIndex: 1
-            ),
-            Question(
-                text: "What is the chemical symbol for water?",
-                answers: ["H2O", "CO2", "O2", "NaCl"],
-                correctAnswerIndex: 0
-            ),
-            Question(
-                text: "Who painted the Mona Lisa?",
-                answers: ["Pablo Picasso", "Leonardo da Vinci", "Vincent van Gogh", "Michelangelo"],
-                correctAnswerIndex: 1
-            ),
-        ]
+        Question(
+            text: "What is the capital of France?",
+            answers: ["Paris", "London", "Rome", "Berlin"],
+            correctAnswerIndex: 0
+        ),
+        Question(
+            text: "What is the largest planet in our solar system?",
+            answers: ["Earth", "Jupiter", "Mars", "Saturn"],
+            correctAnswerIndex: 1
+        ),
+        Question(
+            text: "What is the chemical symbol for water?",
+            answers: ["H2O", "CO2", "O2", "NaCl"],
+            correctAnswerIndex: 0
+        ),
+        Question(
+            text: "Who painted the Mona Lisa?",
+            answers: ["Pablo Picasso", "Leonardo da Vinci", "Vincent van Gogh", "Michelangelo"],
+            correctAnswerIndex: 1
+        ),
+    ]
     
-    @State private var selectedOption: Int?
     @State private var randomIndex = Int.random(in: 0..<4)
-    @State private var showAlert = false
+    @State private var selectedAnswerIndex: Int?
     
     var body: some View {
         let question = questions[randomIndex]
@@ -49,69 +50,29 @@ struct AgeVerifier: View {
                 .padding()
             
             // Buttons in a 2x2 grid
-            HStack {
-                Button(action: {
-                    self.selectedOption = 0
-                    self.checkAnswer(correctIndex: question.correctAnswerIndex, selectedIndex: 0)
-                }) {
-                    Text(question.answers[0])
-                        .frame(width: 150, height: 150)
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                        .padding()
-                }
-                
-                Button(action: {
-                    self.selectedOption = 1
-                    self.checkAnswer(correctIndex: question.correctAnswerIndex, selectedIndex: 1)
-                }) {
-                    Text(question.answers[1])
-                        .frame(width: 150, height: 150)
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                        .padding()
+            VStack(spacing: 0) {
+                ForEach(0..<4) { index in
+                    NavigationLink(destination: StoryList(), tag: index, selection: $selectedAnswerIndex) {
+                        EmptyView()
+                    }
+                    Button(action: {
+                        if index == question.correctAnswerIndex {
+                            // Navigate to StoryList if correct answer is selected
+                            selectedAnswerIndex = index
+                        } else {
+                            // Go back if wrong answer is selected
+                            presentationMode.wrappedValue.dismiss()
+                        }
+                    }) {
+                        Text(question.answers[index])
+                            .frame(width: 150, height: 100)
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                    }
+                    .padding()
                 }
             }
-            
-            HStack {
-                Button(action: {
-                    self.selectedOption = 2
-                    self.checkAnswer(correctIndex: question.correctAnswerIndex, selectedIndex: 2)
-                }) {
-                    Text(question.answers[2])
-                        .frame(width: 150, height: 150)
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                        .padding()
-                }
-                
-                Button(action: {
-                    self.selectedOption = 3
-                    self.checkAnswer(correctIndex: question.correctAnswerIndex, selectedIndex: 3)
-                }) {
-                    Text(question.answers[3])
-                        .frame(width: 150, height: 150)
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                        .padding()
-                }
-            }
-        }
-        .alert(isPresented: $showAlert) {
-            Alert(title: Text("Result"), message: Text("You selected"), dismissButton: .default(Text("OK")))
-        }
-    }
-    
-    func checkAnswer(correctIndex: Int, selectedIndex: Int) {
-        // Check if the selected option is correct
-        if selectedIndex == correctIndex {
-            showAlert = true
-            // Perform additional actions for correct answer
-            // For example, navigate to another view, etc.
         }
     }
 }
