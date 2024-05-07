@@ -41,7 +41,7 @@ struct AgeVerifier: View {
     ]
     
     @State private var randomIndex = Int.random(in: 0..<4)
-    @State private var selectedAnswerIndex: Int?
+    @State private var shouldNavigateToStoryList = false
     
     var body: some View {
         let question = questions[randomIndex]
@@ -52,13 +52,10 @@ struct AgeVerifier: View {
             // Buttons in a 2x2 grid
             VStack(spacing: 0) {
                 ForEach(0..<4) { index in
-                    NavigationLink(destination: StoryList(), tag: index, selection: $selectedAnswerIndex) {
-                        EmptyView()
-                    }
                     Button(action: {
                         if index == question.correctAnswerIndex {
                             // Navigate to StoryList if correct answer is selected
-                            selectedAnswerIndex = index
+                            shouldNavigateToStoryList = true
                         } else {
                             // Go back if wrong answer is selected
                             presentationMode.wrappedValue.dismiss()
@@ -72,6 +69,9 @@ struct AgeVerifier: View {
                     }
                     .padding()
                 }
+            }
+            .navigationDestination(isPresented: $shouldNavigateToStoryList) {
+                StoryList()
             }
         }
     }

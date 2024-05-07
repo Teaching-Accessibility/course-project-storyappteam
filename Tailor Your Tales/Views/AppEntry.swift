@@ -16,5 +16,7 @@ struct AppEntry: View {
 }
 
 #Preview {
-    AppEntry()
+    AppEntry().onAppear {
+        srand48(23)
+    }
 }
