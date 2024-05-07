@@ -27,6 +27,7 @@
 		654E492C2BE9F5D900604945 /* Next Week.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E492B2BE9F5D900604945 /* Next Week.swift */; };
 		654E492E2BEA17BB00604945 /* Sam's Treasures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E492D2BEA17BB00604945 /* Sam's Treasures.swift */; };
 		654E49302BEA22CF00604945 /* StoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E492F2BEA22CE00604945 /* StoryList.swift */; };
+		654E49322BEAF42B00604945 /* Multiple Choices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E49312BEAF42B00604945 /* Multiple Choices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		654E492B2BE9F5D900604945 /* Next Week.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Next Week.swift"; sourceTree = "<group>"; };
 		654E492D2BEA17BB00604945 /* Sam's Treasures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sam's Treasures.swift"; sourceTree = "<group>"; };
 		654E492F2BEA22CE00604945 /* StoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryList.swift; sourceTree = "<group>"; };
+		654E49312BEAF42B00604945 /* Multiple Choices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Multiple Choices.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 			children = (
 				654E492B2BE9F5D900604945 /* Next Week.swift */,
 				654E492D2BEA17BB00604945 /* Sam's Treasures.swift */,
+				654E49312BEAF42B00604945 /* Multiple Choices.swift */,
 			);
 			path = Stories;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				654E49292BE9F0EB00604945 /* StoryView.swift in Sources */,
 				654E49302BEA22CF00604945 /* StoryList.swift in Sources */,
 				654E49212BE8D8F300604945 /* Settings.swift in Sources */,
+				654E49322BEAF42B00604945 /* Multiple Choices.swift in Sources */,
 				654E49252BE8F8FD00604945 /* AgeVerifier.swift in Sources */,
 				654E491F2BE8CDB000604945 /* CharacterView.swift in Sources */,
 				654E49162BE892C400604945 /* Character.swift in Sources */,

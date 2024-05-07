@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StoryList: View {
-    let stories = [nextweek, samstreasures]
+    let stories = [nextweek, samstreasures, multiplechoices]
     var body: some View {
         List(stories) { story in
             NavigationLink {

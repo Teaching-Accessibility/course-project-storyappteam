@@ -35,5 +35,5 @@ struct StoryView: View {
 }
 
 #Preview {
-    StoryView(story: nextweek, pageIndex: 0)
+    StoryView(story: multiplechoices, pageIndex: 0)
 }
