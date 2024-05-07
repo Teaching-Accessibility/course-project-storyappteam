@@ -17,12 +17,16 @@
 		654E49142BE8924200604945 /* StoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E49132BE8924200604945 /* StoryRow.swift */; };
 		654E49162BE892C400604945 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E49152BE892C400604945 /* Character.swift */; };
 		654E49182BE8A1CF00604945 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E49172BE8A1CF00604945 /* FavoriteButton.swift */; };
-		654E491B2BE8B14E00604945 /* StoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E491A2BE8B14E00604945 /* StoryPage.swift */; };
 		654E491D2BE8B41000604945 /* CharacterEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E491C2BE8B41000604945 /* CharacterEdit.swift */; };
 		654E491F2BE8CDB000604945 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E491E2BE8CDB000604945 /* CharacterView.swift */; };
 		654E49212BE8D8F300604945 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E49202BE8D8F300604945 /* Settings.swift */; };
 		654E49232BE8F3B900604945 /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E49222BE8F3B900604945 /* AppEntry.swift */; };
 		654E49252BE8F8FD00604945 /* AgeVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E49242BE8F8FD00604945 /* AgeVerifier.swift */; };
+		654E49272BE9EFDE00604945 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E49262BE9EFDE00604945 /* Story.swift */; };
+		654E49292BE9F0EB00604945 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E49282BE9F0EB00604945 /* StoryView.swift */; };
+		654E492C2BE9F5D900604945 /* Next Week.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E492B2BE9F5D900604945 /* Next Week.swift */; };
+		654E492E2BEA17BB00604945 /* Sam's Treasures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E492D2BEA17BB00604945 /* Sam's Treasures.swift */; };
+		654E49302BEA22CF00604945 /* StoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E492F2BEA22CE00604945 /* StoryList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,12 +60,16 @@
 		654E49132BE8924200604945 /* StoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryRow.swift; sourceTree = "<group>"; };
 		654E49152BE892C400604945 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		654E49172BE8A1CF00604945 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
-		654E491A2BE8B14E00604945 /* StoryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPage.swift; sourceTree = "<group>"; };
 		654E491C2BE8B41000604945 /* CharacterEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterEdit.swift; sourceTree = "<group>"; };
 		654E491E2BE8CDB000604945 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 		654E49202BE8D8F300604945 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		654E49222BE8F3B900604945 /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
 		654E49242BE8F8FD00604945 /* AgeVerifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeVerifier.swift; sourceTree = "<group>"; };
+		654E49262BE9EFDE00604945 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		654E49282BE9F0EB00604945 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		654E492B2BE9F5D900604945 /* Next Week.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Next Week.swift"; sourceTree = "<group>"; };
+		654E492D2BEA17BB00604945 /* Sam's Treasures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sam's Treasures.swift"; sourceTree = "<group>"; };
+		654E492F2BEA22CE00604945 /* StoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,7 @@
 		654E48E32BE04B8900604945 /* Tailor Your Tales */ = {
 			isa = PBXGroup;
 			children = (
+				654E492A2BE9F5BC00604945 /* Stories */,
 				654E48E42BE04B8900604945 /* Tailor_Your_TalesApp.swift */,
 				654E49112BE891A200604945 /* Model */,
 				654E49122BE891B100604945 /* Views */,
@@ -149,6 +158,7 @@
 		654E49112BE891A200604945 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				654E49262BE9EFDE00604945 /* Story.swift */,
 				654E49152BE892C400604945 /* Character.swift */,
 			);
 			path = Model;
@@ -158,14 +168,14 @@
 			isa = PBXGroup;
 			children = (
 				654E48E62BE04B8900604945 /* Login.swift */,
-				654E49132BE8924200604945 /* StoryRow.swift */,
 				654E49192BE8A26600604945 /* Helper */,
-				654E491A2BE8B14E00604945 /* StoryPage.swift */,
 				654E491C2BE8B41000604945 /* CharacterEdit.swift */,
 				654E491E2BE8CDB000604945 /* CharacterView.swift */,
 				654E49202BE8D8F300604945 /* Settings.swift */,
 				654E49222BE8F3B900604945 /* AppEntry.swift */,
 				654E49242BE8F8FD00604945 /* AgeVerifier.swift */,
+				654E49282BE9F0EB00604945 /* StoryView.swift */,
+				654E492F2BEA22CE00604945 /* StoryList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,9 +183,19 @@
 		654E49192BE8A26600604945 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				654E49132BE8924200604945 /* StoryRow.swift */,
 				654E49172BE8A1CF00604945 /* FavoriteButton.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		654E492A2BE9F5BC00604945 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				654E492B2BE9F5D900604945 /* Next Week.swift */,
+				654E492D2BEA17BB00604945 /* Sam's Treasures.swift */,
+			);
+			path = Stories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,16 +329,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				654E48E72BE04B8900604945 /* Login.swift in Sources */,
+				654E492E2BEA17BB00604945 /* Sam's Treasures.swift in Sources */,
 				654E49142BE8924200604945 /* StoryRow.swift in Sources */,
 				654E49232BE8F3B900604945 /* AppEntry.swift in Sources */,
-				654E491B2BE8B14E00604945 /* StoryPage.swift in Sources */,
 				654E48E52BE04B8900604945 /* Tailor_Your_TalesApp.swift in Sources */,
 				654E491D2BE8B41000604945 /* CharacterEdit.swift in Sources */,
 				654E49182BE8A1CF00604945 /* FavoriteButton.swift in Sources */,
+				654E492C2BE9F5D900604945 /* Next Week.swift in Sources */,
+				654E49292BE9F0EB00604945 /* StoryView.swift in Sources */,
+				654E49302BEA22CF00604945 /* StoryList.swift in Sources */,
 				654E49212BE8D8F300604945 /* Settings.swift in Sources */,
 				654E49252BE8F8FD00604945 /* AgeVerifier.swift in Sources */,
 				654E491F2BE8CDB000604945 /* CharacterView.swift in Sources */,
 				654E49162BE892C400604945 /* Character.swift in Sources */,
+				654E49272BE9EFDE00604945 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct StoryRow: View {
+    var story: Story
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            story.previewImage
+            Text(story.title)
+            Spacer()
+        }
     }
 }
 
 #Preview {
-    StoryRow()
+    StoryRow(story: nextweek)
 }

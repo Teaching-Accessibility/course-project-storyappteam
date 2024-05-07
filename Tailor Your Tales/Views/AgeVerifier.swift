@@ -43,7 +43,7 @@ struct AgeVerifier: View {
     @State private var showAlert = false
     
     var body: some View {
-        var question = questions[randomIndex]
+        let question = questions[randomIndex]
         VStack {
             Text(question.text)
                 .padding()
@@ -55,7 +55,7 @@ struct AgeVerifier: View {
                     self.checkAnswer(correctIndex: question.correctAnswerIndex, selectedIndex: 0)
                 }) {
                     Text(question.answers[0])
-                        .frame(width: 100, height: 50)
+                        .frame(width: 150, height: 150)
                         .background(Color.blue)
                         .foregroundColor(.white)
                         .cornerRadius(10)
@@ -67,7 +67,7 @@ struct AgeVerifier: View {
                     self.checkAnswer(correctIndex: question.correctAnswerIndex, selectedIndex: 1)
                 }) {
                     Text(question.answers[1])
-                        .frame(width: 100, height: 50)
+                        .frame(width: 150, height: 150)
                         .background(Color.blue)
                         .foregroundColor(.white)
                         .cornerRadius(10)
@@ -81,7 +81,7 @@ struct AgeVerifier: View {
                     self.checkAnswer(correctIndex: question.correctAnswerIndex, selectedIndex: 2)
                 }) {
                     Text(question.answers[2])
-                        .frame(width: 100, height: 50)
+                        .frame(width: 150, height: 150)
                         .background(Color.blue)
                         .foregroundColor(.white)
                         .cornerRadius(10)
@@ -93,7 +93,7 @@ struct AgeVerifier: View {
                     self.checkAnswer(correctIndex: question.correctAnswerIndex, selectedIndex: 3)
                 }) {
                     Text(question.answers[3])
-                        .frame(width: 100, height: 50)
+                        .frame(width: 150, height: 150)
                         .background(Color.blue)
                         .foregroundColor(.white)
                         .cornerRadius(10)
