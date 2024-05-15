@@ -16,17 +16,31 @@ struct StoryList: View {
         //Text("Tailor Your Tales").font(.title)
         VStack{
             HStack {
+                //App Title
                 Text("Tailor Your Tales")
                 //.font(.largeTitle)
-                    .foregroundStyle(.purple)
+                    .foregroundStyle(Color(red: 0.5412, green: 0.1490, blue: 0.6706))
                 //.font(.system(.body, design: .rounded))
                 //.fontWeight(.heavy)
                     .font(.custom("Helvetica Bold", size: 75)).padding(10)
-                /*Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    //.padding(.leading, UIScreen.main.bounds.size.width / 4)
+                
+                //Spacer()
+                
+                //Link to adut interface
+                NavigationLink(destination: AgeVerifier()) {
                     Text("Adult")
-                })  */          }
+                        .font(.custom("Helvetica Bold", size: 35))
+                        .frame(width: 150, height: 100)
+                        .background(Color(red: 0.5412, green: 0.1490, blue: 0.6706))
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }.padding(.leading, (UIScreen.main.bounds.size.width * 1.5 / 4))
+            }
+            //Instructions
+            Text("Tap on a title below to read a story!").font(.custom("Helvetica", size: 35)).padding(6).padding(.trailing, (UIScreen.main.bounds.size.width * 2 / 4))
             
-            Text("Tap on a title to read a story!").font(.custom("Helvetica", size: 35)).padding(6)
+            //Grid of stories
             ScrollView(.vertical){
                 LazyVGrid(columns: columns, alignment: .center, spacing: 75){
                     ForEach(0 ..< stories.count) {story in
@@ -35,7 +49,7 @@ struct StoryList: View {
                         } label: {
                             StoryRow(story: stories[story]).frame(width: 250, height: 250, alignment: .center)
                                 .cornerRadius(50)
-                                .background(.blue)
+                                .background(Color(red: 0, green: 0.2667, blue: 0.7020))
                                 .foregroundColor(.white)
                                 .font(.title)
                         }
