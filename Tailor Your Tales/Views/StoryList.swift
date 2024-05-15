@@ -15,12 +15,16 @@ struct StoryList: View {
     var body: some View {
         //Text("Tailor Your Tales").font(.title)
         VStack{
-            Text("Tailor Your Tales")
+            HStack {
+                Text("Tailor Your Tales")
                 //.font(.largeTitle)
-                .foregroundStyle(.purple)
+                    .foregroundStyle(.purple)
                 //.font(.system(.body, design: .rounded))
                 //.fontWeight(.heavy)
-                .font(.custom("Helvetica Bold", size: 75)).padding(10)
+                    .font(.custom("Helvetica Bold", size: 75)).padding(10)
+                /*Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Text("Adult")
+                })  */          }
             
             Text("Tap on a title to read a story!").font(.custom("Helvetica", size: 35)).padding(6)
             ScrollView(.vertical){
@@ -29,13 +33,13 @@ struct StoryList: View {
                         NavigationLink {
                             StoryView(story: stories[story], pageIndex: 0)
                         } label: {
-                            StoryRow(story: stories[story])
+                            StoryRow(story: stories[story]).frame(width: 250, height: 250, alignment: .center)
+                                .cornerRadius(50)
+                                .background(.blue)
+                                .foregroundColor(.white)
+                                .font(.title)
                         }
-                        .frame(width: 250, height: 250, alignment: .center)
-                        .cornerRadius(50)
-                        .background(.blue)
-                        .foregroundColor(.white)
-                        .font(.title)
+                        
                         
                         /*ForEach(0 ..< stories.count, id: \.self) {story in
                          NavigationLink {
