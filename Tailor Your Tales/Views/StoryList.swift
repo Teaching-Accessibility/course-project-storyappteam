@@ -35,10 +35,10 @@ struct StoryList: View {
                         .background(Color(red: 0.5412, green: 0.1490, blue: 0.6706))
                         .foregroundColor(.white)
                         .cornerRadius(10)
-                }.padding(.leading, (UIScreen.main.bounds.size.width * 1.5 / 4))
+                }.padding(.leading, (UIScreen.main.bounds.size.width * 1.5 / 4)).padding(.top, 10)
             }
             //Instructions
-            Text("Tap on a title below to read a story!").font(.custom("Helvetica", size: 35)).padding(6).padding(.trailing, (UIScreen.main.bounds.size.width * 2 / 4))
+            Text("Tap on a blue square to read a story!").font(.custom("Helvetica", size: 35)).padding(6).padding(.trailing, (UIScreen.main.bounds.size.width * 2 / 4))
             
             //Grid of stories
             ScrollView(.vertical){
