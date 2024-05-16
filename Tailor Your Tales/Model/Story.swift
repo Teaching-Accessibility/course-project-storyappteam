@@ -9,27 +9,30 @@ import SwiftUI
 
 struct Story: Identifiable, Equatable {
     var id: Int
-    let title: String
-    let previewImage: Image
-    let pages: [StoryPage]
+    var title: String
+    var previewImage: Image
+    var pages: [StoryPage]
+    var characters: [String: Character]
     
     subscript(_ pageIndex: Int) -> StoryPage {
         return pages[pageIndex]
     }
     //Function to allow to check for equality between stories - checks ID
-    static func ==(S1: Story, S2: Story) -> Bool {
+    static func == (S1: Story, S2: Story) -> Bool {
         return S1.id == S2.id //&& S1.title == S2.title
     }
 }
 
 struct StoryPage {
-    let text: String
+    var text: String
+    var choices: [Choice]
+    //var characterNames: [String: Character]
     
-    let choices: [Choice]
-    
+
     init(_ text: String, choices: [Choice]) {
         self.text = text
         self.choices = choices
+        //self.characterNames = characterNames
     }
 }
 

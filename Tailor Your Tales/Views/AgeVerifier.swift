@@ -105,7 +105,7 @@ struct AgeVerifier: View {
                 }
             }
             .navigationDestination(isPresented: $shouldNavigateToStoryList) {
-                StoryList()
+                StoryListAdult()
             }
         }
     }

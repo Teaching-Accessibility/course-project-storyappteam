@@ -18,7 +18,6 @@
 		654E49162BE892C400604945 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E49152BE892C400604945 /* Character.swift */; };
 		654E49182BE8A1CF00604945 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E49172BE8A1CF00604945 /* FavoriteButton.swift */; };
 		654E491D2BE8B41000604945 /* CharacterEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E491C2BE8B41000604945 /* CharacterEdit.swift */; };
-		654E491F2BE8CDB000604945 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E491E2BE8CDB000604945 /* CharacterView.swift */; };
 		654E49212BE8D8F300604945 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E49202BE8D8F300604945 /* Settings.swift */; };
 		654E49232BE8F3B900604945 /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E49222BE8F3B900604945 /* AppEntry.swift */; };
 		654E49252BE8F8FD00604945 /* AgeVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E49242BE8F8FD00604945 /* AgeVerifier.swift */; };
@@ -28,6 +27,8 @@
 		654E492E2BEA17BB00604945 /* Sam's Treasures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E492D2BEA17BB00604945 /* Sam's Treasures.swift */; };
 		654E49302BEA22CF00604945 /* StoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E492F2BEA22CE00604945 /* StoryList.swift */; };
 		654E49322BEAF42B00604945 /* Multiple Choices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E49312BEAF42B00604945 /* Multiple Choices.swift */; };
+		654E49342BF5FCFF00604945 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E49332BF5FCFF00604945 /* CharacterView.swift */; };
+		654E49362BF61CD000604945 /* StoryListAdult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E49352BF61CD000604945 /* StoryListAdult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +63,6 @@
 		654E49152BE892C400604945 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		654E49172BE8A1CF00604945 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		654E491C2BE8B41000604945 /* CharacterEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterEdit.swift; sourceTree = "<group>"; };
-		654E491E2BE8CDB000604945 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 		654E49202BE8D8F300604945 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		654E49222BE8F3B900604945 /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
 		654E49242BE8F8FD00604945 /* AgeVerifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeVerifier.swift; sourceTree = "<group>"; };
@@ -72,6 +72,8 @@
 		654E492D2BEA17BB00604945 /* Sam's Treasures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sam's Treasures.swift"; sourceTree = "<group>"; };
 		654E492F2BEA22CE00604945 /* StoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryList.swift; sourceTree = "<group>"; };
 		654E49312BEAF42B00604945 /* Multiple Choices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Multiple Choices.swift"; sourceTree = "<group>"; };
+		654E49332BF5FCFF00604945 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
+		654E49352BF61CD000604945 /* StoryListAdult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryListAdult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,12 +174,13 @@
 				654E48E62BE04B8900604945 /* Login.swift */,
 				654E49192BE8A26600604945 /* Helper */,
 				654E491C2BE8B41000604945 /* CharacterEdit.swift */,
-				654E491E2BE8CDB000604945 /* CharacterView.swift */,
 				654E49202BE8D8F300604945 /* Settings.swift */,
 				654E49222BE8F3B900604945 /* AppEntry.swift */,
 				654E49242BE8F8FD00604945 /* AgeVerifier.swift */,
 				654E49282BE9F0EB00604945 /* StoryView.swift */,
+				654E49352BF61CD000604945 /* StoryListAdult.swift */,
 				654E492F2BEA22CE00604945 /* StoryList.swift */,
+				654E49332BF5FCFF00604945 /* CharacterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -337,14 +340,15 @@
 				654E49232BE8F3B900604945 /* AppEntry.swift in Sources */,
 				654E48E52BE04B8900604945 /* Tailor_Your_TalesApp.swift in Sources */,
 				654E491D2BE8B41000604945 /* CharacterEdit.swift in Sources */,
+				654E49342BF5FCFF00604945 /* CharacterView.swift in Sources */,
 				654E49182BE8A1CF00604945 /* FavoriteButton.swift in Sources */,
 				654E492C2BE9F5D900604945 /* Next Week.swift in Sources */,
+				654E49362BF61CD000604945 /* StoryListAdult.swift in Sources */,
 				654E49292BE9F0EB00604945 /* StoryView.swift in Sources */,
 				654E49302BEA22CF00604945 /* StoryList.swift in Sources */,
 				654E49212BE8D8F300604945 /* Settings.swift in Sources */,
 				654E49322BEAF42B00604945 /* Multiple Choices.swift in Sources */,
 				654E49252BE8F8FD00604945 /* AgeVerifier.swift in Sources */,
-				654E491F2BE8CDB000604945 /* CharacterView.swift in Sources */,
 				654E49162BE892C400604945 /* Character.swift in Sources */,
 				654E49272BE9EFDE00604945 /* Story.swift in Sources */,
 			);

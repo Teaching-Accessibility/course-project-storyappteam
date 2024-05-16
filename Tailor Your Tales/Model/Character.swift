@@ -36,10 +36,11 @@ struct Character {
     var name: String
     var gender: Gender
     var nameColor: Color
-    var skinColor: Color
-    var eyeColor: Color
-    var hairColor: Color
-    var hairType: HairType
-    var hairLength: HairLength
-    var heightInCentimeters: Int
+//    var characterImage: Image
+//    var skinColor: Color
+//    var eyeColor: Color
+//    var hairColor: Color
+//    var hairType: HairType
+//    var hairLength: HairLength
+//    var heightInCentimeters: Int
 }

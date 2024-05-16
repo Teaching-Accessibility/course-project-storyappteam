@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct StoryList: View {
+struct StoryListAdult: View {
     let stories = [nextweek, samstreasures, multiplechoices]
     let columns = [
            GridItem(.adaptive(minimum: 250))
@@ -28,11 +28,11 @@ struct StoryList: View {
                 //Spacer()
                 
                 //Link to adult interface
-                NavigationLink(destination: AgeVerifier()) {
-                    Text("Adult")
+                NavigationLink(destination: StoryList()) {
+                    Text("Child")
                         .font(.custom("Helvetica Bold", size: 35))
                         .frame(width: 150, height: 100)
-                        .background(Color(red: 0.5412, green: 0.1490, blue: 0.6706))
+                        .background(Color(red: 0.67, green: 0.84, blue: 0.90))
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }.padding(.leading, (UIScreen.main.bounds.size.width * 1.5 / 4)).padding(.top, 10)
@@ -45,7 +45,7 @@ struct StoryList: View {
                 LazyVGrid(columns: columns, alignment: .center, spacing: 75){
                     ForEach(stories) {story in
                         NavigationLink {
-                            StoryView(story: story, pageIndex: 0)
+                            CharacterView(story: story, characters: story.characters)
                         } label: {
                             StoryRow(story: story).frame(width: 250, height: 250, alignment: .center)
                                 .cornerRadius(50)

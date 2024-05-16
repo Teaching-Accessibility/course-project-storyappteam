@@ -1,5 +1,7 @@
 import SwiftUI
 
+var mcharacterDictionary: [String: Character] = [:]
+
 let multiplechoices = Story(
     id: 2,
     title: "Multiple Choices",
@@ -30,4 +32,4 @@ let multiplechoices = Story(
 
         ]
                  ),
-    ])
+    ], characters: mcharacterDictionary)
