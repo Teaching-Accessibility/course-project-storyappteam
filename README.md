@@ -54,5 +54,36 @@ Design Guidelines:
 
 ![Screen1](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen1.png)
 
+### ScreenID: 2
+![Screen2](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen2.png)
+
+### ScreenID: 3
+![Screen3](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen3.png)
+
+### ScreenID: 4
+![Screen4](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen4.png)
+
+### ScreenID: 5
+![Screen5](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen5.png)
+
+### ScreenID: 6
+![Screen6](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen6.png)
+
+### ScreenID: 7
+![Screen7](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen7.png)
+
+### ScreenID: 8
+![Screen8](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen8.png)
+
+### Resources
+1) World Wide Web Consortium. 2018. “Web Content Accessibility Guidelines (WCAG) 2.1” Accessed May 3, 2024. [https://www.w3.org/TR/WCAG21/](https://www.w3.org/TR/WCAG21/)
+2)  Davis, M., Dautenhahn, K., Powell, S. and Nehaniv, C. (2010), "Guidelines for researchers and practitioners designing software and software trials for children with autism", Journal of Assistive Technologies, Vol. 4 No. 1, pp. 38-48. [https://doi.org/10.5042/jat.2010.0043](https://doi.org/10.5042/jat.2010.0043)
+3) Apple Developer App Store. Building Apps for Kids. [https://developer.apple.com/app-store/kids-apps/](https://developer.apple.com/app-store/kids-apps/)
+4) Google for Developers. Building for Kids: Designing Engaging Apps. [https://developers.google.com/building-for-kids/designing-engaging-apps](https://developers.google.com/building-for-kids/designing-engaging-apps)
+
+
+
+
+
 
 
