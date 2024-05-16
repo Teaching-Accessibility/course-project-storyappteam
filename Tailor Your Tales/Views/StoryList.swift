@@ -22,7 +22,7 @@ struct StoryList: View {
                     .foregroundStyle(Color(red: 0.5412, green: 0.1490, blue: 0.6706))
                 //.font(.system(.body, design: .rounded))
                 //.fontWeight(.heavy)
-                    .font(.custom("Helvetica Bold", size: 75)).padding(10)
+                    .font(.custom("Helvetica Bold", size: 65))
                     //.padding(.leading, UIScreen.main.bounds.size.width / 4)
                 
                 //Spacer()
@@ -37,6 +37,7 @@ struct StoryList: View {
                         .cornerRadius(10)
                 }.padding(.leading, (UIScreen.main.bounds.size.width * 1.5 / 4)).padding(.top, 10)
             }
+            .padding()
             //Instructions
             Text("Tap on a blue square to read a story!").font(.custom("Helvetica", size: 35)).padding(6).padding(.trailing, (UIScreen.main.bounds.size.width * 2 / 4))
             

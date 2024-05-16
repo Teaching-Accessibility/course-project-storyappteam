@@ -16,6 +16,7 @@ struct StoryRow: View {
             Text(story.title)
             Spacer()
         }
+        .padding()
     }
 }
 

@@ -22,6 +22,7 @@ struct StoryView: View {
         VStack{
             ScrollView {
                 Text(characterNames(from: story[pageIndex].text, with: characters))
+                    .font(.system(size: 30))
             }
             
             ForEach(story[pageIndex].choices, id: \Choice.text) { choice in

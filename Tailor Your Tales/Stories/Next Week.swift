@@ -48,7 +48,9 @@ var nextweek = Story(
                  ),
         StoryPage( // 2
         """
-        The next day is Monday. I will go to school on Monday. In the afternoon, {friend3name} and {friend4name} will come to my house.
+        The next day is Monday. I will go to school on Monday. 
+        
+        In the afternoon, {friend3name} and {friend4name} will come to my house.
         """,
         choices: [
             Choice(text: "Next", destination: 3)
@@ -56,7 +58,9 @@ var nextweek = Story(
                  ),
         StoryPage( // 3
         """
-        The next day is Tuesday, and the day after that is Wednesday. I will go to school.
+        The next day is Tuesday, and the day after that is Wednesday. 
+        
+        I will go to school.
         """,
         choices: [
             Choice(text: "Next", destination: 4)
@@ -64,7 +68,9 @@ var nextweek = Story(
                  ),
         StoryPage( // 4
         """
-        After that, it will be Thursday. I will go to school in the morning and club with {friend5name} in the afternoon.
+        After that, it will be Thursday. 
+        
+        I will go to school in the morning and club with {friend5name} in the afternoon.
         """,
         choices: [
             Choice(text: "Next", destination: 5)
@@ -72,7 +78,9 @@ var nextweek = Story(
                  ),
         StoryPage( // 5
         """
-        Then it will be Friday again. I will go to school in the morning and club with {friend3name} in the afternoon.
+        Then it will be Friday again. 
+        
+        I will go to school in the morning and club with {friend3name} in the afternoon.
         """,
         choices: [
             Choice(text: "Next", destination: 6)
