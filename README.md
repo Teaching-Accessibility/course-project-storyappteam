@@ -43,14 +43,14 @@ This app is intended for use on an iPad.
 
 Screen Title: Default home page; child view
 
-User-Computer Interaction: 
+User-Computer Interaction: This screen implements the feature separate child/adult user interfaces, as this view is for the child and the user can click on the Adult view in the upper right corner to navigate to the adult view. It also implements a child-friendly UI, as it has big buttons, simple instructions, and bright colors. This page also features our library of pre-created stories, which the users can tap on to read. 
 
 Design Guidelines: 
 
 1) WCAG 1.4; make content distinguishable from the background by using sufficient contrast and maintaining clear text size and spacing
 2) WCAG 3.2; consistent navigation and labeling
-c) WCAG 2.4; provide meaningful titles and a larger touch target space
-d) Google developer; use of bright colors, simple shapes, and big buttons
+3) WCAG 2.4; provide meaningful titles and a larger touch target space
+4) Google developer; use of bright colors, simple shapes, and big buttons
 
 ![Screen1](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen1.png)
 
