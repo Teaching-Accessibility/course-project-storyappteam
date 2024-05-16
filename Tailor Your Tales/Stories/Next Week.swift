@@ -15,11 +15,11 @@ var c5 = Character(name: "Amanda", gender: .female, nameColor: .red)
 
 
 var charactersDictionary: [String: Character] = [
-    "character1": c1,
-    "character2": c2,
-    "character3": c3,
-    "character4": c4,
-    "character5": c5
+    "friend1": c1,
+    "friend2": c2,
+    "friend3": c3,
+    "friend4": c4,
+    "friend5": c5
 ]
 
 var nextweek = Story(
@@ -30,7 +30,7 @@ var nextweek = Story(
     pages: [
         StoryPage( // 0
         """
-        Today is Friday. I go to club with {character1name} and {character2name}.
+        Today is Friday. I go to club with {friend1name} and {friend2name}.
         """,
         choices: [
             Choice(text: "Next", destination: 1)
@@ -48,7 +48,7 @@ var nextweek = Story(
                  ),
         StoryPage( // 2
         """
-        The next day is Monday. I will go to school on Monday. In the afternoon, {character3name} and {character4name} will come to my house.
+        The next day is Monday. I will go to school on Monday. In the afternoon, {friend3name} and {friend4name} will come to my house.
         """,
         choices: [
             Choice(text: "Next", destination: 3)
@@ -64,7 +64,7 @@ var nextweek = Story(
                  ),
         StoryPage( // 4
         """
-        After that, it will be Thursday. I will go to school in the morning and club with {character5name} in the afternoon.
+        After that, it will be Thursday. I will go to school in the morning and club with {friend5name} in the afternoon.
         """,
         choices: [
             Choice(text: "Next", destination: 5)
@@ -72,7 +72,7 @@ var nextweek = Story(
                  ),
         StoryPage( // 5
         """
-        Then it will be Friday again. I will go to school in the morning and club with {character3name} in the afternoon.
+        Then it will be Friday again. I will go to school in the morning and club with {friend3name} in the afternoon.
         """,
         choices: [
             Choice(text: "Next", destination: 6)

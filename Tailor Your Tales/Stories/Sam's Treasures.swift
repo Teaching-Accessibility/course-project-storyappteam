@@ -41,7 +41,7 @@ var scharactersDictionary: [String: Character] = [
  ),
  StoryPage( // 2
  """
- That's not treasure - that's junk",
+ Oh wow! Treasure!",
  
  said {character2name}.
  """,
@@ -51,7 +51,7 @@ var scharactersDictionary: [String: Character] = [
  ),
  StoryPage( // 3
  """
- {character2name} didn't like the things {character1name} found.
+ {character2name} like the things {character1name} found and wanted to find some too.
  """,
  choices: [
  Choice(text: "Next", destination: 4)
@@ -62,7 +62,7 @@ var scharactersDictionary: [String: Character] = [
  That was fine with {character1name}.
  "Time to go treasure hunting!"
  
- Off {character1name} went with his backpack.
+ Off {character1name} and {character2name} went with their backpacks and a chest full of excitement.
  """,
  choices: [
  Choice(text: "Next", destination: 5)
@@ -70,7 +70,7 @@ var scharactersDictionary: [String: Character] = [
  ),
  StoryPage( // 5
  """
- Between the bushes {character1name} found a crown and a magic wand.
+ Between the bushes {character2name} found a crown and a magic wand.
  """,
  choices: [
  Choice(text: "Next", destination: 6)
@@ -78,7 +78,7 @@ var scharactersDictionary: [String: Character] = [
  ),
  StoryPage( // 6
  """
- Under an old log {character1name} found monsters and creepy creatures.
+ Under an old log {character1name} found bugs and creepy creatures.
  
  No thank you!
  """,
@@ -96,7 +96,7 @@ var scharactersDictionary: [String: Character] = [
  ),
  StoryPage( // 8
  """
- In the stream {character1name} found a message in a bottle and a wise old wizard.
+ In the stream {character2name} found a message in a bottle and a wise old wizard.
  """,
  choices: [
  Choice(text: "Next", destination: 9)
@@ -104,7 +104,7 @@ var scharactersDictionary: [String: Character] = [
  ),
  StoryPage( // 9
  """
- By the lamp post {character1name} found a sports car and a victory trophy. Time to show {character2name} all the treausres he had found!
+ By the lamp post {character1name} found a sports car and a victory trophy. Time to show each other all the treasures they had found!
  """,
  choices: [
  Choice(text: "Next", destination: 10)
