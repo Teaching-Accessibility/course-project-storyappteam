@@ -43,7 +43,7 @@ This app is intended for use on an iPad.
 
 Screen Title: Default home page; child view
 
-User-Computer Interaction: The user-computer interactions on this screen implement the feature separate child/adult user interfaces, as this view is for the child and the user can click on the Adult view in the upper right corner to navigate to the adult view. It also implements a child-friendly UI, as it has big buttons, simple instructions, and bright colors. This page also features our library of pre-created stories, which the users can tap on to read. 
+User-Computer Interaction: The user-computer interactions on this screen implement the feature library of stories, as this view contains a list of the stories that the users can tap on to read. It also implements a child-friendly UI, as it has big buttons, simple instructions, and bright colors. It also features an accessible design, as the colors have specifically been chosen to provide sufficient contrast for visually impaired users and the text is in an accessible font. 
 
 Design Guidelines: 
 
@@ -84,12 +84,44 @@ Design Guidelines:
 ![Screen3](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen3.png)
 
 ### ScreenID: 4
+
+ScreenID: 4
+
+User-Computer Interaction: This screen implements a library of customizable stories, as this interface shows the available stories. Adults can click on the stories to customize them. It also features an accessible design, as the colors have specifically been chosen to provide sufficient contrast for visually impaired users and the text is in an accessible font. 
+
+Design Guidelines: 
+
+1) WCAG 1.4; make content distinguishable from the background by using sufficient contrast, and maintaining clear text size and spacing
+2) WCAG 3.2; consistent navigation and labeling
+3) WCAG 2.4; provide meaningful titles and larger touch target space
+
 ![Screen4](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen4.png)
 
 ### ScreenID: 5
+
+Screen Title: Adult view - character list 
+
+User-Computer Interaction: This screen implements the feature making the stories in the library customizable because it provides a list of the characters which the user can tap on to edit. 
+
+Design Guidelines: 
+
+1) WCAG 1.4; make content distinguishable from the background by using sufficient contrast, and maintaining clear text size and spacing
+2) WCAG 2.4; provide meaningful titles and larger touch target space
+   
 ![Screen5](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen5.png)
 
 ### ScreenID: 6
+
+Screen Title: Character edit 
+
+User-Computer Interaction: This screen implements the feature customizable stories because it provides a page for users to edit the attributes of the characters in the story to customize their name and gender.
+
+Design Guidelines: 
+
+1) WCAG 3.2; consistent navigation and labeling
+2) WCAG 2.1; enable keyboard functionality
+3) WCAG 2.4; provide clear focus and informational headings
+   
 ![Screen6](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen6.png)
 
 ### ScreenID: 7
