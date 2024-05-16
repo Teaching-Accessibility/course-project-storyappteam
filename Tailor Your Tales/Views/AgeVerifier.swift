@@ -55,15 +55,15 @@ struct AgeVerifier: View {
                 ToolbarItem (placement: .topBarLeading)  {
                     
                     Button(action: {presentationMode.wrappedValue.dismiss()}, label: {
-                        Text("Back")
+                        Text("Back").font(.custom("Helvetica Bold", size: 35))
+                            .frame(width: 150, height: 100)
+                            .background(Color(red: 0.5804, green: 0.0863, blue: 0))
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                            .padding(.top, 50)
                     })
                     //.padding(.top, 15)
-                    .font(.custom("Helvetica Bold", size: 35))
-                    .frame(width: 150, height: 100)
-                    .background(Color(red: 0.5804, green: 0.0863, blue: 0))
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                    .padding(.top, 50)
+                    
                     
                 }
             })
