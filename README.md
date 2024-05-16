@@ -39,4 +39,20 @@ This app is intended for use on an iPad.
 9) Start using the app!
 
 ## UI Documentation
+### ScreenID: 1
+
+Screen Title: Default home page; child view
+
+User-Computer Interaction: 
+
+Design Guidelines: 
+
+1) WCAG 1.4; make content distinguishable from the background by using sufficient contrast and maintaining clear text size and spacing
+2) WCAG 3.2; consistent navigation and labeling
+c) WCAG 2.4; provide meaningful titles and a larger touch target space
+d) Google developer; use of bright colors, simple shapes, and big buttons
+
+![Screen1](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen1.png)
+
+
 
