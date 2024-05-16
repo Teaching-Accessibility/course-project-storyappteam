@@ -10,7 +10,7 @@ import SwiftUI
 struct AppEntry: View {
     var body: some View {
         NavigationStack {
-            Login()
+            StoryList()
         }
     }
 }

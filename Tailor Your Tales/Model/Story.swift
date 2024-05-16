@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Story: Identifiable {
+struct Story: Identifiable, Equatable {
     var id: Int
     let title: String
     let previewImage: Image
@@ -15,6 +15,10 @@ struct Story: Identifiable {
     
     subscript(_ pageIndex: Int) -> StoryPage {
         return pages[pageIndex]
+    }
+    //Function to allow to check for equality between stories - checks ID
+    static func ==(S1: Story, S2: Story) -> Bool {
+        return S1.id == S2.id //&& S1.title == S2.title
     }
 }
 
