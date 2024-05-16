@@ -19,7 +19,7 @@ struct StoryListAdult: View {
                 //App Title
                 Text("Tailor Your Tales")
                 //.font(.largeTitle)
-                    .foregroundStyle(Color(red: 0.5412, green: 0.1490, blue: 0.6706))
+                    .foregroundStyle(Color(red: 0, green: 0.2667, blue: 0.7020))
                 //.font(.system(.body, design: .rounded))
                 //.fontWeight(.heavy)
                     .font(.custom("Helvetica Bold", size: 75)).padding(10)
@@ -32,13 +32,13 @@ struct StoryListAdult: View {
                     Text("Child")
                         .font(.custom("Helvetica Bold", size: 35))
                         .frame(width: 150, height: 100)
-                        .background(Color(red: 0.67, green: 0.84, blue: 0.90))
+                        .background(Color(red: 0, green: 0.2667, blue: 0.7020))
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }.padding(.leading, (UIScreen.main.bounds.size.width * 1.5 / 4)).padding(.top, 10)
             }
             //Instructions
-            Text("Tap on a blue square to read a story!").font(.custom("Helvetica", size: 35)).padding(6).padding(.trailing, (UIScreen.main.bounds.size.width * 2 / 4))
+            Text("Tap on a purple square to customize a story!").font(.custom("Helvetica", size: 35)).padding(6).padding(.trailing, (UIScreen.main.bounds.size.width * 2 / 4))
             
             //Grid of stories
             ScrollView(.vertical){
@@ -49,7 +49,7 @@ struct StoryListAdult: View {
                         } label: {
                             StoryRow(story: story).frame(width: 250, height: 250, alignment: .center)
                                 .cornerRadius(50)
-                                .background(Color(red: 0, green: 0.2667, blue: 0.7020))
+                                .background(Color(red: 0.5412, green: 0.1490, blue: 0.6706))
                                 .foregroundColor(.white)
                                 .font(.title)
                         }
