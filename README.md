@@ -122,12 +122,34 @@ Design Guidelines:
 2) WCAG 2.1; enable keyboard functionality
 3) WCAG 2.4; provide clear focus and informational headings
    
-![Screen6](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen6.png)
+![Screen6](https://github.com/Teaching-Accessibility/course-project-storyappteam/assets/38673255/13049b84-2f18-45a8-8aa2-21775bb4386b)
+
 
 ### ScreenID: 7
+
+Screen Title: Edited character list
+
+User-Computer Interaction: This screen also implements the customizable story feature because it shows the user that the character that they customized has now been edited. Users can tap to change the customization or customize other characters in the story. Or they can continue on to read the story to their child or have the child read the story themselves. 
+
+Design Guidelines: 
+
+1) WCAG 1.4; make content distinguishable from the background by using sufficient contrast, and maintaining clear text size and spacing
+2) WCAG 2.4; provide meaningful titles and larger touch target space
+   
 ![Screen7](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen7.png)
 
 ### ScreenID: 8
+
+Screen Title: Adult view - edited character story
+
+User-Computer Interaction: This screen shows the final step to officially implement the customization of the story. In this page, the story has now been customized and the customization shows up as the user flips through the story. It also features clear and user-friendly controls with simple instructions. 
+
+Design Guidelines: 
+1)  WCAG 3.2; consistent navigation and labeling
+2)  WCAG 3.1; make text content readable and understandable
+3)  Davis et al; accommodate special interests and fears by providing positive relatable stories and making the story characters customizable
+4)  Davis et al; design with simple intuitive interactions to ensure easy navigation through stories
+
 ![Screen8](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen8.png)
 
 ### Resources
