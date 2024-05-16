@@ -30,4 +30,4 @@ let multiplechoices = Story(
 
         ]
                  ),
-    ])
+    ], characters: charactersDictionary)

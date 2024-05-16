@@ -9,9 +9,10 @@ import SwiftUI
 
 struct Story: Identifiable, Equatable {
     var id: Int
-    let title: String
-    let previewImage: Image
-    let pages: [StoryPage]
+    var title: String
+    var previewImage: Image
+    var pages: [StoryPage]
+    var characters: [String: Character]
     
     subscript(_ pageIndex: Int) -> StoryPage {
         return pages[pageIndex]
@@ -23,13 +24,15 @@ struct Story: Identifiable, Equatable {
 }
 
 struct StoryPage {
-    let text: String
+    var text: String
+    var choices: [Choice]
+    //var characterNames: [String: Character]
     
-    let choices: [Choice]
-    
+
     init(_ text: String, choices: [Choice]) {
         self.text = text
         self.choices = choices
+        //self.characterNames = characterNames
     }
 }
 
