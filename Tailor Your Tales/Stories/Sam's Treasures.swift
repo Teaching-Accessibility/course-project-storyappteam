@@ -3,6 +3,10 @@
 //  Tailor Your Tales
 //
 //  Created by Daniel Koronthaly on 5/7/24.
+
+// Attribution: This story was modified from the original story illustrated by Princess Kabeya, written by Jon Keevy, designed by Jessica Janutsch and Edited by Kelly Norwood-Young with the help of the Book Dash Participants in Cape Town on 14 May 2022
+// The work is licensed under a Creative Commons Attribution 4.0 License: https://creativecommons.org/licenses/by/4.0/
+// The original text can be found here: https://www.storyberries.com/bedtime-stories-sams-treasures-short-stories-for-kids/
 //
 
 import SwiftUI
@@ -20,7 +24,7 @@ var scharactersDictionary: [String: Character] = [
 
  let samstreasures = Story(
  id: 1,
- title: "Sam's Treasures",
+ title: "Treasures",
  previewImage: Image(systemName: "figure.walk"),
  pages: [
  StoryPage( // 0

@@ -1,3 +1,4 @@
+// Attribution: This story was created by Daniel Koronathy.
 import SwiftUI
 
 var mcharacterDictionary: [String: Character] = [:]

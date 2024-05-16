@@ -3,6 +3,7 @@
 //  Tailor Your Tales
 //
 //  Created by Daniel Koronthaly on 5/6/24.
+//Attribution: Created by a participant's therapist. When we have more information about how we should credit them, we will update this attribution.
 //
 
 import SwiftUI
