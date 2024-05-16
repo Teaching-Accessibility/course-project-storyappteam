@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StoryList: View {
-    let stories = [nextweek, samstreasures, multiplechoices,nextweek, samstreasures, multiplechoices,nextweek, samstreasures, multiplechoices,nextweek, samstreasures, multiplechoices,nextweek, samstreasures, multiplechoices,multiplechoices,nextweek, samstreasures, multiplechoices,nextweek, samstreasures,multiplechoices,nextweek, samstreasures, multiplechoices,nextweek, samstreasures,multiplechoices,nextweek, samstreasures, multiplechoices,nextweek, samstreasures,multiplechoices,nextweek, samstreasures, multiplechoices,nextweek, samstreasures,multiplechoices,nextweek, samstreasures, multiplechoices,nextweek, samstreasures,multiplechoices,nextweek, samstreasures, multiplechoices,nextweek, samstreasures,multiplechoices,nextweek, samstreasures, multiplechoices,nextweek, samstreasures,multiplechoices,nextweek, samstreasures, multiplechoices,nextweek, samstreasures,]
+    let stories = [nextweek, samstreasures, multiplechoices]
     let columns = [
            GridItem(.adaptive(minimum: 250))
        ]
@@ -43,11 +43,11 @@ struct StoryList: View {
             //Grid of stories
             ScrollView(.vertical){
                 LazyVGrid(columns: columns, alignment: .center, spacing: 75){
-                    ForEach(0 ..< stories.count) {story in
+                    ForEach(stories) {story in
                         NavigationLink {
-                            StoryView(story: stories[story], pageIndex: 0)
+                            StoryView(story: story, pageIndex: 0)
                         } label: {
-                            StoryRow(story: stories[story]).frame(width: 250, height: 250, alignment: .center)
+                            StoryRow(story: story).frame(width: 250, height: 250, alignment: .center)
                                 .cornerRadius(50)
                                 .background(Color(red: 0, green: 0.2667, blue: 0.7020))
                                 .foregroundColor(.white)
