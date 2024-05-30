@@ -16,11 +16,13 @@ struct CharacterView: View {
         ScrollView(.vertical){
             ForEach(characters.keys.sorted(), id: \.self) {key in
                 NavigationLink(destination: CharacterEdit(character: binding(for: key), role: key)){
-                    HStack{
-                        Text(characters[key]?.name ?? "")
-                            .font(.system(size: 20))
-                        Text("(" + (characters[key]?.gender.rawValue ?? "") + ")").foregroundColor(.gray)
-                            .font(.system(size: 20))
+                    VStack {
+                        HStack{
+                            Text(characters[key]?.name ?? "")
+                                .font(.system(size: 20))
+                            Text("(" + (characters[key]?.gender.rawValue ?? "") + ")").foregroundColor(.gray)
+                                .font(.system(size: 20))
+                        }
                     }
                 }
             }
