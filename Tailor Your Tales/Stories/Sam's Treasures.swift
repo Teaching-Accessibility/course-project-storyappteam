@@ -33,6 +33,10 @@ var scharactersDictionary: [String: Character] = [
  """,
  choices: [
  Choice(text: "Next", destination: 1)
+ ],
+ characters: [
+     "character1": .happy,
+     "character2": .happy
  ]
  ),
  StoryPage( // 1
@@ -41,6 +45,9 @@ var scharactersDictionary: [String: Character] = [
  """,
  choices: [
  Choice(text: "Next", destination: 2)
+ ],
+ characters: [
+     "character1": .love,
  ]
  ),
  StoryPage( // 2
@@ -51,6 +58,9 @@ var scharactersDictionary: [String: Character] = [
  """,
  choices: [
  Choice(text: "Next", destination: 3)
+ ],
+ characters: [
+     "character2": .happy
  ]
  ),
  StoryPage( // 3
@@ -59,6 +69,9 @@ var scharactersDictionary: [String: Character] = [
  """,
  choices: [
  Choice(text: "Next", destination: 4)
+ ],
+ characters: [
+     "character1": .neutral,
  ]
  ),
  StoryPage( // 4
@@ -70,6 +83,10 @@ var scharactersDictionary: [String: Character] = [
  """,
  choices: [
  Choice(text: "Next", destination: 5)
+ ],
+ characters: [
+     "character1": .happy,
+     "character2": .happy
  ]
  ),
  StoryPage( // 5
@@ -78,6 +95,9 @@ var scharactersDictionary: [String: Character] = [
  """,
  choices: [
  Choice(text: "Next", destination: 6)
+ ],
+ characters: [
+     "character2": .love
  ]
  ),
  StoryPage( // 6
@@ -88,6 +108,9 @@ var scharactersDictionary: [String: Character] = [
  """,
  choices: [
  Choice(text: "Next", destination: 7)
+ ],
+ characters: [
+     "character1": .angry,
  ]
  ),
  StoryPage( // 7
@@ -96,6 +119,9 @@ var scharactersDictionary: [String: Character] = [
  """,
  choices: [
  Choice(text: "Next", destination: 8)
+ ],
+ characters: [
+     "character1": .happy,
  ]
  ),
  StoryPage( // 8
@@ -104,6 +130,9 @@ var scharactersDictionary: [String: Character] = [
  """,
  choices: [
  Choice(text: "Next", destination: 9)
+ ],
+ characters: [
+     "character2": .happy
  ]
  ),
  StoryPage( // 9
@@ -112,6 +141,9 @@ var scharactersDictionary: [String: Character] = [
  """,
  choices: [
  Choice(text: "Next", destination: 10)
+ ],
+ characters: [
+     "character1": .happy,
  ]
  ),
  StoryPage( // 10
@@ -122,6 +154,9 @@ var scharactersDictionary: [String: Character] = [
  """,
  choices: [
  Choice(text: "Next", destination: 11)
+ ],
+ characters: [
+     "character2": .sad
  ]
  ),
  StoryPage( // 11
@@ -132,6 +167,10 @@ var scharactersDictionary: [String: Character] = [
  """,
  choices: [
  Choice(text: "Next", destination: 12)
+ ],
+ characters: [
+     "character1": .happy,
+     "character2": .love
  ]
  ),
  StoryPage( // 12
@@ -140,6 +179,9 @@ var scharactersDictionary: [String: Character] = [
  """,
  choices: [
  
+ ],
+ characters: [
+     "character2": .love
  ]
  ),
  ],characters: scharactersDictionary

@@ -21,12 +21,23 @@ enum CharacterImage: String, CaseIterable, Identifiable {
     case bella = "bella"
     case christine = "christine"
     case derrick = "derrick"
+    case elizabeth = "elizabeth"
     case joe = "joe"
     case matt = "matt"
     case megan = "megan"
     case nina = "nina"
     case rohit = "rohit"
     case sarah = "sarah"
+    
+    var id: String {self.rawValue}
+}
+
+enum Emotion: String, CaseIterable, Identifiable {
+    case happy = "happy"
+    case angry = "angry"
+    case sad = "sad"
+    case neutral = "neutral"
+    case love = "love"
     
     var id: String {self.rawValue}
 }

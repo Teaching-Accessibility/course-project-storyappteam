@@ -8,11 +8,11 @@
 
 import SwiftUI
 
-var c1 = Character(name: "Juliana", gender: .female, nameColor: .red)
-var c2 = Character(name: "Jana", gender: .female, nameColor: .green)
-var c3 = Character(name: "Elena", gender: .female, nameColor: .red)
-var c4 = Character(name: "Java", gender: .female, nameColor: .green)
-var c5 = Character(name: "Amanda", gender: .female, nameColor: .red)
+var c1 = Character(name: "Juliana", gender: .female, nameColor: .red, image: .christine)
+var c2 = Character(name: "Jana", gender: .female, nameColor: .green, image: .megan)
+var c3 = Character(name: "Elena", gender: .female, nameColor: .red, image: .nina)
+var c4 = Character(name: "Java", gender: .female, nameColor: .green, image: .sarah)
+var c5 = Character(name: "Amanda", gender: .female, nameColor: .red, image: .alia)
 
 
 var charactersDictionary: [String: Character] = [
@@ -35,6 +35,10 @@ var nextweek = Story(
         """,
         choices: [
             Choice(text: "Next", destination: 1)
+        ],
+        characters: [
+            "friend1": .happy,
+            "friend2": .happy
         ]
                  ),
         StoryPage( // 1
@@ -55,6 +59,10 @@ var nextweek = Story(
         """,
         choices: [
             Choice(text: "Next", destination: 3)
+        ],
+        characters: [
+            "friend3": .happy,
+            "friend4": .happy
         ]
                  ),
         StoryPage( // 3
@@ -75,6 +83,9 @@ var nextweek = Story(
         """,
         choices: [
             Choice(text: "Next", destination: 5)
+        ],
+        characters: [
+            "friend5": .happy,
         ]
                  ),
         StoryPage( // 5
@@ -85,6 +96,9 @@ var nextweek = Story(
         """,
         choices: [
             Choice(text: "Next", destination: 6)
+        ],
+        characters: [
+            "friend3": .happy,
         ]
                  ),
         StoryPage( // 6
