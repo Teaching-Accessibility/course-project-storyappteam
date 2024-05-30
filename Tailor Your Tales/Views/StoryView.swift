@@ -72,7 +72,7 @@ struct StoryView: View {
                 
         }
             .padding()
-            .navigationTitle("Page \(pageIndex + 1)")
+            .navigationTitle("Page \(pageIndex + 1) of \(story.title)")
             .navigationBarTitleDisplayMode(.inline)
     }
     
