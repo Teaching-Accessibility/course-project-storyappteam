@@ -20,7 +20,7 @@ var beanholeCharacters: [String: Character] = [
 let beanhole = Story(
 id: 6,
 title: "Bean Hole",
-previewImage: Image(systemName: "figure.walk"),
+previewImage: Image(systemName: "carrot"),
 pages: [
 StoryPage( // 0
 """

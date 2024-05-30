@@ -20,7 +20,7 @@ var letspartyCharacters: [String: Character] = [
 let letsParty = Story(
 id: 4,
 title: "Let's Party!",
-previewImage: Image(systemName: "figure.walk"),
+previewImage: Image(systemName: "party.popper"),
 pages: [
 StoryPage( // 0
 """

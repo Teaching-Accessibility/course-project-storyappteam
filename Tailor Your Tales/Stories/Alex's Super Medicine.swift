@@ -22,7 +22,7 @@ var alexCharacters: [String: Character] = [
 let alexsSuperMedicine = Story(
 id: 7,
 title: "Alex's Super Medicine",
-previewImage: Image(systemName: "figure.walk"),
+previewImage: Image(systemName: "medical.thermometer"),
 pages: [
 StoryPage( // 0
 """

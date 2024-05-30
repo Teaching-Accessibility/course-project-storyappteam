@@ -23,7 +23,7 @@ var emmaCharacters: [String: Character] = [
 let emmasAdventure = Story(
 id: 8,
 title: "Emma's Magical Garden Adventure",
-previewImage: Image(systemName: "figure.walk"),
+previewImage: Image(systemName: "ladybug"),
 pages: [
 StoryPage( // 0
 """

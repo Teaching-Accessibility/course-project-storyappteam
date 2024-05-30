@@ -10,7 +10,7 @@ import SwiftUI
 let theDark = Story(
 id: 5,
 title: "The dark is friendly",
-previewImage: Image(systemName: "figure.walk"),
+previewImage: Image(systemName: "moon"),
 pages: [
 StoryPage( // 0
 """

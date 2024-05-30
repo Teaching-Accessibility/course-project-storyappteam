@@ -20,7 +20,7 @@ var mondayCharacters: [String: Character] = [
 let mondayMorning = Story(
 id: 3,
 title: "Monday Morning",
-previewImage: Image(systemName: "figure.walk"),
+previewImage: Image(systemName: "sun.horizon"),
 pages: [
 StoryPage( // 0
 """
