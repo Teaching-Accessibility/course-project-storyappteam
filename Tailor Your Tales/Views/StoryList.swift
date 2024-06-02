@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StoryList: View {
-    let stories = [nextweek, samstreasures, multiplechoices]
+    let stories = [samstreasures, mondayMorning, letsParty, theDark, beanhole, alexsSuperMedicine, emmasAdventure]
     let columns = [
            GridItem(.adaptive(minimum: 250))
        ]
@@ -43,12 +43,12 @@ struct StoryList: View {
             
             //Grid of stories
             ScrollView(.vertical){
-                LazyVGrid(columns: columns, alignment: .center, spacing: 75){
+                LazyVGrid(columns: columns, alignment: .center, spacing: 60){
                     ForEach(stories) {story in
                         NavigationLink {
                             StoryView(story: story, pageIndex: 0)
                         } label: {
-                            StoryRow(story: story).frame(width: 250, height: 250, alignment: .center)
+                            StoryRow(story: story).frame(width: 230, height: 230, alignment: .center)
                                 .cornerRadius(50)
                                 .background(Color(red: 0, green: 0.2667, blue: 0.7020))
                                 .foregroundColor(.white)

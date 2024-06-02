@@ -14,15 +14,23 @@ struct CharacterView: View {
         Text("Tap on a character to edit them!")
             .font(.system(size: 25))
         ScrollView(.vertical){
-            ForEach(characters.keys.sorted(), id: \.self) {key in
-                NavigationLink(destination: CharacterEdit(character: binding(for: key), role: key)){
-                    HStack{
-                        Text(characters[key]?.name ?? "")
-                            .font(.system(size: 20))
-                        Text("(" + (characters[key]?.gender.rawValue ?? "") + ")").foregroundColor(.gray)
-                            .font(.system(size: 20))
+            if characters.count != 0 {
+                ForEach(characters.keys.sorted(), id: \.self) {key in
+                    NavigationLink(destination: CharacterEdit(character: binding(for: key), role: key)){
+                        VStack {
+                            HStack{
+                                Text(characters[key]?.name ?? "")
+                                    .font(.system(size: 20))
+                                Text("(" + (characters[key]?.gender.rawValue ?? "") + ")").foregroundColor(.gray)
+                                    .font(.system(size: 20))
+                            }
+                        }
                     }
                 }
+            }
+            else {
+                Text("No characters to edit.")
+                    .font(.system(size: 20))
             }
         }
         

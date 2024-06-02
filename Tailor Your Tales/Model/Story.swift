@@ -26,13 +26,12 @@ struct Story: Identifiable, Equatable {
 struct StoryPage {
     var text: String
     var choices: [Choice]
-    //var characterNames: [String: Character]
-    
+    var characters: [String : Emotion]?
 
-    init(_ text: String, choices: [Choice]) {
+    init(_ text: String, choices: [Choice], characters: [String : Emotion]? = nil) {
         self.text = text
         self.choices = choices
-        //self.characterNames = characterNames
+        self.characters = characters
     }
 }
 

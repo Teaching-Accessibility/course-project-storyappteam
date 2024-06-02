@@ -33,6 +33,12 @@
 		CE125AF72BFBEB1D009D0F03 /* LocalData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE125AF52BFBEB1D009D0F03 /* LocalData.xcdatamodeld */; };
 		CE125AF82BFBEB1D009D0F03 /* LocalData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE125AF52BFBEB1D009D0F03 /* LocalData.xcdatamodeld */; };
 		CE125AF92BFBEB1D009D0F03 /* LocalData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE125AF52BFBEB1D009D0F03 /* LocalData.xcdatamodeld */; };
+		656C34982C087E9000B6FE82 /* Monday Morning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C34972C087E9000B6FE82 /* Monday Morning.swift */; };
+		656C349A2C0880AC00B6FE82 /* Let's Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C34992C0880AC00B6FE82 /* Let's Party.swift */; };
+		656C349C2C08830700B6FE82 /* The Dark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C349B2C08830700B6FE82 /* The Dark.swift */; };
+		656C349E2C0884A700B6FE82 /* Bean Hole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C349D2C0884A700B6FE82 /* Bean Hole.swift */; };
+		656C34A02C08863A00B6FE82 /* Alex's Super Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C349F2C08863A00B6FE82 /* Alex's Super Medicine.swift */; };
+		656C34A22C0887C200B6FE82 /* Emma's Magical Garden Adventure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C34A12C0887C200B6FE82 /* Emma's Magical Garden Adventure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +86,12 @@
 		654E49352BF61CD000604945 /* StoryListAdult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryListAdult.swift; sourceTree = "<group>"; };
 		CE125AF32BFBE91C009D0F03 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		CE125AF62BFBEB1D009D0F03 /* LocalData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocalData.xcdatamodel; sourceTree = "<group>"; };
+		656C34972C087E9000B6FE82 /* Monday Morning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Monday Morning.swift"; sourceTree = "<group>"; };
+		656C34992C0880AC00B6FE82 /* Let's Party.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Let's Party.swift"; sourceTree = "<group>"; };
+		656C349B2C08830700B6FE82 /* The Dark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "The Dark.swift"; sourceTree = "<group>"; };
+		656C349D2C0884A700B6FE82 /* Bean Hole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bean Hole.swift"; sourceTree = "<group>"; };
+		656C349F2C08863A00B6FE82 /* Alex's Super Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alex's Super Medicine.swift"; sourceTree = "<group>"; };
+		656C34A12C0887C200B6FE82 /* Emma's Magical Garden Adventure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Emma's Magical Garden Adventure.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +220,12 @@
 				654E492B2BE9F5D900604945 /* Next Week.swift */,
 				654E492D2BEA17BB00604945 /* Sam's Treasures.swift */,
 				654E49312BEAF42B00604945 /* Multiple Choices.swift */,
+				656C34972C087E9000B6FE82 /* Monday Morning.swift */,
+				656C34992C0880AC00B6FE82 /* Let's Party.swift */,
+				656C349B2C08830700B6FE82 /* The Dark.swift */,
+				656C349D2C0884A700B6FE82 /* Bean Hole.swift */,
+				656C349F2C08863A00B6FE82 /* Alex's Super Medicine.swift */,
+				656C34A12C0887C200B6FE82 /* Emma's Magical Garden Adventure.swift */,
 			);
 			path = Stories;
 			sourceTree = "<group>";
@@ -342,21 +360,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656C349C2C08830700B6FE82 /* The Dark.swift in Sources */,
 				654E48E72BE04B8900604945 /* Login.swift in Sources */,
 				654E492E2BEA17BB00604945 /* Sam's Treasures.swift in Sources */,
 				654E49142BE8924200604945 /* StoryRow.swift in Sources */,
+				656C34982C087E9000B6FE82 /* Monday Morning.swift in Sources */,
 				654E49232BE8F3B900604945 /* AppEntry.swift in Sources */,
 				654E48E52BE04B8900604945 /* Tailor_Your_TalesApp.swift in Sources */,
 				654E491D2BE8B41000604945 /* CharacterEdit.swift in Sources */,
+				656C349E2C0884A700B6FE82 /* Bean Hole.swift in Sources */,
+				656C349A2C0880AC00B6FE82 /* Let's Party.swift in Sources */,
 				654E49342BF5FCFF00604945 /* CharacterView.swift in Sources */,
 				CE125AF72BFBEB1D009D0F03 /* LocalData.xcdatamodeld in Sources */,
 				654E49182BE8A1CF00604945 /* FavoriteButton.swift in Sources */,
 				654E492C2BE9F5D900604945 /* Next Week.swift in Sources */,
+				656C34A02C08863A00B6FE82 /* Alex's Super Medicine.swift in Sources */,
 				654E49362BF61CD000604945 /* StoryListAdult.swift in Sources */,
 				654E49292BE9F0EB00604945 /* StoryView.swift in Sources */,
 				654E49302BEA22CF00604945 /* StoryList.swift in Sources */,
 				654E49212BE8D8F300604945 /* Settings.swift in Sources */,
 				CE125AF42BFBE91C009D0F03 /* DataManager.swift in Sources */,
+				656C34A22C0887C200B6FE82 /* Emma's Magical Garden Adventure.swift in Sources */,
 				654E49322BEAF42B00604945 /* Multiple Choices.swift in Sources */,
 				654E49252BE8F8FD00604945 /* AgeVerifier.swift in Sources */,
 				654E49162BE892C400604945 /* Character.swift in Sources */,

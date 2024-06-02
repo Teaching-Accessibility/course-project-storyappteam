@@ -18,6 +18,8 @@ struct StoryView: View {
         self.pageIndex = pageIndex
     }
     
+    let imageWidth: CGFloat = 400
+    
     var body: some View {
         VStack{
             ScrollView {
@@ -25,10 +27,27 @@ struct StoryView: View {
                     .font(.system(size: 30))
             }
             
-            ForEach(story[pageIndex].choices, id: \Choice.text) { choice in
-                NavigationLink(destination: StoryView(story: story, pageIndex: choice.destination, characters: characters)) {
+            if let characterCount = story[pageIndex].characters?.count, characterCount > 0 {
+                HStack(spacing: calculateSpacing(for: UIScreen.main.bounds.width, imageCount: characterCount, imageWidth: imageWidth)) {
+                    ForEach(story[pageIndex].characters!.keys.sorted(), id: \.self) { key in
+                         
+                        let imageName = (self.characters[key]?.image!.rawValue)! + (story[pageIndex].characters?[key]!.rawValue)!
+                            Image(imageName)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: imageWidth, height: imageWidth)
+                                .cornerRadius(8)
+                        
                     
-                    Text(choice.text)
+                    }
+                }
+                .padding()
+            }
+            
+            if story[pageIndex].choices.count == 0 {
+                NavigationLink(destination: StoryList()) {
+                    
+                    Text("Return to story list")
                         .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding()
@@ -36,10 +55,31 @@ struct StoryView: View {
                         .cornerRadius(8)
                 }
             }
-            .padding()
-            .navigationTitle("Page \(pageIndex + 1)")
-            .navigationBarTitleDisplayMode(.inline)
+            else {
+                ForEach(story[pageIndex].choices, id: \Choice.text) { choice in
+                    NavigationLink(destination: StoryView(story: story, pageIndex: choice.destination, characters: characters)) {
+                        
+                        Text(choice.text)
+                            .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding()
+                            .background(Color.gray.opacity(0.25))
+                            .cornerRadius(8)
+                    }
+                }
+
+            }
+                
         }
+            .padding()
+            .navigationTitle("Page \(pageIndex + 1) of \(story.title)")
+            .navigationBarTitleDisplayMode(.inline)
+    }
+    
+    private func calculateSpacing(for screenWidth: CGFloat, imageCount: Int, imageWidth: CGFloat) -> CGFloat {
+            let totalImageWidth = CGFloat(imageCount) * imageWidth
+            let spacing = (screenWidth - totalImageWidth) / CGFloat(imageCount + 1)
+            return spacing
     }
     
     func characterNames(from template: String, with mapping: [String: Character]) -> String {

@@ -16,18 +16,28 @@ enum Gender: String, CaseIterable, Identifiable {
     var id: String {self.rawValue}
 }
 
-enum HairType: String, CaseIterable, Identifiable {
-    case straight = "Straight"
-    case wavy = "Wavy"
-    case curly = "Curly"
+enum CharacterImage: String, CaseIterable, Identifiable {
+    case alia = "alia"
+    case bella = "bella"
+    case christine = "christine"
+    case derrick = "derrick"
+    case elizabeth = "elizabeth"
+    case joe = "joe"
+    case matt = "matt"
+    case megan = "megan"
+    case nina = "nina"
+    case rohit = "rohit"
+    case sarah = "sarah"
     
     var id: String {self.rawValue}
 }
 
-enum HairLength: String, CaseIterable, Identifiable {
-    case short = "Short"
-    case long = "Long"
-    case none = "None"
+enum Emotion: String, CaseIterable, Identifiable {
+    case happy = "happy"
+    case angry = "angry"
+    case sad = "sad"
+    case neutral = "neutral"
+    case love = "love"
     
     var id: String {self.rawValue}
 }
@@ -36,11 +46,5 @@ struct Character {
     var name: String
     var gender: Gender
     var nameColor: Color
-//    var characterImage: Image
-//    var skinColor: Color
-//    var eyeColor: Color
-//    var hairColor: Color
-//    var hairType: HairType
-//    var hairLength: HairLength
-//    var heightInCentimeters: Int
+    var image: CharacterImage?
 }
