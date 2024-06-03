@@ -12,14 +12,14 @@
 import SwiftUI
 
 
-var sc2 = Character(name: "Dara", gender: .female, image: .bella)
-var sc1 = Character(name: "Sam", gender: .male, image: .joe)
+var st2 = Character(name: "Dara", gender: .female, image: .bella)
+var st1 = Character(name: "Sam", gender: .male, image: .joe)
 
 
 
 var scharactersDictionary: [String: Character] = [
-    "character1": sc1,
-    "character2": sc2,
+    "character1": st1,
+    "character2": st2,
 ]
 
  let samstreasures = Story(

@@ -8,13 +8,13 @@
 import SwiftUI
 
 
-var m1 = Character(name: "Row", gender: .female, image: .megan)
-var m2 = Character(name: "Dad", gender: .female, image: .derrick)
+var mm1 = Character(name: "Row", gender: .female, image: .megan)
+var mm2 = Character(name: "Dad", gender: .female, image: .derrick)
 
 
 var mondayCharacters: [String: Character] = [
-    "main": m1,
-    "parent": m2
+    "main": mm1,
+    "parent": mm2
 ]
 
 let mondayMorning = Story(

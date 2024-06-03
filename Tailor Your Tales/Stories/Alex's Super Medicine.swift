@@ -8,15 +8,15 @@
 import SwiftUI
 
 
-var a1 = Character(name: "Alex", gender: .male, image: .joe)
-var a2 = Character(name: "Dr. Bongi", gender: .male, image: .rohit)
-var a3 = Character(name: "Mom", gender: .female, image: .bella)
+var am1 = Character(name: "Alex", gender: .male, image: .joe)
+var am2 = Character(name: "Dr. Bongi", gender: .male, image: .rohit)
+var am3 = Character(name: "Mom", gender: .female, image: .bella)
 
 
 var alexCharacters: [String: Character] = [
-    "child": a1,
-    "doctor": a2,
-    "parent": a3
+    "child": am1,
+    "doctor": am2,
+    "parent": am3
 ]
 
 let alexsSuperMedicine = Story(

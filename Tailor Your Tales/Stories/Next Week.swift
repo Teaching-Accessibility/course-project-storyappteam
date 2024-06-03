@@ -8,19 +8,19 @@
 
 import SwiftUI
 
-var c1 = Character(name: "Juliana", gender: .female, image: .christine)
-var c2 = Character(name: "Jana", gender: .female, image: .megan)
-var c3 = Character(name: "Elena", gender: .female, image: .nina)
-var c4 = Character(name: "Java", gender: .female, image: .sarah)
-var c5 = Character(name: "Amanda", gender: .female, image: .alia)
+var nw1 = Character(name: "Juliana", gender: .female, image: .christine)
+var nw2 = Character(name: "Jana", gender: .female, image: .megan)
+var nw3 = Character(name: "Elena", gender: .female, image: .nina)
+var nw4 = Character(name: "Java", gender: .female, image: .sarah)
+var nw5 = Character(name: "Amanda", gender: .female, image: .alia)
 
 
 var charactersDictionary: [String: Character] = [
-    "friend1": c1,
-    "friend2": c2,
-    "friend3": c3,
-    "friend4": c4,
-    "friend5": c5
+    "friend1": nw1,
+    "friend2": nw2,
+    "friend3": nw3,
+    "friend4": nw4,
+    "friend5": nw5
 ]
 
 var nextweek = Story(

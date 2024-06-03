@@ -8,13 +8,13 @@
 import SwiftUI
 
 
-var b1 = Character(name: "Tom", gender: .male, image: .matt)
-var b2 = Character(name: "Mummy", gender: .female, image: .alia)
+var bh1 = Character(name: "Tom", gender: .male, image: .matt)
+var bh2 = Character(name: "Mummy", gender: .female, image: .alia)
 
 
 var beanholeCharacters: [String: Character] = [
-    "child": b1,
-    "parent": b2
+    "child": bh1,
+    "parent": bh2
 ]
 
 let beanhole = Story(

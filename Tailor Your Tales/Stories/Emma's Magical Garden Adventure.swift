@@ -8,16 +8,16 @@
 import SwiftUI
 
 
-var e1 = Character(name: "Emma", gender: .female, image: .alia)
-var e2 = Character(name: "Mom", gender: .female, image: .nina)
-var e3 = Character(name: "Grandma", gender: .female, image: .elizabeth)
+var ea1 = Character(name: "Emma", gender: .female, image: .alia)
+var ea2 = Character(name: "Mom", gender: .female, image: .nina)
+var ea3 = Character(name: "Grandma", gender: .female, image: .elizabeth)
 
 
 
 var emmaCharacters: [String: Character] = [
-    "child": e1,
-    "parent": e2,
-    "grandparent": e3
+    "child": ea1,
+    "parent": ea2,
+    "grandparent": ea3
 ]
 
 let emmasAdventure = Story(

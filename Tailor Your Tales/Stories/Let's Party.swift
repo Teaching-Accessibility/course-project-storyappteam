@@ -8,13 +8,13 @@
 import SwiftUI
 
 
-var l1 = Character(name: "Zara", gender: .female, image: .bella)
+var lp1 = Character(name: "Zara", gender: .female, image: .bella)
 var l2 = Character(name: "Dalia", gender: .female, image: .megan)
 
 
 var letspartyCharacters: [String: Character] = [
-    "guest": l1,
-    "host": l2
+    "guest": lp1,
+    "host": lp2
 ]
 
 let letsParty = Story(
