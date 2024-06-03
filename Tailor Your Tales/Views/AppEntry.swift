@@ -10,7 +10,8 @@ import SwiftUI
 struct AppEntry: View {
     init() {
             _ = CoreDataManager.shared // Initialize the CoreDataManager
-        CoreDataManager.shared.clearAllCharacterEntities()
+//        CoreDataManager.shared.clearAllCharacterEntities()
+        // use the above line to clear all core data
         }
     
     var body: some View {
