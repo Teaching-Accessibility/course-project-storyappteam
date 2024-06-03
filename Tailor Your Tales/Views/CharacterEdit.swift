@@ -82,7 +82,6 @@ struct CharacterEdit: View {
     }
     
     private func saveCharacter() {
-        print("saved " + role)
         CoreDataManager.shared.saveCharacter(character, withKey: role)
     }
 }

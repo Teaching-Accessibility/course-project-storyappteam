@@ -8,16 +8,15 @@
 import SwiftUI
 
 struct StoryView: View {
-    let manager = CoreDataManager.shared
+    @State private var isViewOnScreen = false
     
     var story: Story
     let pageIndex: Int
-    var characters: [String: Character]
+    @State var characters: [String: Character]
     
     init(story: Story, pageIndex: Int, characters: [String: Character]? = nil){
         self.story = story
         self.characters = characters ?? story.characters
-//        self.characters = CoreDataManager.shared.mergeWithCoreData(defaultCharacters: self.characters)
         self.pageIndex = pageIndex
     }
     
@@ -33,15 +32,15 @@ struct StoryView: View {
             if let characterCount = story[pageIndex].characters?.count, characterCount > 0 {
                 HStack(spacing: calculateSpacing(for: UIScreen.main.bounds.width, imageCount: characterCount, imageWidth: imageWidth)) {
                     ForEach(story[pageIndex].characters!.keys.sorted(), id: \.self) { key in
-                         
-                        let imageName = (self.characters[key]?.image!.rawValue)! + (story[pageIndex].characters?[key]!.rawValue)!
-                            Image(imageName)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: imageWidth, height: imageWidth)
-                                .cornerRadius(8)
                         
-                    
+                        let imageName = (self.characters[key]?.image!.rawValue)! + (story[pageIndex].characters?[key]!.rawValue)!
+                        Image(imageName)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: imageWidth, height: imageWidth)
+                            .cornerRadius(8)
+                        
+                        
                     }
                 }
                 .padding()
@@ -70,29 +69,40 @@ struct StoryView: View {
                             .cornerRadius(8)
                     }
                 }
-
-            }
                 
+            }
+            
         }
-            .padding()
-            .navigationTitle("Page \(pageIndex + 1) of \(story.title)")
-            .navigationBarTitleDisplayMode(.inline)
+        .padding()
+        .navigationTitle("Page \(pageIndex + 1) of \(story.title)")
+        .navigationBarTitleDisplayMode(.inline)
+//        .onAppear {
+//            isViewOnScreen = true
+//            loadCharacters()
+//        }
+//        .onDisappear {
+//            isViewOnScreen = false
+//        }
     }
     
     private func calculateSpacing(for screenWidth: CGFloat, imageCount: Int, imageWidth: CGFloat) -> CGFloat {
-            let totalImageWidth = CGFloat(imageCount) * imageWidth
-            let spacing = (screenWidth - totalImageWidth) / CGFloat(imageCount + 1)
-            return spacing
+        let totalImageWidth = CGFloat(imageCount) * imageWidth
+        let spacing = (screenWidth - totalImageWidth) / CGFloat(imageCount + 1)
+        return spacing
     }
     
     func characterNames(from template: String, with mapping: [String: Character]) -> String {
-            var result = template
-            for (role, c) in mapping {
-                result = result.replacingOccurrences(of: "{\(role)" + "name}", with: c.name)
-            }
-            return result
+        var result = template
+        for (role, c) in mapping {
+            result = result.replacingOccurrences(of: "{\(role)" + "name}", with: c.name)
         }
+        return result
     }
+    
+//    func loadCharacters() {
+//        characters = CoreDataManager.shared.mergeWithCoreData(defaultCharacters: characters)
+//    }
+}
 
 
 #Preview {

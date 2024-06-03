@@ -35,6 +35,7 @@ class CoreDataManager {
             let data = try JSONEncoder().encode(character)
             characterEntity.data = data
             characterEntity.key = key
+            print("saved " + key + " as " + character.name + " with image " + (character.image?.rawValue ?? ""))
             saveContext()
         } catch {
             print("Failed to encode character: \(error)")
@@ -131,7 +132,7 @@ class CoreDataManager {
         var mergedCharacters = defaultCharacters
         for key in defaultCharacters.keys {
             if let coreDataCharacter = fetchCharacter(withKey: key) {
-                print("found " + key + " as " + coreDataCharacter.name)
+                print("found " + key + " as " + coreDataCharacter.name + " with image " + (coreDataCharacter.image?.rawValue ?? ""))
                 mergedCharacters[key] = coreDataCharacter
             }
         }

@@ -50,7 +50,7 @@ characters: [
 ),
 StoryPage( // 2
 """
-        {am2} can help. {am2} works at a hospital.
+        {am2name} can help. {am2name} works at a hospital.
 """,
 choices: [
 Choice(text: "Next", destination: 3)
