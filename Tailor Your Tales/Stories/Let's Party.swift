@@ -8,13 +8,13 @@
 import SwiftUI
 
 
-var l1 = Character(name: "Zara", gender: .female, nameColor: .red, image: .bella)
-var l2 = Character(name: "Dalia", gender: .female, nameColor: .red, image: .megan)
+var lp1 = Character(name: "Zara", gender: .female, image: .bella)
+var lp2 = Character(name: "Dalia", gender: .female, image: .megan)
 
 
 var letspartyCharacters: [String: Character] = [
-    "guest": l1,
-    "host": l2
+    "lp1": lp1, //guest
+    "lp2": lp2 //host
 ]
 
 let letsParty = Story(
@@ -24,29 +24,29 @@ previewImage: Image(systemName: "party.popper"),
 pages: [
 StoryPage( // 0
 """
-       {guestname} is invited to {hostname}'s party.
+       {lp1name} is invited to {lp2name}'s party.
 
-       Hooray! {guestname} gets to dress up and wear something fun.
+       Hooray! {lp1name} gets to dress up and wear something fun.
 
 """,
 choices: [
 Choice(text: "Next", destination: 1)
 ],
 characters: [
-    "guest": .love,
-    "host": .happy
+    "lp1": .love,
+    "lp2": .happy
 ]
 ),
 StoryPage( // 1
 """
         Hmmm...
-        {guestname}'s always wanted to dress like a superhero and save the day. Zoom! Zap! Kapow!
+        {lp1name}'s always wanted to dress like a superhero and save the day. Zoom! Zap! Kapow!
 """,
 choices: [
 Choice(text: "Next", destination: 2)
 ],
 characters: [
-    "guest": .happy,
+    "lp1": .happy,
 ]
 ),
 StoryPage( // 2
@@ -58,7 +58,7 @@ choices: [
 Choice(text: "Next", destination: 3)
 ],
 characters: [
-    "guest": .neutral,
+    "lp1": .neutral,
 ]
 ),
 StoryPage( // 3
@@ -70,7 +70,7 @@ choices: [
 Choice(text: "Next", destination: 4)
 ],
 characters: [
-    "guest": .happy
+    "lp1": .happy
 ]
 ),
 StoryPage( // 4
@@ -81,18 +81,18 @@ choices: [
 Choice(text: "Next", destination: 5)
 ],
 characters: [
-    "guest": .happy
+    "lp1": .happy
 ]
 ),
 StoryPage( // 5
 """
-        Or {guestname} could pretend to be a great, big whale. Sploosh splash.
+        Or {lp1name} could pretend to be a great, big whale. Sploosh splash.
 """,
 choices: [
 Choice(text: "Next", destination: 6)
 ],
 characters: [
-    "guest": .neutral,
+    "lp1": .neutral,
 ]
 ),
 StoryPage( // 6
@@ -106,13 +106,13 @@ Choice(text: "Next", destination: 7)
 ),
 StoryPage( // 7
 """
-        Hmmmm... How will {guestname} choose what to be?
+        Hmmmm... How will {lp1name} choose what to be?
 """,
 choices: [
 Choice(text: "Next", destination: 8)
 ],
 characters: [
-    "guest": .neutral
+    "lp1": .neutral
 ]
 ),
 StoryPage( // 8
@@ -123,7 +123,7 @@ choices: [
 Choice(text: "Next", destination: 9)
 ],
 characters: [
-    "guest": .love
+    "lp1": .love
 ]
 ),
 StoryPage( // 9
@@ -137,7 +137,7 @@ choices: [
 Choice(text: "Next", destination: 10)
 ],
 characters: [
-    "guest": .happy
+    "lp1": .happy
 ]
 ),
 StoryPage( // 10
@@ -148,8 +148,8 @@ choices: [
 
 ],
 characters: [
-    "guest": .love,
-    "host": .love
+    "lp1": .love,
+    "lp2": .love
 ]
 ),
 ],characters: letspartyCharacters

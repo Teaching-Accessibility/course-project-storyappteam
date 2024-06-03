@@ -12,14 +12,13 @@
 import SwiftUI
 
 
-var sc2 = Character(name: "Dara", gender: .female, nameColor: .red, image: .bella)
-var sc1 = Character(name: "Sam", gender: .male, nameColor: .green, image: .joe)
-
+var st2 = Character(name: "Dara", gender: .female, image: .bella)
+var st1 = Character(name: "Sam", gender: .male, image: .joe)
 
 
 var scharactersDictionary: [String: Character] = [
-    "character1": sc1,
-    "character2": sc2,
+        "st1": st1,
+        "st2": st2,
 ]
 
  let samstreasures = Story(
@@ -29,80 +28,80 @@ var scharactersDictionary: [String: Character] = [
  pages: [
  StoryPage( // 0
  """
-         {character1name} and {character2name} were at the park. A shiny sparkle caught {character1name}'s eye.
+         {st1name} and {st2name} were at the park. A shiny sparkle caught {st1name}'s eye.
  """,
  choices: [
  Choice(text: "Next", destination: 1)
  ],
  characters: [
-     "character1": .happy,
-     "character2": .happy
+     "st1": .happy,
+     "st2": .happy
  ]
  ),
  StoryPage( // 1
  """
- A crystal ball! A magic pearl! A treasure for {character1name}'s collection!
+ A crystal ball! A magic pearl! A treasure for {st1name}'s collection!
  """,
  choices: [
  Choice(text: "Next", destination: 2)
  ],
  characters: [
-     "character1": .love,
+     "st1": .love,
  ]
  ),
  StoryPage( // 2
  """
  Oh wow! Treasure!",
  
- said {character2name}.
+ said {st2name}.
  """,
  choices: [
  Choice(text: "Next", destination: 3)
  ],
  characters: [
-     "character2": .happy
+     "st2": .happy
  ]
  ),
  StoryPage( // 3
  """
- {character2name} like the things {character1name} found and wanted to find some too.
+ {st2name} like the things {st1name} found and wanted to find some too.
  """,
  choices: [
  Choice(text: "Next", destination: 4)
  ],
  characters: [
-     "character1": .neutral,
+     "st1": .neutral,
  ]
  ),
  StoryPage( // 4
  """
- That was fine with {character1name}.
+ That was fine with {st1name}.
  "Time to go treasure hunting!"
  
- Off {character1name} and {character2name} went with their backpacks and a chest full of excitement.
+ Off {st1name} and {st2name} went with their backpacks and a chest full of excitement.
  """,
  choices: [
  Choice(text: "Next", destination: 5)
  ],
  characters: [
-     "character1": .happy,
-     "character2": .happy
+     "st1": .happy,
+     "st2": .happy
  ]
  ),
  StoryPage( // 5
  """
- Between the bushes {character2name} found a crown and a magic wand.
+ Between the bushes {st2name} found a crown and a magic wand.
  """,
  choices: [
  Choice(text: "Next", destination: 6)
  ],
  characters: [
-     "character2": .love
+     "st2": .love
  ]
  ),
  StoryPage( // 6
  """
- Under an old log {character1name} found bugs and creepy creatures.
+ Under an old log {st1name} found bugs and creepy creatures.
  
  No thank you!
  """,
@@ -110,78 +109,78 @@ var scharactersDictionary: [String: Character] = [
  Choice(text: "Next", destination: 7)
  ],
  characters: [
-     "character1": .angry,
+     "st1": .angry,
  ]
  ),
  StoryPage( // 7
  """
- Among the flowers {character1name} found a chest and a ring.
+ Among the flowers {st1name} found a chest and a ring.
  """,
  choices: [
  Choice(text: "Next", destination: 8)
  ],
  characters: [
-     "character1": .happy,
+     "st1": .happy,
  ]
  ),
  StoryPage( // 8
  """
- In the stream {character2name} found a message in a bottle and a wise old wizard.
+ In the stream {st2name} found a message in a bottle and a wise old wizard.
  """,
  choices: [
  Choice(text: "Next", destination: 9)
  ],
  characters: [
-     "character2": .happy
+     "st2": .happy
  ]
  ),
  StoryPage( // 9
  """
- By the lamp post {character1name} found a sports car and a victory trophy. Time to show each other all the treasures they had found!
+ By the lamp post {st1name} found a sports car and a victory trophy. Time to show each other all the treasures they had found!
  """,
  choices: [
  Choice(text: "Next", destination: 10)
  ],
  characters: [
-     "character1": .happy,
+     "st1": .happy,
  ]
  ),
  StoryPage( // 10
  """
-  {character2name} was crying.
- "I lost my ring," said {character2name}.
+  {st2name} was crying.
+ "I lost my ring," said {st2name}.
  "I don't know where I dropped it."
  """,
  choices: [
  Choice(text: "Next", destination: 11)
  ],
  characters: [
-     "character2": .sad
+     "st2": .sad
  ]
  ),
  StoryPage( // 11
  """
- That sounded like something {character1name} had found.
+ That sounded like something {st1name} had found.
  
- It was! It was {character2name}'s ring!
+ It was! It was {st2name}'s ring!
  """,
  choices: [
  Choice(text: "Next", destination: 12)
  ],
  characters: [
-     "character1": .happy,
-     "character2": .love
+     "st1": .happy,
+     "st2": .love
  ]
  ),
  StoryPage( // 12
  """
- "Thank you, {character1name}! You DO find treasures!"
+ "Thank you, {st1name}! You DO find treasures!"
  """,
  choices: [
  
  ],
  characters: [
-     "character2": .love
+     "st2": .love
  ]
  ),
  ],characters: scharactersDictionary

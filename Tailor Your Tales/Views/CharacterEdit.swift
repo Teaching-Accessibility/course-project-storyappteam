@@ -30,14 +30,16 @@ struct CharacterEdit: View {
             HStack {
                 Text("Name:")
                     .padding(.leading)
-                TextField("Enter name", text: $character.name)
+                TextField("Enter name", text: $character.name, onCommit: {
+                    saveCharacter()
+                })
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .autocorrectionDisabled()
                     .padding()
                 
             }
             .padding()
-            .navigationTitle("Editing \(role)")
+            .navigationTitle("Editing Character")
             
             ScrollView {
                 LazyVGrid(columns: gridItems, spacing: 10) {
@@ -54,6 +56,7 @@ struct CharacterEdit: View {
                             .onTapGesture {
                                 selectedImage = imageName
                                 character.image = imageName
+                                saveCharacter()
                             }
                             .frame(height: 200)
                             .clipped()
@@ -69,10 +72,17 @@ struct CharacterEdit: View {
             }
             .pickerStyle(SegmentedPickerStyle())
             .padding()
+            .onChange(of: character.gender) {
+                saveCharacter()
+            }
         }
         .onAppear {
             selectedImage = character.image
         }
+    }
+    
+    private func saveCharacter() {
+        CoreDataManager.shared.saveCharacter(character, withKey: role)
     }
 }
 

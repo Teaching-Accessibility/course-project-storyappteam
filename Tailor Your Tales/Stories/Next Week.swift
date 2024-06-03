@@ -8,19 +8,19 @@
 
 import SwiftUI
 
-var c1 = Character(name: "Juliana", gender: .female, nameColor: .red, image: .christine)
-var c2 = Character(name: "Jana", gender: .female, nameColor: .green, image: .megan)
-var c3 = Character(name: "Elena", gender: .female, nameColor: .red, image: .nina)
-var c4 = Character(name: "Java", gender: .female, nameColor: .green, image: .sarah)
-var c5 = Character(name: "Amanda", gender: .female, nameColor: .red, image: .alia)
+var nw1 = Character(name: "Juliana", gender: .female, image: .christine)
+var nw2 = Character(name: "Jana", gender: .female, image: .megan)
+var nw3 = Character(name: "Elena", gender: .female, image: .nina)
+var nw4 = Character(name: "Java", gender: .female, image: .sarah)
+var nw5 = Character(name: "Amanda", gender: .female, image: .alia)
 
 
 var charactersDictionary: [String: Character] = [
-    "friend1": c1,
-    "friend2": c2,
-    "friend3": c3,
-    "friend4": c4,
-    "friend5": c5
+    "nw1": nw1,
+    "nww": nw2,
+    "nw3": nw3,
+    "nw4": nw4,
+    "nw5": nw5
 ]
 
 var nextweek = Story(
@@ -31,14 +31,14 @@ var nextweek = Story(
     pages: [
         StoryPage( // 0
         """
-        Today is Friday. I go to club with {friend1name} and {friend2name}.
+        Today is Friday. I go to club with {nw1name} and {nw2name}.
         """,
         choices: [
             Choice(text: "Next", destination: 1)
         ],
         characters: [
-            "friend1": .happy,
-            "friend2": .happy
+            "nw1": .happy,
+            "nw2": .happy
         ]
                  ),
         StoryPage( // 1
@@ -55,14 +55,14 @@ var nextweek = Story(
         """
         The next day is Monday. I will go to school on Monday. 
         
-        In the afternoon, {friend3name} and {friend4name} will come to my house.
+        In the afternoon, {nw3name} and {nw4name} will come to my house.
         """,
         choices: [
             Choice(text: "Next", destination: 3)
         ],
         characters: [
-            "friend3": .happy,
-            "friend4": .happy
+            "nw3": .happy,
+            "nw4": .happy
         ]
                  ),
         StoryPage( // 3
@@ -79,7 +79,7 @@ var nextweek = Story(
         """
         After that, it will be Thursday. 
         
-        I will go to school in the morning and club with {friend5name} in the afternoon.
+        I will go to school in the morning and club with {nw5name} in the afternoon.
         """,
         choices: [
             Choice(text: "Next", destination: 5)
@@ -92,13 +92,13 @@ var nextweek = Story(
         """
         Then it will be Friday again. 
         
-        I will go to school in the morning and club with {friend3name} in the afternoon.
+        I will go to school in the morning and club with {nw3name} in the afternoon.
         """,
         choices: [
             Choice(text: "Next", destination: 6)
         ],
         characters: [
-            "friend3": .happy,
+            "nw3": .happy,
         ]
                  ),
         StoryPage( // 6

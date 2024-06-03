@@ -8,13 +8,13 @@
 import SwiftUI
 
 
-var m1 = Character(name: "Row", gender: .female, nameColor: .red, image: .megan)
-var m2 = Character(name: "Dad", gender: .female, nameColor: .red, image: .derrick)
+var mm1 = Character(name: "Row", gender: .female, image: .megan)
+var mm2 = Character(name: "Dad", gender: .male, image: .derrick)
 
 
 var mondayCharacters: [String: Character] = [
-    "main": m1,
-    "parent": m2
+    "mm1": mm1, //mm1 Character
+    "mm2": mm2  //mm2
 ]
 
 let mondayMorning = Story(
@@ -25,36 +25,36 @@ pages: [
 StoryPage( // 0
 """
         It's Monday! The sun is shining.
-        It's time for {mainname} to get ready for school.
+        It's time for {mm1name} to get ready for school.
 
 """,
 choices: [
 Choice(text: "Next", destination: 1)
 ],
 characters: [
-    "main": .neutral,
+    "mm1": .neutral,
 ]
 ),
 StoryPage( // 1
 """
-        {mainname} hops out of bed and goes to the bathroom to wash up.
+        {mm1name} hops out of bed and goes to the bathroom to wash up.
 """,
 choices: [
 Choice(text: "Next", destination: 2)
 ],
 characters: [
-    "main": .happy,
+    "mm1": .happy,
 ]
 ),
 StoryPage( // 2
 """
-        {mainname} brushes her teeth for 2 whole minutes and doesn't forget to get her tongue too!
+        {mm1name} brushes her teeth for 2 whole minutes and doesn't forget to get her tongue too!
 """,
 choices: [
 Choice(text: "Next", destination: 3)
 ],
 characters: [
-    "main": .happy
+    "mm1": .happy
 ]
 ),
 StoryPage( // 3
@@ -68,20 +68,20 @@ choices: [
 Choice(text: "Next", destination: 4)
 ],
 characters: [
-    "main": .happy,
+    "mm1": .happy,
 ]
 ),
 StoryPage( // 4
 """
-        Breakfast time! {parentname} makes waffles and scrambled eggs.
+        Breakfast time! {mm2name} makes waffles and scrambled eggs.
 
 """,
 choices: [
 Choice(text: "Next", destination: 5)
 ],
 characters: [
-    "main": .love,
-    "parent": .happy,
+    "mm1": .love,
+    "mm2": .happy,
 ]
 ),
 StoryPage( // 5
@@ -94,13 +94,13 @@ Choice(text: "Next", destination: 6)
 ),
 StoryPage( // 6
 """
-        {mainname}, excited for school today, puts on shoes and races to the bus.
+        {mm1name}, excited for school today, puts on shoes and races to the bus.
 """,
 choices: [
 
 ],
 characters: [
-    "main": .happy,
+    "mm1": .happy,
 ]
 ),
 ],characters: mondayCharacters
