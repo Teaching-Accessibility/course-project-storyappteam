@@ -33,7 +33,7 @@ class CoreDataManager {
         let context = persistentContainer.viewContext
         
         // Fetch existing entity with the same key
-        if let existingEntity = fetchCharacter(withKey: key) {
+        if fetchCharacter(withKey: key) != nil {
             // Update existing entity
             updateCharacter(character, withKey: key)
         } else {
