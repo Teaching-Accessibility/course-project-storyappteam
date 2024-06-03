@@ -8,16 +8,16 @@
 import SwiftUI
 
 
-var l1 = Character(name: "Zara", gender: .female, nameColor: .red, image: .bella)
-var l2 = Character(name: "Dalia", gender: .female, nameColor: .red, image: .megan)
+var l1 = CharacterMod(name: "Zara", gender: .female, nameColor: .red, image: .bella)
+var l2 = CharacterMod(name: "Dalia", gender: .female, nameColor: .red, image: .megan)
 
 
-var letspartyCharacters: [String: Character] = [
+var letspartyCharacters: [String: CharacterMod] = [
     "guest": l1,
     "host": l2
 ]
 
-let letsParty = Story(
+let letsParty = StoryMod(
 id: 4,
 title: "Let's Party!",
 previewImage: Image(systemName: "party.popper"),

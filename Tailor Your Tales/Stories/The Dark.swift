@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let theDark = Story(
+let theDark = StoryMod(
 id: 5,
 title: "The dark is friendly",
 previewImage: Image(systemName: "moon"),

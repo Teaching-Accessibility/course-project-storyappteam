@@ -29,16 +29,22 @@
 		654E49322BEAF42B00604945 /* Multiple Choices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E49312BEAF42B00604945 /* Multiple Choices.swift */; };
 		654E49342BF5FCFF00604945 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E49332BF5FCFF00604945 /* CharacterView.swift */; };
 		654E49362BF61CD000604945 /* StoryListAdult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E49352BF61CD000604945 /* StoryListAdult.swift */; };
-		CE125AF42BFBE91C009D0F03 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE125AF32BFBE91C009D0F03 /* DataManager.swift */; };
-		CE125AF72BFBEB1D009D0F03 /* LocalData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE125AF52BFBEB1D009D0F03 /* LocalData.xcdatamodeld */; };
-		CE125AF82BFBEB1D009D0F03 /* LocalData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE125AF52BFBEB1D009D0F03 /* LocalData.xcdatamodeld */; };
-		CE125AF92BFBEB1D009D0F03 /* LocalData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE125AF52BFBEB1D009D0F03 /* LocalData.xcdatamodeld */; };
 		656C34982C087E9000B6FE82 /* Monday Morning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C34972C087E9000B6FE82 /* Monday Morning.swift */; };
 		656C349A2C0880AC00B6FE82 /* Let's Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C34992C0880AC00B6FE82 /* Let's Party.swift */; };
 		656C349C2C08830700B6FE82 /* The Dark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C349B2C08830700B6FE82 /* The Dark.swift */; };
 		656C349E2C0884A700B6FE82 /* Bean Hole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C349D2C0884A700B6FE82 /* Bean Hole.swift */; };
 		656C34A02C08863A00B6FE82 /* Alex's Super Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C349F2C08863A00B6FE82 /* Alex's Super Medicine.swift */; };
 		656C34A22C0887C200B6FE82 /* Emma's Magical Garden Adventure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C34A12C0887C200B6FE82 /* Emma's Magical Garden Adventure.swift */; };
+		CE125AF42BFBE91C009D0F03 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE125AF32BFBE91C009D0F03 /* DataManager.swift */; };
+		CE125AF72BFBEB1D009D0F03 /* LocalData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE125AF52BFBEB1D009D0F03 /* LocalData.xcdatamodeld */; };
+		CE125AF82BFBEB1D009D0F03 /* LocalData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE125AF52BFBEB1D009D0F03 /* LocalData.xcdatamodeld */; };
+		CE125AF92BFBEB1D009D0F03 /* LocalData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE125AF52BFBEB1D009D0F03 /* LocalData.xcdatamodeld */; };
+		CE9A39F02C0D375C00BE6DEB /* Story+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A39EC2C0D375C00BE6DEB /* Story+CoreDataClass.swift */; };
+		CE9A39F12C0D375C00BE6DEB /* Story+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A39ED2C0D375C00BE6DEB /* Story+CoreDataProperties.swift */; };
+		CE9A39F22C0D375C00BE6DEB /* Character+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A39EE2C0D375C00BE6DEB /* Character+CoreDataClass.swift */; };
+		CE9A39F32C0D375C00BE6DEB /* Character+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A39EF2C0D375C00BE6DEB /* Character+CoreDataProperties.swift */; };
+		CE9A39F52C0D3EBB00BE6DEB /* TestLocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A39F42C0D3EBB00BE6DEB /* TestLocalData.swift */; };
+		CE9A39F72C0D48B500BE6DEB /* StartupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A39F62C0D48B500BE6DEB /* StartupManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,14 +90,20 @@
 		654E49312BEAF42B00604945 /* Multiple Choices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Multiple Choices.swift"; sourceTree = "<group>"; };
 		654E49332BF5FCFF00604945 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 		654E49352BF61CD000604945 /* StoryListAdult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryListAdult.swift; sourceTree = "<group>"; };
-		CE125AF32BFBE91C009D0F03 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		CE125AF62BFBEB1D009D0F03 /* LocalData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocalData.xcdatamodel; sourceTree = "<group>"; };
 		656C34972C087E9000B6FE82 /* Monday Morning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Monday Morning.swift"; sourceTree = "<group>"; };
 		656C34992C0880AC00B6FE82 /* Let's Party.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Let's Party.swift"; sourceTree = "<group>"; };
 		656C349B2C08830700B6FE82 /* The Dark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "The Dark.swift"; sourceTree = "<group>"; };
 		656C349D2C0884A700B6FE82 /* Bean Hole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bean Hole.swift"; sourceTree = "<group>"; };
 		656C349F2C08863A00B6FE82 /* Alex's Super Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alex's Super Medicine.swift"; sourceTree = "<group>"; };
 		656C34A12C0887C200B6FE82 /* Emma's Magical Garden Adventure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Emma's Magical Garden Adventure.swift"; sourceTree = "<group>"; };
+		CE125AF32BFBE91C009D0F03 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		CE125AF62BFBEB1D009D0F03 /* LocalData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocalData.xcdatamodel; sourceTree = "<group>"; };
+		CE9A39EC2C0D375C00BE6DEB /* Story+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Story+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CE9A39ED2C0D375C00BE6DEB /* Story+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Story+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE9A39EE2C0D375C00BE6DEB /* Character+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CE9A39EF2C0D375C00BE6DEB /* Character+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE9A39F42C0D3EBB00BE6DEB /* TestLocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLocalData.swift; sourceTree = "<group>"; };
+		CE9A39F62C0D48B500BE6DEB /* StartupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +134,10 @@
 		654E48D82BE04B8900604945 = {
 			isa = PBXGroup;
 			children = (
+				CE9A39EC2C0D375C00BE6DEB /* Story+CoreDataClass.swift */,
+				CE9A39ED2C0D375C00BE6DEB /* Story+CoreDataProperties.swift */,
+				CE9A39EE2C0D375C00BE6DEB /* Character+CoreDataClass.swift */,
+				CE9A39EF2C0D375C00BE6DEB /* Character+CoreDataProperties.swift */,
 				654E48E32BE04B8900604945 /* Tailor Your Tales */,
 				654E48F42BE04B8C00604945 /* Tailor Your TalesTests */,
 				654E48FE2BE04B8C00604945 /* Tailor Your TalesUITests */,
@@ -143,13 +159,13 @@
 			isa = PBXGroup;
 			children = (
 				CE125AF52BFBEB1D009D0F03 /* LocalData.xcdatamodeld */,
+				CE125AF32BFBE91C009D0F03 /* DataManager.swift */,
 				654E492A2BE9F5BC00604945 /* Stories */,
 				654E48E42BE04B8900604945 /* Tailor_Your_TalesApp.swift */,
 				654E49112BE891A200604945 /* Model */,
 				654E49122BE891B100604945 /* Views */,
 				654E48E82BE04B8C00604945 /* Assets.xcassets */,
 				654E48EA2BE04B8C00604945 /* Preview Content */,
-				CE125AF32BFBE91C009D0F03 /* DataManager.swift */,
 			);
 			path = "Tailor Your Tales";
 			sourceTree = "<group>";
@@ -196,11 +212,13 @@
 				654E491C2BE8B41000604945 /* CharacterEdit.swift */,
 				654E49202BE8D8F300604945 /* Settings.swift */,
 				654E49222BE8F3B900604945 /* AppEntry.swift */,
+				CE9A39F62C0D48B500BE6DEB /* StartupManager.swift */,
 				654E49242BE8F8FD00604945 /* AgeVerifier.swift */,
 				654E49282BE9F0EB00604945 /* StoryView.swift */,
 				654E49352BF61CD000604945 /* StoryListAdult.swift */,
 				654E492F2BEA22CE00604945 /* StoryList.swift */,
 				654E49332BF5FCFF00604945 /* CharacterView.swift */,
+				CE9A39F42C0D3EBB00BE6DEB /* TestLocalData.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -368,6 +386,10 @@
 				654E49232BE8F3B900604945 /* AppEntry.swift in Sources */,
 				654E48E52BE04B8900604945 /* Tailor_Your_TalesApp.swift in Sources */,
 				654E491D2BE8B41000604945 /* CharacterEdit.swift in Sources */,
+				CE9A39F02C0D375C00BE6DEB /* Story+CoreDataClass.swift in Sources */,
+				CE9A39F12C0D375C00BE6DEB /* Story+CoreDataProperties.swift in Sources */,
+				CE9A39F22C0D375C00BE6DEB /* Character+CoreDataClass.swift in Sources */,
+				CE9A39F32C0D375C00BE6DEB /* Character+CoreDataProperties.swift in Sources */,
 				656C349E2C0884A700B6FE82 /* Bean Hole.swift in Sources */,
 				656C349A2C0880AC00B6FE82 /* Let's Party.swift in Sources */,
 				654E49342BF5FCFF00604945 /* CharacterView.swift in Sources */,
@@ -385,6 +407,8 @@
 				654E49252BE8F8FD00604945 /* AgeVerifier.swift in Sources */,
 				654E49162BE892C400604945 /* Character.swift in Sources */,
 				654E49272BE9EFDE00604945 /* Story.swift in Sources */,
+				CE9A39F72C0D48B500BE6DEB /* StartupManager.swift in Sources */,
+				CE9A39F52C0D3EBB00BE6DEB /* TestLocalData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,14 +8,14 @@
 
 import SwiftUI
 
-var c1 = Character(name: "Juliana", gender: .female, nameColor: .red, image: .christine)
-var c2 = Character(name: "Jana", gender: .female, nameColor: .green, image: .megan)
-var c3 = Character(name: "Elena", gender: .female, nameColor: .red, image: .nina)
-var c4 = Character(name: "Java", gender: .female, nameColor: .green, image: .sarah)
-var c5 = Character(name: "Amanda", gender: .female, nameColor: .red, image: .alia)
+var c1 = CharacterMod(name: "Juliana", gender: .female, nameColor: .red, image: .christine)
+var c2 = CharacterMod(name: "Jana", gender: .female, nameColor: .green, image: .megan)
+var c3 = CharacterMod(name: "Elena", gender: .female, nameColor: .red, image: .nina)
+var c4 = CharacterMod(name: "Java", gender: .female, nameColor: .green, image: .sarah)
+var c5 = CharacterMod(name: "Amanda", gender: .female, nameColor: .red, image: .alia)
 
 
-var charactersDictionary: [String: Character] = [
+var charactersDictionary: [String: CharacterMod] = [
     "friend1": c1,
     "friend2": c2,
     "friend3": c3,
@@ -23,7 +23,7 @@ var charactersDictionary: [String: Character] = [
     "friend5": c5
 ]
 
-var nextweek = Story(
+var nextweek = StoryMod(
     id: 0,
     title: "Next Week",
     previewImage: Image(systemName: "calendar"),

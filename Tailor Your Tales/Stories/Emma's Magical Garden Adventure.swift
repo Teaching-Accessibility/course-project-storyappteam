@@ -8,19 +8,19 @@
 import SwiftUI
 
 
-var e1 = Character(name: "Emma", gender: .female, nameColor: .red, image: .alia)
-var e2 = Character(name: "Mom", gender: .female, nameColor: .red, image: .nina)
-var e3 = Character(name: "Grandma", gender: .female, nameColor: .red, image: .elizabeth)
+var e1 = CharacterMod(name: "Emma", gender: .female, nameColor: .red, image: .alia)
+var e2 = CharacterMod(name: "Mom", gender: .female, nameColor: .red, image: .nina)
+var e3 = CharacterMod(name: "Grandma", gender: .female, nameColor: .red, image: .elizabeth)
 
 
 
-var emmaCharacters: [String: Character] = [
+var emmaCharacters: [String: CharacterMod] = [
     "child": e1,
     "parent": e2,
     "grandparent": e3
 ]
 
-let emmasAdventure = Story(
+let emmasAdventure = StoryMod(
 id: 8,
 title: "Emma's Magical Garden Adventure",
 previewImage: Image(systemName: "ladybug"),

@@ -1,9 +1,9 @@
 // Attribution: This story was created by Daniel Koronathy.
 import SwiftUI
 
-var mcharacterDictionary: [String: Character] = [:]
+var mcharacterDictionary: [String: CharacterMod] = [:]
 
-let multiplechoices = Story(
+let multiplechoices = StoryMod(
     id: 2,
     title: "Multiple Choices",
     previewImage: Image(systemName: "heart"),

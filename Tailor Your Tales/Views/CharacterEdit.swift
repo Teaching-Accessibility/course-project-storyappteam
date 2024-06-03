@@ -16,11 +16,11 @@ struct CharacterEdit: View {
         Array(repeating: .init(.flexible()), count: imageColumnCount)
     }
     
-    @Binding var character: Character
+    @Binding var character: CharacterMod
     var role: String
     
     
-    init(character: Binding<Character>, role: String) {
+    init(character: Binding<CharacterMod>, role: String) {
         self._character = character
         self.role = role
         _selectedImage = State(initialValue: character.wrappedValue.image)

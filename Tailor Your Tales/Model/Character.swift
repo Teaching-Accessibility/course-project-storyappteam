@@ -42,7 +42,7 @@ enum Emotion: String, CaseIterable, Identifiable {
     var id: String {self.rawValue}
 }
 
-struct Character {
+struct CharacterMod {
     var name: String
     var gender: Gender
     var nameColor: Color

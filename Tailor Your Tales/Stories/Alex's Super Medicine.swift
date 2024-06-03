@@ -8,18 +8,18 @@
 import SwiftUI
 
 
-var a1 = Character(name: "Alex", gender: .male, nameColor: .red, image: .joe)
-var a2 = Character(name: "Dr. Bongi", gender: .male, nameColor: .red, image: .rohit)
-var a3 = Character(name: "Mom", gender: .female, nameColor: .red, image: .bella)
+var a1 = CharacterMod(name: "Alex", gender: .male, nameColor: .red, image: .joe)
+var a2 = CharacterMod(name: "Dr. Bongi", gender: .male, nameColor: .red, image: .rohit)
+var a3 = CharacterMod(name: "Mom", gender: .female, nameColor: .red, image: .bella)
 
 
-var alexCharacters: [String: Character] = [
+var alexCharacters: [String: CharacterMod] = [
     "child": a1,
     "doctor": a2,
     "parent": a3
 ]
 
-let alexsSuperMedicine = Story(
+let alexsSuperMedicine = StoryMod(
 id: 7,
 title: "Alex's Super Medicine",
 previewImage: Image(systemName: "medical.thermometer"),

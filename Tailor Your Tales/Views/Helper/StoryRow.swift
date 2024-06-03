@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StoryRow: View {
-    var story: Story
+    var story: StoryMod
     
     var body: some View {
         HStack{

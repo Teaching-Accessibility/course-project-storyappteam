@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct CharacterView: View {
-    let story: Story
-    @State var characters: [String: Character]
+    let story: StoryMod
+    @State var characters: [String: CharacterMod]
     var body: some View {
         Text("Tap on a character to edit them!")
             .font(.system(size: 25))
@@ -45,9 +45,9 @@ struct CharacterView: View {
         .padding()
     }
                                    
-    func binding(for key: String) -> Binding<Character> {
-            return Binding<Character>(
-                get: { characters[key, default: Character(name: "", gender: .nonbinary, nameColor: .red)] },
+    func binding(for key: String) -> Binding<CharacterMod> {
+            return Binding<CharacterMod>(
+                get: { characters[key, default: CharacterMod(name: "", gender: .nonbinary, nameColor: .red)] },
                 set: { newCharacter in
                     characters[key] = newCharacter
                 }

@@ -7,18 +7,18 @@
 
 import SwiftUI
 
-struct Story: Identifiable, Equatable {
+struct StoryMod: Identifiable, Equatable {
     var id: Int
     var title: String
     var previewImage: Image
     var pages: [StoryPage]
-    var characters: [String: Character]
+    var characters: [String: CharacterMod]
     
     subscript(_ pageIndex: Int) -> StoryPage {
         return pages[pageIndex]
     }
     //Function to allow to check for equality between stories - checks ID
-    static func == (S1: Story, S2: Story) -> Bool {
+    static func == (S1: StoryMod, S2: StoryMod) -> Bool {
         return S1.id == S2.id //&& S1.title == S2.title
     }
 }

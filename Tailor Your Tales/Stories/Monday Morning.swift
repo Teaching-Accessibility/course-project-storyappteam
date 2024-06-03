@@ -8,16 +8,16 @@
 import SwiftUI
 
 
-var m1 = Character(name: "Row", gender: .female, nameColor: .red, image: .megan)
-var m2 = Character(name: "Dad", gender: .female, nameColor: .red, image: .derrick)
+var m1 = CharacterMod(name: "Row", gender: .female, nameColor: .red, image: .megan)
+var m2 = CharacterMod(name: "Dad", gender: .female, nameColor: .red, image: .derrick)
 
 
-var mondayCharacters: [String: Character] = [
+var mondayCharacters: [String: CharacterMod] = [
     "main": m1,
     "parent": m2
 ]
 
-let mondayMorning = Story(
+let mondayMorning = StoryMod(
 id: 3,
 title: "Monday Morning",
 previewImage: Image(systemName: "sun.horizon"),

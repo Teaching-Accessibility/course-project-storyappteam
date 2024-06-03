@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct StoryView: View {
-    var story: Story
+    var story: StoryMod
+    //var storyChar: Story //Story entry in localdata to be able to access characters
     let pageIndex: Int
-    var characters: [String: Character]
+    var characters: [String: CharacterMod]
+    //var characters: [Character]
     
-    init(story: Story, pageIndex: Int, characters: [String: Character]? = nil){
+    init(story: StoryMod, pageIndex: Int, characters: [String: CharacterMod]? = nil){
         self.story = story
+        //self.characters = DataManager.shared.loadCharData(story_title: story.title)!
         self.characters = characters ?? story.characters
         self.pageIndex = pageIndex
     }
@@ -23,8 +26,8 @@ struct StoryView: View {
     var body: some View {
         VStack{
             ScrollView {
-                Text(characterNames(from: story[pageIndex].text, with: characters))
-                    .font(.system(size: 30))
+                //Text(characterNames(from: story[pageIndex].text, with: characters))
+                   // .font(.system(size: 30))
             }
             
             if let characterCount = story[pageIndex].characters?.count, characterCount > 0 {
@@ -85,7 +88,7 @@ struct StoryView: View {
     func characterNames(from template: String, with mapping: [String: Character]) -> String {
             var result = template
             for (role, c) in mapping {
-                result = result.replacingOccurrences(of: "{\(role)" + "name}", with: c.name)
+                result = result.replacingOccurrences(of: "{\(role)" + "name}", with: c.name!)
             }
             return result
         }

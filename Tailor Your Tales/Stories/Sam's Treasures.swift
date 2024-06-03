@@ -12,17 +12,17 @@
 import SwiftUI
 
 
-var sc2 = Character(name: "Dara", gender: .female, nameColor: .red, image: .bella)
-var sc1 = Character(name: "Sam", gender: .male, nameColor: .green, image: .joe)
+var sc2 = CharacterMod(name: "Dara", gender: .female, nameColor: .red, image: .bella)
+var sc1 = CharacterMod(name: "Sam", gender: .male, nameColor: .green, image: .joe)
 
 
 
-var scharactersDictionary: [String: Character] = [
+var scharactersDictionary: [String: CharacterMod] = [
     "character1": sc1,
     "character2": sc2,
 ]
 
- let samstreasures = Story(
+ let samstreasures = StoryMod(
  id: 1,
  title: "Treasures",
  previewImage: Image(systemName: "figure.walk"),

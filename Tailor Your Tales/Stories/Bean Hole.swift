@@ -8,16 +8,16 @@
 import SwiftUI
 
 
-var b1 = Character(name: "Tom", gender: .male, nameColor: .red, image: .matt)
-var b2 = Character(name: "Mummy", gender: .female, nameColor: .red, image: .alia)
+var b1 = CharacterMod(name: "Tom", gender: .male, nameColor: .red, image: .matt)
+var b2 = CharacterMod(name: "Mummy", gender: .female, nameColor: .red, image: .alia)
 
 
-var beanholeCharacters: [String: Character] = [
+var beanholeCharacters: [String: CharacterMod] = [
     "child": b1,
     "parent": b2
 ]
 
-let beanhole = Story(
+let beanhole = StoryMod(
 id: 6,
 title: "Bean Hole",
 previewImage: Image(systemName: "carrot"),

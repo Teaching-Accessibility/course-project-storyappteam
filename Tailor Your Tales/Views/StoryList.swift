@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StoryList: View {
-    let stories = [samstreasures, mondayMorning, letsParty, theDark, beanhole, alexsSuperMedicine, emmasAdventure]
+    let stories = [samstreasures]//, mondayMorning, letsParty, theDark, beanhole, alexsSuperMedicine, emmasAdventure]
     let columns = [
            GridItem(.adaptive(minimum: 250))
        ]
