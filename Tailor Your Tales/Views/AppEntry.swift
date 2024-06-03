@@ -10,6 +10,7 @@ import SwiftUI
 struct AppEntry: View {
     init() {
             _ = CoreDataManager.shared // Initialize the CoreDataManager
+        CoreDataManager.shared.clearAllCharacterEntities()
         }
     
     var body: some View {

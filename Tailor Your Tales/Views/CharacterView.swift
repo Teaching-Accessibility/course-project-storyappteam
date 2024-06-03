@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct CharacterView: View {
-    let story: Story
     @State private var isViewOnScreen = false
+    
+    let story: Story
     @State var characters: [String: Character]
     
-//    init(story: Story, characters: [String : Character]) {
-//        self.story = story
-//        self.characters = CoreDataManager.shared.mergeWithCoreData(defaultCharacters: characters)
-//    }
+    init(story: Story, characters: [String : Character]) {
+        CoreDataManager.shared.setupChangeTracking()
+        self.story = story
+        self.characters = CoreDataManager.shared.mergeWithCoreData(defaultCharacters: characters)
+    }
     
     var body: some View {
         VStack {
@@ -41,7 +43,7 @@ struct CharacterView: View {
                         .font(.system(size: 20))
                 }
             }
-            
+            Spacer()
             Button("Reset Character Defaults"){
                 CoreDataManager.shared.deleteStoryCharacters(characters: characters)
                 characters = story.characters
@@ -63,13 +65,13 @@ struct CharacterView: View {
             }
             .padding()
         }
-//        .onAppear {
-//            isViewOnScreen = true
-//            loadCharacters()
-//        }
-//        .onDisappear {
-//            isViewOnScreen = false
-//        }
+        .onAppear {
+            isViewOnScreen = true
+            loadCharacters()
+        }
+        .onDisappear {
+            isViewOnScreen = false
+        }
     }
        
                                    
@@ -82,8 +84,8 @@ struct CharacterView: View {
         )
     }
     
-//    func loadCharacters() {
-//        characters = CoreDataManager.shared.mergeWithCoreData(defaultCharacters: characters)
-//    }
+    func loadCharacters() {
+        characters = CoreDataManager.shared.mergeWithCoreData(defaultCharacters: characters)
+    }
 }
 

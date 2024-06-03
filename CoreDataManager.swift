@@ -1,9 +1,11 @@
 import Foundation
 import CoreData
+import Combine
 
 class CoreDataManager {
     static let shared = CoreDataManager()
     
+    let objectWillChange = PassthroughSubject<Void, Never>()
     let persistentContainer: NSPersistentContainer
     
     private init() {
@@ -29,16 +31,23 @@ class CoreDataManager {
     
     func saveCharacter(_ character: Character, withKey key: String) {
         let context = persistentContainer.viewContext
-        let characterEntity = CharacterEntity(context: context)
         
-        do {
-            let data = try JSONEncoder().encode(character)
-            characterEntity.data = data
-            characterEntity.key = key
-            print("saved " + key + " as " + character.name + " with image " + (character.image?.rawValue ?? ""))
-            saveContext()
-        } catch {
-            print("Failed to encode character: \(error)")
+        // Fetch existing entity with the same key
+        if let existingEntity = fetchCharacter(withKey: key) {
+            // Update existing entity
+            updateCharacter(character, withKey: key)
+        } else {
+            // Create new entity if it doesn't exist
+            let characterEntity = CharacterEntity(context: context)
+            do {
+                let data = try JSONEncoder().encode(character)
+                characterEntity.data = data
+                characterEntity.key = key
+                print("Saved " + key + " as " + character.name)
+                saveContext()
+            } catch {
+                print("Failed to encode character: (error)")
+            }
         }
     }
     
@@ -57,22 +66,6 @@ class CoreDataManager {
         }
         return nil
     }
-    
-//    func fetchAllCharacters() -> [Character] {
-//        let context = persistentContainer.viewContext
-//        let fetchRequest: NSFetchRequest<CharacterEntity> = CharacterEntity.fetchRequest()
-//        
-//        do {
-//            let characterEntities = try context.fetch(fetchRequest)
-//            return characterEntities.compactMap { entity in
-//                guard let data = entity.data else { return nil }
-//                return try? JSONDecoder().decode(Character.self, from: data)
-//            }
-//        } catch {
-//            print("Failed to fetch characters: \(error)")
-//            return []
-//        }
-//    }
     
     func updateCharacter(_ character: Character, withKey key: String) {
         let context = persistentContainer.viewContext
@@ -139,4 +132,24 @@ class CoreDataManager {
         return mergedCharacters
     }
     
+    func setupChangeTracking() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(contextDidChange(notification:)),
+                                               name: NSNotification.Name.NSManagedObjectContextObjectsDidChange,
+                                               object: persistentContainer.viewContext)
+    }
+    
+    @objc func contextDidChange(notification: Notification) {
+        objectWillChange.send()
+    }
+    
+    func decodeCharacter(from data: Data?) -> Character? {
+        guard let data = data else { return nil }
+        do {
+            return try JSONDecoder().decode(Character.self, from: data)
+        } catch {
+            print("Failed to decode character: (error)")
+            return nil
+        }
+    }
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 
 var mm1 = Character(name: "Row", gender: .female, image: .megan)
-var mm2 = Character(name: "Dad", gender: .female, image: .derrick)
+var mm2 = Character(name: "Dad", gender: .male, image: .derrick)
 
 
 var mondayCharacters: [String: Character] = [

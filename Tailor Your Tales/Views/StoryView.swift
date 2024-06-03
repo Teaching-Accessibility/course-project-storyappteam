@@ -15,6 +15,7 @@ struct StoryView: View {
     @State var characters: [String: Character]
     
     init(story: Story, pageIndex: Int, characters: [String: Character]? = nil){
+        CoreDataManager.shared.setupChangeTracking()
         self.story = story
         self.characters = characters ?? story.characters
         self.pageIndex = pageIndex
@@ -76,13 +77,13 @@ struct StoryView: View {
         .padding()
         .navigationTitle("Page \(pageIndex + 1) of \(story.title)")
         .navigationBarTitleDisplayMode(.inline)
-//        .onAppear {
-//            isViewOnScreen = true
-//            loadCharacters()
-//        }
-//        .onDisappear {
-//            isViewOnScreen = false
-//        }
+                .onAppear {
+                    isViewOnScreen = true
+                    loadCharacters()
+                }
+                .onDisappear {
+                    isViewOnScreen = false
+                }
     }
     
     private func calculateSpacing(for screenWidth: CGFloat, imageCount: Int, imageWidth: CGFloat) -> CGFloat {
@@ -99,9 +100,9 @@ struct StoryView: View {
         return result
     }
     
-//    func loadCharacters() {
-//        characters = CoreDataManager.shared.mergeWithCoreData(defaultCharacters: characters)
-//    }
+    func loadCharacters() {
+        characters = CoreDataManager.shared.mergeWithCoreData(defaultCharacters: characters)
+    }
 }
 
 
