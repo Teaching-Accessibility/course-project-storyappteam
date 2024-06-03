@@ -8,11 +8,11 @@
 
 import SwiftUI
 
-var c1 = Character(name: "Juliana", gender: .female, nameColor: .red, image: .christine)
-var c2 = Character(name: "Jana", gender: .female, nameColor: .green, image: .megan)
-var c3 = Character(name: "Elena", gender: .female, nameColor: .red, image: .nina)
-var c4 = Character(name: "Java", gender: .female, nameColor: .green, image: .sarah)
-var c5 = Character(name: "Amanda", gender: .female, nameColor: .red, image: .alia)
+var c1 = Character(name: "Juliana", gender: .female, image: .christine)
+var c2 = Character(name: "Jana", gender: .female, image: .megan)
+var c3 = Character(name: "Elena", gender: .female, image: .nina)
+var c4 = Character(name: "Java", gender: .female, image: .sarah)
+var c5 = Character(name: "Amanda", gender: .female, image: .alia)
 
 
 var charactersDictionary: [String: Character] = [

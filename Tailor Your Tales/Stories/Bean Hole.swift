@@ -8,8 +8,8 @@
 import SwiftUI
 
 
-var b1 = Character(name: "Tom", gender: .male, nameColor: .red, image: .matt)
-var b2 = Character(name: "Mummy", gender: .female, nameColor: .red, image: .alia)
+var b1 = Character(name: "Tom", gender: .male, image: .matt)
+var b2 = Character(name: "Mummy", gender: .female, image: .alia)
 
 
 var beanholeCharacters: [String: Character] = [

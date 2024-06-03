@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-enum Gender: String, CaseIterable, Identifiable {
+enum Gender: String, CaseIterable, Identifiable, Codable {
     case male = "Male"
     case female = "Female"
     case nonbinary = "Nonbinary"
@@ -16,7 +16,7 @@ enum Gender: String, CaseIterable, Identifiable {
     var id: String {self.rawValue}
 }
 
-enum CharacterImage: String, CaseIterable, Identifiable {
+enum CharacterImage: String, CaseIterable, Identifiable, Codable {
     case alia = "alia"
     case bella = "bella"
     case christine = "christine"
@@ -32,7 +32,7 @@ enum CharacterImage: String, CaseIterable, Identifiable {
     var id: String {self.rawValue}
 }
 
-enum Emotion: String, CaseIterable, Identifiable {
+enum Emotion: String, CaseIterable, Identifiable, Codable {
     case happy = "happy"
     case angry = "angry"
     case sad = "sad"
@@ -42,9 +42,8 @@ enum Emotion: String, CaseIterable, Identifiable {
     var id: String {self.rawValue}
 }
 
-struct Character {
+struct Character: Codable {
     var name: String
     var gender: Gender
-    var nameColor: Color
     var image: CharacterImage?
 }

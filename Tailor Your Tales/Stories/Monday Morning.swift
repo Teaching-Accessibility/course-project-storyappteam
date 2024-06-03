@@ -8,8 +8,8 @@
 import SwiftUI
 
 
-var m1 = Character(name: "Row", gender: .female, nameColor: .red, image: .megan)
-var m2 = Character(name: "Dad", gender: .female, nameColor: .red, image: .derrick)
+var m1 = Character(name: "Row", gender: .female, image: .megan)
+var m2 = Character(name: "Dad", gender: .female, image: .derrick)
 
 
 var mondayCharacters: [String: Character] = [

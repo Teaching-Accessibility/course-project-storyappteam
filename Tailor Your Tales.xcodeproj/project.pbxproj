@@ -35,6 +35,10 @@
 		656C349E2C0884A700B6FE82 /* Bean Hole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C349D2C0884A700B6FE82 /* Bean Hole.swift */; };
 		656C34A02C08863A00B6FE82 /* Alex's Super Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C349F2C08863A00B6FE82 /* Alex's Super Medicine.swift */; };
 		656C34A22C0887C200B6FE82 /* Emma's Magical Garden Adventure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C34A12C0887C200B6FE82 /* Emma's Magical Garden Adventure.swift */; };
+		656C34B92C0DAA0B00B6FE82 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 656C34B72C0DAA0B00B6FE82 /* CoreData.xcdatamodeld */; };
+		656C34BC2C0DAA6400B6FE82 /* CharacterEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C34BA2C0DAA6400B6FE82 /* CharacterEntity+CoreDataClass.swift */; };
+		656C34BD2C0DAA6400B6FE82 /* CharacterEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C34BB2C0DAA6400B6FE82 /* CharacterEntity+CoreDataProperties.swift */; };
+		656C34BF2C0DAAB800B6FE82 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C34BE2C0DAAB800B6FE82 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +90,10 @@
 		656C349D2C0884A700B6FE82 /* Bean Hole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bean Hole.swift"; sourceTree = "<group>"; };
 		656C349F2C08863A00B6FE82 /* Alex's Super Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alex's Super Medicine.swift"; sourceTree = "<group>"; };
 		656C34A12C0887C200B6FE82 /* Emma's Magical Garden Adventure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Emma's Magical Garden Adventure.swift"; sourceTree = "<group>"; };
+		656C34B82C0DAA0B00B6FE82 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		656C34BA2C0DAA6400B6FE82 /* CharacterEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		656C34BB2C0DAA6400B6FE82 /* CharacterEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		656C34BE2C0DAAB800B6FE82 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +124,10 @@
 		654E48D82BE04B8900604945 = {
 			isa = PBXGroup;
 			children = (
+				656C34BE2C0DAAB800B6FE82 /* CoreDataManager.swift */,
+				656C34BA2C0DAA6400B6FE82 /* CharacterEntity+CoreDataClass.swift */,
+				656C34BB2C0DAA6400B6FE82 /* CharacterEntity+CoreDataProperties.swift */,
+				656C34B72C0DAA0B00B6FE82 /* CoreData.xcdatamodeld */,
 				654E48E32BE04B8900604945 /* Tailor Your Tales */,
 				654E48F42BE04B8C00604945 /* Tailor Your TalesTests */,
 				654E48FE2BE04B8C00604945 /* Tailor Your TalesUITests */,
@@ -358,10 +370,14 @@
 				654E49142BE8924200604945 /* StoryRow.swift in Sources */,
 				656C34982C087E9000B6FE82 /* Monday Morning.swift in Sources */,
 				654E49232BE8F3B900604945 /* AppEntry.swift in Sources */,
+				656C34BF2C0DAAB800B6FE82 /* CoreDataManager.swift in Sources */,
 				654E48E52BE04B8900604945 /* Tailor_Your_TalesApp.swift in Sources */,
 				654E491D2BE8B41000604945 /* CharacterEdit.swift in Sources */,
+				656C34B92C0DAA0B00B6FE82 /* CoreData.xcdatamodeld in Sources */,
 				656C349E2C0884A700B6FE82 /* Bean Hole.swift in Sources */,
 				656C349A2C0880AC00B6FE82 /* Let's Party.swift in Sources */,
+				656C34BC2C0DAA6400B6FE82 /* CharacterEntity+CoreDataClass.swift in Sources */,
+				656C34BD2C0DAA6400B6FE82 /* CharacterEntity+CoreDataProperties.swift in Sources */,
 				654E49342BF5FCFF00604945 /* CharacterView.swift in Sources */,
 				654E49182BE8A1CF00604945 /* FavoriteButton.swift in Sources */,
 				654E492C2BE9F5D900604945 /* Next Week.swift in Sources */,
@@ -704,6 +720,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		656C34B72C0DAA0B00B6FE82 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				656C34B82C0DAA0B00B6FE82 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = 656C34B82C0DAA0B00B6FE82 /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 654E48D92BE04B8900604945 /* Project object */;
 }

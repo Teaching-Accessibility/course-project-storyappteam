@@ -8,8 +8,8 @@
 import SwiftUI
 
 
-var l1 = Character(name: "Zara", gender: .female, nameColor: .red, image: .bella)
-var l2 = Character(name: "Dalia", gender: .female, nameColor: .red, image: .megan)
+var l1 = Character(name: "Zara", gender: .female, image: .bella)
+var l2 = Character(name: "Dalia", gender: .female, image: .megan)
 
 
 var letspartyCharacters: [String: Character] = [

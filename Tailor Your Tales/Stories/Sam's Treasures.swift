@@ -12,8 +12,8 @@
 import SwiftUI
 
 
-var sc2 = Character(name: "Dara", gender: .female, nameColor: .red, image: .bella)
-var sc1 = Character(name: "Sam", gender: .male, nameColor: .green, image: .joe)
+var sc2 = Character(name: "Dara", gender: .female, image: .bella)
+var sc1 = Character(name: "Sam", gender: .male, image: .joe)
 
 
 

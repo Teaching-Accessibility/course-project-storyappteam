@@ -8,9 +8,9 @@
 import SwiftUI
 
 
-var e1 = Character(name: "Emma", gender: .female, nameColor: .red, image: .alia)
-var e2 = Character(name: "Mom", gender: .female, nameColor: .red, image: .nina)
-var e3 = Character(name: "Grandma", gender: .female, nameColor: .red, image: .elizabeth)
+var e1 = Character(name: "Emma", gender: .female, image: .alia)
+var e2 = Character(name: "Mom", gender: .female, image: .nina)
+var e3 = Character(name: "Grandma", gender: .female, image: .elizabeth)
 
 
 
