@@ -10,6 +10,12 @@ import SwiftUI
 struct CharacterView: View {
     let story: Story
     @State var characters: [String: Character]
+    
+//    init(story: Story, characters: [String : Character]) {
+//        self.story = story
+//        self.characters = CoreDataManager.shared.mergeWithCoreData(defaultCharacters: characters)
+//    }
+    
     var body: some View {
         Text("Tap on a character to edit them!")
             .font(.system(size: 25))
@@ -33,6 +39,17 @@ struct CharacterView: View {
                     .font(.system(size: 20))
             }
         }
+        
+        Button("Reset Character Defaults"){
+            CoreDataManager.shared.deleteStoryCharacters(characters: characters)
+            characters = story.characters
+        }
+        .padding()
+        .foregroundColor(.white)
+        .background(Color.red)
+        .cornerRadius(8)
+        
+        Spacer()
         
         NavigationLink(destination: StoryView(story: story, pageIndex: 0, characters: characters)){
             Text("Continue to " + story.title)

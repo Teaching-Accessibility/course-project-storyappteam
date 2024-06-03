@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6524E9BA2C0DDAD700A0B08A /* CoreData.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 656C34B72C0DAA0B00B6FE82 /* CoreData.xcdatamodeld */; };
 		654E48E52BE04B8900604945 /* Tailor_Your_TalesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E48E42BE04B8900604945 /* Tailor_Your_TalesApp.swift */; };
 		654E48E72BE04B8900604945 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E48E62BE04B8900604945 /* Login.swift */; };
 		654E48E92BE04B8C00604945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 654E48E82BE04B8C00604945 /* Assets.xcassets */; };
@@ -337,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6524E9BA2C0DDAD700A0B08A /* CoreData.xcdatamodeld in Resources */,
 				654E48EC2BE04B8C00604945 /* Preview Assets.xcassets in Resources */,
 				654E48E92BE04B8C00604945 /* Assets.xcassets in Resources */,
 			);

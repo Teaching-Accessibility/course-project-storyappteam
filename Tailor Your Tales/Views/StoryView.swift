@@ -17,7 +17,7 @@ struct StoryView: View {
     init(story: Story, pageIndex: Int, characters: [String: Character]? = nil){
         self.story = story
         self.characters = characters ?? story.characters
-        self.characters = manager.mergeWithCoreData(defaultCharacters: self.characters)
+//        self.characters = CoreDataManager.shared.mergeWithCoreData(defaultCharacters: self.characters)
         self.pageIndex = pageIndex
     }
     

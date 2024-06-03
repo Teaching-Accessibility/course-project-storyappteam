@@ -16,7 +16,6 @@ var st2 = Character(name: "Dara", gender: .female, image: .bella)
 var st1 = Character(name: "Sam", gender: .male, image: .joe)
 
 
-
 var scharactersDictionary: [String: Character] = [
         "st1": st1,
         "st2": st2,

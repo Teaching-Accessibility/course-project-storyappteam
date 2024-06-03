@@ -103,12 +103,35 @@ class CoreDataManager {
         }
     }
     
+    func deleteStoryCharacters(characters: [String: Character]) {
+        for key in characters.keys {
+            if fetchCharacter(withKey: key) != nil {
+                print("deleted " + key)
+                deleteCharacter(withKey: key)
+            }
+        }
+    }
+    
+    func clearAllCharacterEntities() {
+        let context = persistentContainer.viewContext
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = CharacterEntity.fetchRequest()
+        
+        let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+        
+        do {
+            try context.execute(batchDeleteRequest)
+            try context.save()
+        } catch {
+            print("Error clearing CharacterEntity entities: (error)")
+        }
+    }
     
     // Use this
     func mergeWithCoreData(defaultCharacters: [String: Character]) -> [String: Character] {
         var mergedCharacters = defaultCharacters
         for key in defaultCharacters.keys {
             if let coreDataCharacter = fetchCharacter(withKey: key) {
+                print("found " + key + " as " + coreDataCharacter.name)
                 mergedCharacters[key] = coreDataCharacter
             }
         }

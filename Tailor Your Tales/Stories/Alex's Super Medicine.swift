@@ -50,7 +50,7 @@ characters: [
 ),
 StoryPage( // 2
 """
-        Dr. Bongi can help. Dr Bongi works at a hospital.
+        {am2} can help. {am2} works at a hospital.
 """,
 choices: [
 Choice(text: "Next", destination: 3)
