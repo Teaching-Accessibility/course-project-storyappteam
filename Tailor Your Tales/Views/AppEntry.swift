@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct AppEntry: View {
-    @State private var startupManager = StartupManager()
+    init() {
+            _ = CoreDataManager.shared // Initialize the CoreDataManager
+        }
+    
     var body: some View {
         NavigationStack {
             StoryList()

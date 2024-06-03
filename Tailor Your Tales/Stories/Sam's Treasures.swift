@@ -11,16 +11,16 @@
 
 import SwiftUI
 
-var st1 = CoreDataManager.shared.fetchCharacter(withKey: "st1")
-var st2 = CoreDataManager.shared.fetchCharacter(withKey: "st2")
-//var st2 = Character(name: "Dara", gender: .female, image: .bella)
- //st1 = Character(name: "Sam", gender: .male, image: .joe)
+//var st1 = CoreDataManager.shared.fetchCharacter(withKey: "st1")
+//var st2 = CoreDataManager.shared.fetchCharacter(withKey: "st2")
+var st2 = Character(name: "Dara", gender: .female, image: .bella)
+var st1 = Character(name: "Sam", gender: .male, image: .joe)
 
 
 
 var scharactersDictionary: [String: Character] = [
-    "character1": st1!,
-    "character2": st2!,
+    "character1": st1,
+    "character2": st2,
 ]
 
  let samstreasures = Story(

@@ -14,9 +14,9 @@ class StartupManager {
     func DataLoad () {
         let characters = CoreDataManager.shared.fetchAllCharacters()
         if (characters.isEmpty) {
-            var st2 = Character(name: "Dara", gender: .female, image: .bella)
+            let st2 = Character(name: "Dara", gender: .female, image: .bella)
             CoreDataManager.shared.saveCharacter(st2, withKey: "st2")
-            var st1 = Character(name: "Sam", gender: .male, image: .joe)
+            let st1 = Character(name: "Sam", gender: .male, image: .joe)
             CoreDataManager.shared.saveCharacter(st1, withKey: "st1")
             print("here")
             

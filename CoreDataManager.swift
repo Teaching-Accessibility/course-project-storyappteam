@@ -7,7 +7,7 @@ class CoreDataManager {
     let persistentContainer: NSPersistentContainer
     
     private init() {
-        persistentContainer = NSPersistentContainer(name: "Model")
+        persistentContainer = NSPersistentContainer(name: "CoreData")
         persistentContainer.loadPersistentStores { (description, error) in
             if let error = error {
                 fatalError("Unable to load persistent stores: \(error)")
