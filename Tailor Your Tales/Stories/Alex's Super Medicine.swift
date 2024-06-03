@@ -14,9 +14,9 @@ var am3 = Character(name: "Mom", gender: .female, image: .bella)
 
 
 var alexCharacters: [String: Character] = [
-    "child": am1,
-    "doctor": am2,
-    "parent": am3
+    "am1": am1, //child
+    "am2": am2, //doctor
+    "am3": am3 //parent
 ]
 
 let alexsSuperMedicine = Story(
@@ -26,26 +26,26 @@ previewImage: Image(systemName: "medical.thermometer"),
 pages: [
 StoryPage( // 0
 """
-       "I'm not feeling so good, {parentname}." {childname} says.
+       "I'm not feeling so good, {am3name}." {am1name} says.
 """,
 choices: [
 Choice(text: "Next", destination: 1)
 ],
 characters: [
-    "child": .sad,
-    "parent": .neutral
+    "am1": .sad,
+    "am3": .neutral
 ]
 ),
 StoryPage( // 1
 """
-        {parentname} packs up the car and says it is time to go see {doctorname}.
+        {am3name} packs up the car and says it is time to go see {am2name}.
 
 """,
 choices: [
 Choice(text: "Next", destination: 2)
 ],
 characters: [
-    "parent": .happy
+    "am3": .happy
 ]
 ),
 StoryPage( // 2
@@ -56,63 +56,63 @@ choices: [
 Choice(text: "Next", destination: 3)
 ],
 characters: [
-    "doctor": .happy
+    "am2": .happy
 ]
 ),
 StoryPage( // 3
 """
       There is medicine and syringes and so many tubes and machines that will make you feel all better!
 
-      {doctorname} prescribes {childname} some medicine. Medicine will help {childname} feel much better soon.
+      {am2name} prescribes {am1name} some medicine. Medicine will help {am1name} feel much better soon.
 
 """,
 choices: [
 Choice(text: "Next", destination: 4)
 ],
 characters: [
-    "child": .happy,
-    "doctor": .happy
+    "am1": .happy,
+    "am2": .happy
 ]
 ),
 StoryPage( // 4
 """
-        But {childname} doesn't like medicine, it's yucky.
+        But {am1name} doesn't like medicine, it's yucky.
 
 
-        But it will take the icky feeling away. So {childname} tries the medicine anyway.
+        But it will take the icky feeling away. So {am1name} tries the medicine anyway.
 """,
 choices: [
 Choice(text: "Next", destination: 5)
 ],
 characters: [
-    "child": .sad
+    "am1": .sad
 ]
 ),
 StoryPage( // 5
 """
         And wait! What's this? Something is happening.
 
-        Oh, {childname} already feels so much better!
+        Oh, {am1name} already feels so much better!
 """,
 choices: [
 Choice(text: "Next", destination: 6)
 ],
 characters: [
-    "child": .happy,
-    "parent": .happy
+    "am1": .happy,
+    "am3": .happy
 ]
 ),
 StoryPage( // 6
 """
-      You did it, {childname}! We're so proud of you.
+      You did it, {am1name}! We're so proud of you.
 """,
 choices: [
 
 ],
 characters: [
-    "doctor": .happy,
-    "child": .love,
-    "parent": .love
+    "am2": .happy,
+    "am1": .love,
+    "am3": .love
 ]
 ),
 ],characters: alexCharacters

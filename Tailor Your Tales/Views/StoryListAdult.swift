@@ -27,7 +27,7 @@ struct StoryListAdult: View {
                 
                 //Spacer()
                 
-                //Link to adult interface
+                //Link to child interface
                 NavigationLink(destination: StoryList()) {
                     Text("Child")
                         .font(.custom("Helvetica Bold", size: 35))

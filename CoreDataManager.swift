@@ -57,21 +57,21 @@ class CoreDataManager {
         return nil
     }
     
-    func fetchAllCharacters() -> [Character] {
-        let context = persistentContainer.viewContext
-        let fetchRequest: NSFetchRequest<CharacterEntity> = CharacterEntity.fetchRequest()
-        
-        do {
-            let characterEntities = try context.fetch(fetchRequest)
-            return characterEntities.compactMap { entity in
-                guard let data = entity.data else { return nil }
-                return try? JSONDecoder().decode(Character.self, from: data)
-            }
-        } catch {
-            print("Failed to fetch characters: \(error)")
-            return []
-        }
-    }
+//    func fetchAllCharacters() -> [Character] {
+//        let context = persistentContainer.viewContext
+//        let fetchRequest: NSFetchRequest<CharacterEntity> = CharacterEntity.fetchRequest()
+//        
+//        do {
+//            let characterEntities = try context.fetch(fetchRequest)
+//            return characterEntities.compactMap { entity in
+//                guard let data = entity.data else { return nil }
+//                return try? JSONDecoder().decode(Character.self, from: data)
+//            }
+//        } catch {
+//            print("Failed to fetch characters: \(error)")
+//            return []
+//        }
+//    }
     
     func updateCharacter(_ character: Character, withKey key: String) {
         let context = persistentContainer.viewContext
@@ -102,4 +102,17 @@ class CoreDataManager {
             print("Failed to delete character: \(error)")
         }
     }
+    
+    
+    // Use this
+    func mergeWithCoreData(defaultCharacters: [String: Character]) -> [String: Character] {
+        var mergedCharacters = defaultCharacters
+        for key in defaultCharacters.keys {
+            if let coreDataCharacter = fetchCharacter(withKey: key) {
+                mergedCharacters[key] = coreDataCharacter
+            }
+        }
+        return mergedCharacters
+    }
+    
 }

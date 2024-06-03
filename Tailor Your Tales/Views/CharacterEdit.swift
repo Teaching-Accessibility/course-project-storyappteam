@@ -37,7 +37,7 @@ struct CharacterEdit: View {
                 
             }
             .padding()
-            .navigationTitle("Editing \(role)")
+            .navigationTitle("Editing Character")
             
             ScrollView {
                 LazyVGrid(columns: gridItems, spacing: 10) {

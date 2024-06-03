@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct StoryView: View {
+    let manager = CoreDataManager.shared
+    
     var story: Story
     let pageIndex: Int
     var characters: [String: Character]
@@ -15,6 +17,7 @@ struct StoryView: View {
     init(story: Story, pageIndex: Int, characters: [String: Character]? = nil){
         self.story = story
         self.characters = characters ?? story.characters
+        self.characters = manager.mergeWithCoreData(defaultCharacters: self.characters)
         self.pageIndex = pageIndex
     }
     
