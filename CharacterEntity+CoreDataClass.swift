@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-@objc(CDCharacterEntity)
-public class CDCharacterEntity: NSManagedObject {
+@objc(CharacterEntity)
+public class CharacterEntity: NSManagedObject {
 
 }

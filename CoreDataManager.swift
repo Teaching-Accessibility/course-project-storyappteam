@@ -29,7 +29,7 @@ class CoreDataManager {
     
     func saveCharacter(_ character: Character, withKey key: String) {
         let context = persistentContainer.viewContext
-        let characterEntity = CDCharacterEntity(context: context)
+        let characterEntity = CharacterEntity(context: context)
         
         do {
             let data = try JSONEncoder().encode(character)
@@ -43,7 +43,7 @@ class CoreDataManager {
     
     func fetchCharacter(withKey key: String) -> Character? {
         let context = persistentContainer.viewContext
-        let fetchRequest: NSFetchRequest<CDCharacterEntity> = CDCharacterEntity.fetchRequest()
+        let fetchRequest: NSFetchRequest<CharacterEntity> = CharacterEntity.fetchRequest()
         fetchRequest.predicate = NSPredicate(format: "key == %@", key)
         
         do {
@@ -59,7 +59,7 @@ class CoreDataManager {
     
     func fetchAllCharacters() -> [Character] {
         let context = persistentContainer.viewContext
-        let fetchRequest: NSFetchRequest<CDCharacterEntity> = CDCharacterEntity.fetchRequest()
+        let fetchRequest: NSFetchRequest<CharacterEntity> = CharacterEntity.fetchRequest()
         
         do {
             let characterEntities = try context.fetch(fetchRequest)
@@ -75,7 +75,7 @@ class CoreDataManager {
     
     func updateCharacter(_ character: Character, withKey key: String) {
         let context = persistentContainer.viewContext
-        let fetchRequest: NSFetchRequest<CDCharacterEntity> = CDCharacterEntity.fetchRequest()
+        let fetchRequest: NSFetchRequest<CharacterEntity> = CharacterEntity.fetchRequest()
         fetchRequest.predicate = NSPredicate(format: "key == %@", key)
         
         do {
@@ -90,7 +90,7 @@ class CoreDataManager {
     
     func deleteCharacter(withKey key: String) {
         let context = persistentContainer.viewContext
-        let fetchRequest: NSFetchRequest<CDCharacterEntity> = CDCharacterEntity.fetchRequest()
+        let fetchRequest: NSFetchRequest<CharacterEntity> = CharacterEntity.fetchRequest()
         fetchRequest.predicate = NSPredicate(format: "key == %@", key)
         
         do {

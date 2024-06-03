@@ -2,7 +2,7 @@
 //  CharacterEntity+CoreDataProperties.swift
 //  Tailor Your Tales
 //
-//  Created by Daniel Koronthaly on 6/3/24.
+//  Created by Selah Bellscheidt on 6/3/24.
 //
 //
 
@@ -10,17 +10,17 @@ import Foundation
 import CoreData
 
 
-extension CDCharacterEntity {
+extension CharacterEntity {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<CDCharacterEntity> {
-        return NSFetchRequest<CDCharacterEntity>(entityName: "CharacterEntity")
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<CharacterEntity> {
+        return NSFetchRequest<CharacterEntity>(entityName: "CharacterEntity")
     }
 
-    @NSManaged public var key: String?
     @NSManaged public var data: Data?
+    @NSManaged public var key: String?
 
 }
 
-extension CDCharacterEntity : Identifiable {
+extension CharacterEntity : Identifiable {
 
 }

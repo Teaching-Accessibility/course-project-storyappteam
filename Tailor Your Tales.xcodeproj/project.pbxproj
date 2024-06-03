@@ -35,10 +35,10 @@
 		656C349E2C0884A700B6FE82 /* Bean Hole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C349D2C0884A700B6FE82 /* Bean Hole.swift */; };
 		656C34A02C08863A00B6FE82 /* Alex's Super Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C349F2C08863A00B6FE82 /* Alex's Super Medicine.swift */; };
 		656C34A22C0887C200B6FE82 /* Emma's Magical Garden Adventure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C34A12C0887C200B6FE82 /* Emma's Magical Garden Adventure.swift */; };
-		656C34B92C0DAA0B00B6FE82 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 656C34B72C0DAA0B00B6FE82 /* CoreData.xcdatamodeld */; };
 		656C34BC2C0DAA6400B6FE82 /* CharacterEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C34BA2C0DAA6400B6FE82 /* CharacterEntity+CoreDataClass.swift */; };
 		656C34BD2C0DAA6400B6FE82 /* CharacterEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C34BB2C0DAA6400B6FE82 /* CharacterEntity+CoreDataProperties.swift */; };
 		656C34BF2C0DAAB800B6FE82 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C34BE2C0DAAB800B6FE82 /* CoreDataManager.swift */; };
+		CE9A3A012C0DAF6300BE6DEB /* StartupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A3A002C0DAF6300BE6DEB /* StartupManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +94,7 @@
 		656C34BA2C0DAA6400B6FE82 /* CharacterEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		656C34BB2C0DAA6400B6FE82 /* CharacterEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		656C34BE2C0DAAB800B6FE82 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		CE9A3A002C0DAF6300BE6DEB /* StartupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +201,7 @@
 				654E491C2BE8B41000604945 /* CharacterEdit.swift */,
 				654E49202BE8D8F300604945 /* Settings.swift */,
 				654E49222BE8F3B900604945 /* AppEntry.swift */,
+				CE9A3A002C0DAF6300BE6DEB /* StartupManager.swift */,
 				654E49242BE8F8FD00604945 /* AgeVerifier.swift */,
 				654E49282BE9F0EB00604945 /* StoryView.swift */,
 				654E49352BF61CD000604945 /* StoryListAdult.swift */,
@@ -373,7 +375,6 @@
 				656C34BF2C0DAAB800B6FE82 /* CoreDataManager.swift in Sources */,
 				654E48E52BE04B8900604945 /* Tailor_Your_TalesApp.swift in Sources */,
 				654E491D2BE8B41000604945 /* CharacterEdit.swift in Sources */,
-				656C34B92C0DAA0B00B6FE82 /* CoreData.xcdatamodeld in Sources */,
 				656C349E2C0884A700B6FE82 /* Bean Hole.swift in Sources */,
 				656C349A2C0880AC00B6FE82 /* Let's Party.swift in Sources */,
 				656C34BC2C0DAA6400B6FE82 /* CharacterEntity+CoreDataClass.swift in Sources */,
@@ -385,6 +386,7 @@
 				654E49362BF61CD000604945 /* StoryListAdult.swift in Sources */,
 				654E49292BE9F0EB00604945 /* StoryView.swift in Sources */,
 				654E49302BEA22CF00604945 /* StoryList.swift in Sources */,
+				CE9A3A012C0DAF6300BE6DEB /* StartupManager.swift in Sources */,
 				654E49212BE8D8F300604945 /* Settings.swift in Sources */,
 				656C34A22C0887C200B6FE82 /* Emma's Magical Garden Adventure.swift in Sources */,
 				654E49322BEAF42B00604945 /* Multiple Choices.swift in Sources */,

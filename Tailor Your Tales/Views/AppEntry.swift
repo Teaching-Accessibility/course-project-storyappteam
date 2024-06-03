@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AppEntry: View {
+    @State private var startupManager = StartupManager()
     var body: some View {
         NavigationStack {
             StoryList()

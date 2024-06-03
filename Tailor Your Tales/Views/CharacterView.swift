@@ -47,7 +47,7 @@ struct CharacterView: View {
                                    
     func binding(for key: String) -> Binding<Character> {
             return Binding<Character>(
-                get: { characters[key, default: Character(name: "", gender: .nonbinary, nameColor: .red)] },
+                get: { characters[key, default: Character(name: "", gender: .nonbinary)] },
                 set: { newCharacter in
                     characters[key] = newCharacter
                 }

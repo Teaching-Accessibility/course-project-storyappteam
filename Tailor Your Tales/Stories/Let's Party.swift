@@ -9,7 +9,7 @@ import SwiftUI
 
 
 var lp1 = Character(name: "Zara", gender: .female, image: .bella)
-var l2 = Character(name: "Dalia", gender: .female, image: .megan)
+var lp2 = Character(name: "Dalia", gender: .female, image: .megan)
 
 
 var letspartyCharacters: [String: Character] = [
