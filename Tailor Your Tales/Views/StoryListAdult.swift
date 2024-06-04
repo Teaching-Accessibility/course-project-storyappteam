@@ -29,9 +29,9 @@ struct StoryListAdult: View {
                 
                 //Link to child interface
                 NavigationLink(destination: StoryList()) {
-                    Text("Child")
+                    Text("Go to Child Area")
                         .font(.custom("Helvetica Bold", size: 35))
-                        .frame(width: 150, height: 100)
+                        .frame(width: 300, height: 100)
                         .background(Color(red: 0, green: 0.2667, blue: 0.7020))
                         .foregroundColor(.white)
                         .cornerRadius(10)
