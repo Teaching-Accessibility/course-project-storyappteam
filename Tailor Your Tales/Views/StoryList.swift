@@ -29,9 +29,9 @@ struct StoryList: View {
                 
                 //Link to adult interface
                 NavigationLink(destination: AgeVerifier()) {
-                    Text("Adult")
+                    Text("Go to Adult Area")
                         .font(.custom("Helvetica Bold", size: 35))
-                        .frame(width: 150, height: 100)
+                        .frame(width: 300, height: 100)
                         .background(Color(red: 0.5412, green: 0.1490, blue: 0.6706))
                         .foregroundColor(.white)
                         .cornerRadius(10)

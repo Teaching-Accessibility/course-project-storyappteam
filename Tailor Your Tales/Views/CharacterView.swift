@@ -12,6 +12,7 @@ struct CharacterView: View {
     
     let story: Story
     @State var characters: [String: Character]
+    @State private var showAlert = false
     
     init(story: Story, characters: [String : Character]) {
         CoreDataManager.shared.setupChangeTracking()
@@ -44,9 +45,21 @@ struct CharacterView: View {
                 }
             }
             Spacer()
-            Button("Reset Character Defaults"){
-                CoreDataManager.shared.deleteStoryCharacters(characters: characters)
-                characters = story.characters
+            
+            Button("Reset to Default Characters"){
+                showAlert=true
+            }
+            .alert(isPresented: $showAlert) {
+                Alert(
+                                title: Text("Are you sure you want to reset the characters to their default settings?"),
+                                message: Text("There is no way to undo a reset."),
+                                primaryButton: .destructive(Text("Reset")) {
+                                    print("Resetting...")
+                                    CoreDataManager.shared.deleteStoryCharacters(characters: characters)
+                                    characters = story.characters
+                                },
+                                secondaryButton: .cancel()
+                            )
             }
             .padding()
             .foregroundColor(.white)
