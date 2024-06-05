@@ -39,6 +39,7 @@
 		656C34BC2C0DAA6400B6FE82 /* CharacterEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C34BA2C0DAA6400B6FE82 /* CharacterEntity+CoreDataClass.swift */; };
 		656C34BD2C0DAA6400B6FE82 /* CharacterEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C34BB2C0DAA6400B6FE82 /* CharacterEntity+CoreDataProperties.swift */; };
 		656C34BF2C0DAAB800B6FE82 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C34BE2C0DAAB800B6FE82 /* CoreDataManager.swift */; };
+		C7D2DDFB2C0FEFEF00F61CED /* StoryViewAdult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D2DDFA2C0FEFEF00F61CED /* StoryViewAdult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		656C34BA2C0DAA6400B6FE82 /* CharacterEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		656C34BB2C0DAA6400B6FE82 /* CharacterEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		656C34BE2C0DAAB800B6FE82 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		C7D2DDFA2C0FEFEF00F61CED /* StoryViewAdult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewAdult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,8 +204,9 @@
 				654E49222BE8F3B900604945 /* AppEntry.swift */,
 				654E49242BE8F8FD00604945 /* AgeVerifier.swift */,
 				654E49282BE9F0EB00604945 /* StoryView.swift */,
-				654E49352BF61CD000604945 /* StoryListAdult.swift */,
 				654E492F2BEA22CE00604945 /* StoryList.swift */,
+				C7D2DDFA2C0FEFEF00F61CED /* StoryViewAdult.swift */,
+				654E49352BF61CD000604945 /* StoryListAdult.swift */,
 				654E49332BF5FCFF00604945 /* CharacterView.swift */,
 			);
 			path = Views;
@@ -222,8 +225,8 @@
 			isa = PBXGroup;
 			children = (
 				654E492B2BE9F5D900604945 /* Next Week.swift */,
-				654E492D2BEA17BB00604945 /* Sam's Treasures.swift */,
 				654E49312BEAF42B00604945 /* Multiple Choices.swift */,
+				654E492D2BEA17BB00604945 /* Sam's Treasures.swift */,
 				656C34972C087E9000B6FE82 /* Monday Morning.swift */,
 				656C34992C0880AC00B6FE82 /* Let's Party.swift */,
 				656C349B2C08830700B6FE82 /* The Dark.swift */,
@@ -387,6 +390,7 @@
 				654E49302BEA22CF00604945 /* StoryList.swift in Sources */,
 				654E49212BE8D8F300604945 /* Settings.swift in Sources */,
 				656C34A22C0887C200B6FE82 /* Emma's Magical Garden Adventure.swift in Sources */,
+				C7D2DDFB2C0FEFEF00F61CED /* StoryViewAdult.swift in Sources */,
 				654E49322BEAF42B00604945 /* Multiple Choices.swift in Sources */,
 				654E49252BE8F8FD00604945 /* AgeVerifier.swift in Sources */,
 				654E49162BE892C400604945 /* Character.swift in Sources */,

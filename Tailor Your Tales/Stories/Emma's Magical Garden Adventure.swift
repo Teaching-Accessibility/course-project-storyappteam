@@ -1,9 +1,10 @@
 //
-//  Monday Morning.swift
+//  Emma's Magical Garden Adventure.swift
 //  Tailor Your Tales
 //
 //  Created by Daniel Koronthaly on 5/30/24.
 //
+// Attribution: This story was created by Dion Udokop
 
 import SwiftUI
 
@@ -48,7 +49,7 @@ StoryPage( // 1 flower patch start
         The bright colorful flowers are very beautiful.
 
 """,
-choices: [
+choices: [Choice(text: "Back", destination: 0),
 Choice(text: "Next", destination: 2)
 ],
 characters: [
@@ -61,7 +62,7 @@ StoryPage( // 2
 
        {ea1name} collects so many flowers with pretty, pretty petals.
 """,
-choices: [
+choices: [Choice(text: "Back", destination: 1),
 Choice(text: "Next", destination: 3)
 ],
 characters: [
@@ -77,7 +78,7 @@ StoryPage( // 3
       {ea1name} skips over to {ea3name} and hands over the bouquet.
 
 """,
-choices: [
+choices: [Choice(text: "Back", destination: 2),
 Choice(text: "Next", destination: 4)
 ],
 characters: [
@@ -91,8 +92,8 @@ StoryPage( // 4
 
         {ea3name} scoops {ea1name} up into a big bear hug and says thank you for the flowers.
 """,
-choices: [
-
+choices: [Choice(text: "Back", destination: 3),
+Choice(text: "Next", destination: 10),
 ],
 characters: [
     "ea1": .happy,
@@ -100,13 +101,14 @@ characters: [
     "ea2": .love
 ]
 ),
+
 StoryPage( // 5 vegetable patch start
 """
-        Emma skips over to the vegetable patch.
+        {ea1name} skips over to the vegetable patch.
 
         Veggies in the ground always have the coolest bugs!
 """,
-choices: [
+choices: [Choice(text: "Back", destination: 0),
 Choice(text: "Next", destination: 6)
 ],
 characters: [
@@ -119,7 +121,7 @@ StoryPage( // 6
 
       {ea1name} wants to find all the cool bugs {ea3name}'s vegetables have.
 """,
-choices: [
+choices: [Choice(text: "Back", destination: 5),
     Choice(text: "Next", destination: 7)
 ],
 characters: [
@@ -133,7 +135,7 @@ StoryPage( // 7
       On a branch, there hangs a caterpillar cocoon. It will be a beautiful butterfly really soon.
 
 """,
-choices: [
+choices: [Choice(text: "Back", destination: 6),
     Choice(text: "Next", destination: 8)
 ]
 ),
@@ -143,7 +145,7 @@ StoryPage( // 8
 
       {ea1name} wonders what colors the new butterfly will be.
 """,
-choices: [
+choices: [Choice(text: "Back", destination: 7),
     Choice(text: "Next", destination: 9)
 ],
 characters: [
@@ -157,10 +159,21 @@ StoryPage( // 9
     Tiny with red and black spotted wings, {ea1name} thinks this has to be the coolest bug ever.
 """,
 choices: [
-    
+    Choice(text: "Back", destination: 8),
+    Choice(text: "Next", destination: 10)
 ],
 characters: [
     "ea1": .love
+]
+),
+StoryPage( // 10
+"""
+    THE END.
+""",
+choices: [
+
+],
+characters: [:
 ]
 ),
 ],characters: emmaCharacters

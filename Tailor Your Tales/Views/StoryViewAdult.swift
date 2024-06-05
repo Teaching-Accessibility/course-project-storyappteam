@@ -1,13 +1,13 @@
 //
-//  StoryView.swift
+//  StoryViewAdult.swift
 //  Tailor Your Tales
 //
-//  Created by Daniel Koronthaly on 5/6/24.
+//  Created by Dion Udokop on 6/4/24.
 //
 
 import SwiftUI
 
-struct StoryView: View {
+struct StoryViewAdult: View {
     @State private var isViewOnScreen = false
     @Environment(\.presentationMode) var presentationMode
     
@@ -20,7 +20,6 @@ struct StoryView: View {
         self.story = story
         self.pageIndex = pageIndex
         self._characters = State(initialValue: characters ?? story.characters)
-        
     }
     
     let imageWidth: CGFloat = 400
@@ -34,7 +33,7 @@ struct StoryView: View {
             //.toolbar(content: {
                // ToolbarItem (placement: .topBarLeading)  {
 
-            NavigationLink(destination: StoryList()) {
+            NavigationLink(destination: StoryListAdult()) {
                 
                 Text("Return to story list")
                     //.multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
@@ -51,7 +50,7 @@ struct StoryView: View {
                         //.padding(.top, 50)
                         .padding(.trailing, UIScreen.main.bounds.size.width * 1.5 / 2)
             }
-        
+            
             ScrollView {
                 Text(characterNames(from: story[pageIndex].text, with: characters))
                     .font(.system(size: 30))
@@ -75,7 +74,7 @@ struct StoryView: View {
             }
             
             if story[pageIndex].choices.count == 0 {
-                NavigationLink(destination: StoryList()) {
+                NavigationLink(destination: StoryListAdult()) {
                     
                     Text("Return to story list")
                         .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
@@ -97,10 +96,9 @@ struct StoryView: View {
                                 .background(Color.gray.opacity(0.25))
                                 .cornerRadius(10)
                                 .font(.custom("Helvetica Bold", size: 35))
-                                .frame(width: 550, height: 70)
+                                .frame(width: 500, height: 100)
                                 .background(Color(red: 0.5412, green: 0.1490, blue: 0.6706))
                                 .foregroundColor(.white)
-                                .offset(y:10)
                         }
                     }
                 }
@@ -141,5 +139,6 @@ struct StoryView: View {
 
 
 #Preview {
-    StoryView(story: samstreasures, pageIndex: 0)
+    StoryView(story: nextweek, pageIndex: 0)
 }
+
