@@ -1,9 +1,14 @@
 //
-//  Monday Morning.swift
+//  Let's Party.swift
 //  Tailor Your Tales
 //
 //  Created by Daniel Koronthaly on 5/30/24.
 //
+// Attribution: This story was modified from the original story illustrated by Karen Vermeulen, written by Liora Friedland, designed by Sharleen Hollick and Edited by Ester Levinrad with the help of the Book Dash Participants in Cape Town on 14 October 2023
+// The work is licensed under a Creative Commons Attribution 4.0 License: https://creativecommons.org/licenses/by/4.0/
+// The original text can be found here: https://www.storyberries.com/bedtime-stories-lets-party-short-stories-for-kids/
+
+
 
 import SwiftUI
 
@@ -40,9 +45,10 @@ characters: [
 StoryPage( // 1
 """
         Hmmm...
-        {lp1name}'s always wanted to dress like a superhero and save the day. Zoom! Zap! Kapow!
+        {lp1name}'s always wanted to dress like a superhero and save the day. 
+        Zoom! Zap! Kapow!
 """,
-choices: [
+choices: [Choice(text: "Back", destination: 0),
 Choice(text: "Next", destination: 2)
 ],
 characters: [
@@ -51,10 +57,11 @@ characters: [
 ),
 StoryPage( // 2
 """
-       But would also like to be a fluffy bunny with soft ears and a wiggly nose. Нор hop!
+       But would also like to be a fluffy bunny with soft ears and a wiggly nose. 
+        Нор hop!
 
 """,
-choices: [
+choices: [Choice(text: "Back", destination: 1),
 Choice(text: "Next", destination: 3)
 ],
 characters: [
@@ -63,10 +70,11 @@ characters: [
 ),
 StoryPage( // 3
 """
-        Or maybe even a very orange carrot. Crunch. Crunch. Crunch.
+        Or maybe even a very orange carrot.
+        Crunch. Crunch. Crunch.
 
 """,
-choices: [
+choices: [Choice(text: "Back", destination: 2),
 Choice(text: "Next", destination: 4)
 ],
 characters: [
@@ -77,7 +85,7 @@ StoryPage( // 4
 """
         Oh! Maybe a birthday cake. Yummmm.
 """,
-choices: [
+choices: [Choice(text: "Back", destination: 3),
 Choice(text: "Next", destination: 5)
 ],
 characters: [
@@ -86,9 +94,10 @@ characters: [
 ),
 StoryPage( // 5
 """
-        Or {lp1name} could pretend to be a great, big whale. Sploosh splash.
+        Or {lp1name} could pretend to be a great, big whale. 
+        Sploosh splash.
 """,
-choices: [
+choices: [Choice(text: "Back", destination: 4),
 Choice(text: "Next", destination: 6)
 ],
 characters: [
@@ -97,18 +106,21 @@ characters: [
 ),
 StoryPage( // 6
 """
-        It would also be fun to dress up like a leaping, twirling
-        dancer. Wheeeeeee!
+        It would also be fun to dress up like a leaping, twirling dancer.
+        Wheeeeeee!
 """,
-choices: [
+choices: [Choice(text: "Back", destination: 5),
 Choice(text: "Next", destination: 7)
+],
+characters: [
+    "lp1": .happy
 ]
 ),
 StoryPage( // 7
 """
         Hmmmm... How will {lp1name} choose what to be?
 """,
-choices: [
+choices: [Choice(text: "Back", destination: 6),
 Choice(text: "Next", destination: 8)
 ],
 characters: [
@@ -117,9 +129,10 @@ characters: [
 ),
 StoryPage( // 8
 """
-        Oh! Here's an idea! Zara will go as a superhero-bunny-carrot-birthday-cake-whale-dancer!
+        Oh! Here's an idea! 
+        {lp1name} will go as a superhero-bunny-carrot-birthday-cake-whale-dancer!
 """,
-choices: [
+choices: [Choice(text: "Back", destination: 7),
 Choice(text: "Next", destination: 9)
 ],
 characters: [
@@ -133,7 +146,7 @@ StoryPage( // 9
         Sploosh splash.
         Wheeeeeee!
 """,
-choices: [
+choices: [Choice(text: "Back", destination: 8),
 Choice(text: "Next", destination: 10)
 ],
 characters: [
@@ -144,12 +157,22 @@ StoryPage( // 10
 """
         Let's party!
 """,
-choices: [
-
+choices: [Choice(text: "Back", destination: 9),
+          Choice(text: "Next", destination: 11),
 ],
 characters: [
     "lp1": .love,
     "lp2": .love
+]
+),
+StoryPage( // 11
+"""
+THE END.
+""",
+choices: [Choice(text: "Back", destination: 10),
+
+],
+characters: [:
 ]
 ),
 ],characters: letspartyCharacters

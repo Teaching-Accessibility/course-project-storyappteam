@@ -15,6 +15,7 @@ struct StoryListAdult: View {
     var body: some View {
         //Text("Tailor Your Tales").font(.title)
         VStack{
+            Spacer().navigationBarBackButtonHidden(true)
             HStack {
                 //App Title
                 Text("Tailor Your Tales")
@@ -29,7 +30,7 @@ struct StoryListAdult: View {
                 
                 //Link to child interface
                 NavigationLink(destination: StoryList()) {
-                    Text("Go to Child Area")
+                    Text("Go to Child View")
                         .font(.custom("Helvetica Bold", size: 35))
                         .frame(width: 300, height: 100)
                         .background(Color(red: 0, green: 0.2667, blue: 0.7020))
@@ -51,7 +52,7 @@ struct StoryListAdult: View {
                                 .cornerRadius(50)
                                 .background(Color(red: 0.5412, green: 0.1490, blue: 0.6706))
                                 .foregroundColor(.white)
-                                .font(.title)
+                                .font(.custom("Helvetica Bold", size: 28))
                         }
                         
                         
@@ -82,5 +83,5 @@ struct StoryListAdult: View {
 }
 
 #Preview {
-    StoryList()
+    StoryListAdult()
 }

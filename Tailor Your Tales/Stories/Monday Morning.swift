@@ -4,6 +4,9 @@
 //
 //  Created by Daniel Koronthaly on 5/30/24.
 //
+// Attribution: This story was created by Dion Udokop
+
+
 
 import SwiftUI
 
@@ -39,7 +42,7 @@ StoryPage( // 1
 """
         {mm1name} hops out of bed and goes to the bathroom to wash up.
 """,
-choices: [
+choices: [Choice(text: "Back", destination: 0),
 Choice(text: "Next", destination: 2)
 ],
 characters: [
@@ -50,7 +53,7 @@ StoryPage( // 2
 """
         {mm1name} brushes her teeth for 2 whole minutes and doesn't forget to get her tongue too!
 """,
-choices: [
+choices: [Choice(text: "Back", destination: 1),
 Choice(text: "Next", destination: 3)
 ],
 characters: [
@@ -59,12 +62,12 @@ characters: [
 ),
 StoryPage( // 3
 """
-        Row washes her face and puts on her clothes.
+        {mm1name} washes her face and puts on her clothes.
 
         Oh, can't forget socks! Especially not the dinosaur ones.
 
 """,
-choices: [
+choices: [Choice(text: "Back", destination: 2),
 Choice(text: "Next", destination: 4)
 ],
 characters: [
@@ -76,7 +79,7 @@ StoryPage( // 4
         Breakfast time! {mm2name} makes waffles and scrambled eggs.
 
 """,
-choices: [
+choices: [Choice(text: "Back", destination: 3),
 Choice(text: "Next", destination: 5)
 ],
 characters: [
@@ -88,20 +91,35 @@ StoryPage( // 5
 """
         After breakfast, the school bus honks outside and it is time to go to school.
 """,
-choices: [
+choices: [Choice(text: "Back", destination: 4),
 Choice(text: "Next", destination: 6)
+],
+characters: [
+    "mm1": .neutral,
 ]
 ),
 StoryPage( // 6
 """
         {mm1name}, excited for school today, puts on shoes and races to the bus.
+        It's gonna be a great day!
 """,
-choices: [
-
+choices: [Choice(text: "Back", destination: 5),
+          Choice(text: "Next", destination: 7),
 ],
 characters: [
     "mm1": .happy,
 ]
 ),
+StoryPage( // 7
+"""
+THE END.
+""",
+choices: [Choice(text: "Back", destination: 6),
+
+],
+characters: [:
+]
+),
+
 ],characters: mondayCharacters
 )
