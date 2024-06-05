@@ -42,7 +42,7 @@ var scharactersDictionary: [String: Character] = [
  """
  A crystal ball! A magic pearl! A treasure for {st1name}'s collection!
  """,
- choices: [
+ choices: [Choice(text: "Back", destination: 0),
  Choice(text: "Next", destination: 2)
  ],
  characters: [
