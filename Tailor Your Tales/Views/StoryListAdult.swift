@@ -51,7 +51,7 @@ struct StoryListAdult: View {
                                 .cornerRadius(50)
                                 .background(Color(red: 0.5412, green: 0.1490, blue: 0.6706))
                                 .foregroundColor(.white)
-                                .font(.title)
+                                .font(.custom("Helvetica Bold", size: 28))
                         }
                         
                         

@@ -15,6 +15,7 @@ struct StoryList: View {
     var body: some View {
         //Text("Tailor Your Tales").font(.title)
         VStack{
+            Spacer().navigationBarBackButtonHidden(true)
             HStack {
                 //App Title
                 Text("Tailor Your Tales")
@@ -52,7 +53,7 @@ struct StoryList: View {
                                 .cornerRadius(50)
                                 .background(Color(red: 0, green: 0.2667, blue: 0.7020))
                                 .foregroundColor(.white)
-                                .font(.title)
+                                .font(.custom("Helvetica Bold", size: 28))
                         }
                         
                         
