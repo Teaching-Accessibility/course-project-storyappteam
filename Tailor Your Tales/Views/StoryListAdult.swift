@@ -23,7 +23,7 @@ struct StoryListAdult: View {
                     .foregroundStyle(Color(red: 0, green: 0.2667, blue: 0.7020))
                 //.font(.system(.body, design: .rounded))
                 //.fontWeight(.heavy)
-                    .font(.custom("Helvetica Bold", size: 65)).padding(10)
+                    .font(.custom("Helvetica Bold", size: 60)).padding(10)
                     //.padding(.leading, UIScreen.main.bounds.size.width / 4)
                 
                 //Spacer()
@@ -39,7 +39,7 @@ struct StoryListAdult: View {
                 }.padding(.leading, (UIScreen.main.bounds.size.width / 4)).padding(.top, 10)
             }
             //Instructions
-            Text("Tap on a purple square to customize a story!").font(.custom("Helvetica", size: 35)).padding(6).padding(.trailing, (UIScreen.main.bounds.size.width * 2 / 5)).padding(.bottom,10)
+            Text("Tap on a purple square to customize a story!").font(.custom("Helvetica", size: 30)).padding(6).padding(.trailing, (UIScreen.main.bounds.size.width * 2 / 5)).padding(.bottom,10)
             
             //Grid of stories
             ScrollView(.vertical){
