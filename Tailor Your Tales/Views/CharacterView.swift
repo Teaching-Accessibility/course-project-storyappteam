@@ -12,7 +12,7 @@ struct CharacterView: View {
     @Environment(\.presentationMode) var presentationMode
     
     let story: Story
-    @State var characters: [String: Character]
+    @State var characters: [String: Character] = [:]
     @State private var showAlert = false
     
     init(story: Story, characters: [String : Character]) {
