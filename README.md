@@ -2,12 +2,20 @@
 Tailor Your Tales is an app for customizing stories for your child. Read on to learn more!
 
 ## Group Members
+
+## R1:
 Selah: Child UI design, Base text customization research/brainstorming, app setup in Testflight, installation instructions, UI documentation
 
 Dion: Base text customization, minor story edits, UI documentation, README documentation
 
 Daniel: Majority backend work, created skeleton for group members to work off of, did major structural work with structs/data structures
 
+## R2:
+Selah: 
+
+Dion: 
+
+Daniel: Added character images (with 5 emotions each) that are customizable. Added Core Data (local storage) which ensures that character changes persist between launches of the app and between different screens. Added redrawing of changed characters in pre-existing screens. 
 
 ## Implemented Features
 a.	Inclusive and accessible design: High contrast colors and large fonts have been utilized throughout the app to ensure readability for a wide range of users. 
