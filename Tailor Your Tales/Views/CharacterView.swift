@@ -18,7 +18,7 @@ struct CharacterView: View {
     init(story: Story, characters: [String : Character]) {
         CoreDataManager.shared.setupChangeTracking()
         self.story = story
-        self.characters = CoreDataManager.shared.mergeWithCoreData(defaultCharacters: characters)
+        self._characters = State(initialValue: CoreDataManager.shared.mergeWithCoreData(defaultCharacters: characters))
     }
     
     var body: some View {
