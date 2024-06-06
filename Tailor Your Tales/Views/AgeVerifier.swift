@@ -60,10 +60,11 @@ struct AgeVerifier: View {
                             .background(Color(red: 0.5804, green: 0.0863, blue: 0))
                             .foregroundColor(.white)
                             .cornerRadius(10)
-                            .offset(x: -60)
+                            //.offset(x: -60)
                                 //.padding(.top, 50)
-                            .padding(.trailing, UIScreen.main.bounds.size.width * 1.5 / 2)
-                    })
+                                                        
+                    }).padding(.trailing, UIScreen.main.bounds.size.width * 1.5 / 2)
+
                     //.padding(.top, 15)
                     
                     
