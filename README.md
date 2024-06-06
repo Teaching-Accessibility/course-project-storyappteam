@@ -70,7 +70,7 @@ Design Guidelines:
 
 Screen Title: Child view - unedited default story
 
-User-Computer Interaction: This screen implements the library of customizable stories feature, as users read an unedited default story when they are on this screen. They can tap next to navigate to the next page. This is also an example of child-friendly UI as the buttons are simple, with clear instructions.
+User-Computer Interaction: This screen implements the library of customizable stories feature, as users read an unedited default story when they are on this screen. They can tap next to navigate to the next page back to return to the previous page and return to storylist to go back to the homepage. This is also an example of a child-friendly UI as the buttons are simple, with clear instructions.
 
 Design Guidelines: 
 
@@ -126,7 +126,7 @@ Design Guidelines:
 
 Screen Title: Character edit 
 
-User-Computer Interaction: This screen implements the feature customizable stories because it provides a page for users to edit the attributes of the characters in the story to customize their name and gender.
+User-Computer Interaction: This screen implements the feature of customizable stories because it provides a page for users to edit the attributes of the characters in the story to customize their name, gender and image.
 
 Design Guidelines: 
 
@@ -163,6 +163,21 @@ Design Guidelines:
 4)  Davis et al; design with simple intuitive interactions to ensure easy navigation through stories
 
 ![Screen8](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen8.png)
+
+
+### ScreenID: 9
+
+Screen Title: Child view - edited character story
+
+User-Computer Interaction: This screen also shows the implementation of the customization and saving app data features. On this, the edited story can now be read by just the child in their interface. It is also consistent with the features of clear and user-friendly controls with simple instructions. 
+
+Design Guidelines: 
+1)  WCAG 3.2; consistent navigation and labeling
+2)  WCAG 3.1; make text content readable and understandable
+3)  Davis et al; accommodate special interests and fears by providing positive relatable stories and making the story characters customizable
+4)  Davis et al; design with simple intuitive interactions to ensure easy navigation through stories
+
+![Screen9](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen9.png)
 
 ### Resources
 1) World Wide Web Consortium. 2018. “Web Content Accessibility Guidelines (WCAG) 2.1” Accessed May 3, 2024. [https://www.w3.org/TR/WCAG21/](https://www.w3.org/TR/WCAG21/)
