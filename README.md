@@ -64,7 +64,7 @@ Design Guidelines:
 3) WCAG 2.4; provide meaningful titles and a larger touch target space
 4) Google developer; use of bright colors, simple shapes, and big buttons
 
-![Screen1](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen1.png)
+![Screen1](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen11.png)
 
 ### ScreenID: 2
 
@@ -79,7 +79,8 @@ Design Guidelines:
 3) Davis et al; accommodate special interests and fears by providing positive relatable stories and making the story characters customizable
 4) Davis et al; design with simple intuitive interactions to ensure easy navigation through stories
 
-![Screen2](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen2.png)
+![Screen2](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen12.png)
+![Screen21](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen122.png)
 
 ### ScreenID: 3
 
@@ -93,7 +94,7 @@ Design Guidelines:
 2) Apple Developer; parental gates to ensure ward’s device and internet safety
 3) Google Developer; promote joint engagement and build for multiple ages
    
-![Screen3](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen3.png)
+![Screen3](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen13.png)
 
 ### ScreenID: 4
 
@@ -107,7 +108,7 @@ Design Guidelines:
 2) WCAG 3.2; consistent navigation and labeling
 3) WCAG 2.4; provide meaningful titles and larger touch target space
 
-![Screen4](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen4.png)
+![Screen4](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen14.png)
 
 ### ScreenID: 5
 
@@ -120,7 +121,7 @@ Design Guidelines:
 1) WCAG 1.4; make content distinguishable from the background by using sufficient contrast, and maintaining clear text size and spacing
 2) WCAG 2.4; provide meaningful titles and larger touch target space
    
-![Screen5](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen5.png)
+![Screen5](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen15.png)
 
 ### ScreenID: 6
 
@@ -134,7 +135,7 @@ Design Guidelines:
 2) WCAG 2.1; enable keyboard functionality
 3) WCAG 2.4; provide clear focus and informational headings
    
-![Screen6](https://github.com/Teaching-Accessibility/course-project-storyappteam/assets/38673255/13049b84-2f18-45a8-8aa2-21775bb4386b)
+![Screen7](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen16.png)
 
 
 ### ScreenID: 7
@@ -148,7 +149,7 @@ Design Guidelines:
 1) WCAG 1.4; make content distinguishable from the background by using sufficient contrast, and maintaining clear text size and spacing
 2) WCAG 2.4; provide meaningful titles and larger touch target space
    
-![Screen7](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen7.png)
+![Screen7](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen17.png)
 
 ### ScreenID: 8
 
@@ -162,7 +163,7 @@ Design Guidelines:
 3)  Davis et al; accommodate special interests and fears by providing positive relatable stories and making the story characters customizable
 4)  Davis et al; design with simple intuitive interactions to ensure easy navigation through stories
 
-![Screen8](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen8.png)
+![Screen8](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen18.png)
 
 
 ### ScreenID: 9
@@ -177,7 +178,7 @@ Design Guidelines:
 3)  Davis et al; accommodate special interests and fears by providing positive relatable stories and making the story characters customizable
 4)  Davis et al; design with simple intuitive interactions to ensure easy navigation through stories
 
-![Screen9](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen9.png)
+![Screen9](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen19.png)
 
 ### Resources
 1) World Wide Web Consortium. 2018. “Web Content Accessibility Guidelines (WCAG) 2.1” Accessed May 3, 2024. [https://www.w3.org/TR/WCAG21/](https://www.w3.org/TR/WCAG21/)
