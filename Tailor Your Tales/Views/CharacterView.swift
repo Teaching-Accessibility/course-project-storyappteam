@@ -23,7 +23,7 @@ struct CharacterView: View {
     var body: some View {
         VStack {
             Text("Tap on a character to edit them!")
-                .font(.system(size: 25))
+                .font(.custom("Helvetica Bold", size: 40))
             ScrollView(.vertical){
                 if characters.count != 0 {
                     ForEach(characters.keys.sorted(), id: \.self) {key in
