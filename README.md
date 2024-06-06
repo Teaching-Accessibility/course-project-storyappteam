@@ -132,8 +132,7 @@ User-Computer Interaction: This screen implements the feature of customizable st
 Design Guidelines: 
 
 1) WCAG 3.2; consistent navigation and labeling
-2) WCAG 2.1; enable keyboard functionality
-3) WCAG 2.4; provide clear focus and informational headings
+2) WCAG 2.4; provide clear focus and informational headings
    
 ![Screen7](https://github.com/Teaching-Accessibility/course-project-storyappteam/blob/main/UIDocImages/Screen16.png)
 
