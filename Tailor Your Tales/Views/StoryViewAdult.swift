@@ -59,7 +59,7 @@ struct StoryViewAdult: View {
                         .background(Color(red: 0.5804, green: 0.0863, blue: 0))
                         .foregroundColor(.white)
                         .cornerRadius(10)
-                        .offset(y: -40)
+                        //.offset(y: -40)
                         //.padding(.top, 50)
                         .padding(.trailing, UIScreen.main.bounds.size.width * 1.5 / 2)
             }
