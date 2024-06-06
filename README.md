@@ -11,7 +11,7 @@ Dion: Base text customization, minor story edits, UI documentation, README docum
 Daniel: Majority backend work, created skeleton for group members to work off of, did major structural work with structs/data structures
 
 ## R2:
-Selah: 
+Selah: Improving UI design (standardizing colors, making button names more intuitive, etc.). Increasing accessibility (adding alt text, testing bugs found with a screen reader). Helped with brainstorming and implementation for navigation and core data. App testing and rebuilding.
 
 Dion: 
 
