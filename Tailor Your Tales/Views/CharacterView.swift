@@ -68,7 +68,7 @@ struct CharacterView: View {
             
             Spacer()
             
-            NavigationLink(destination: StoryView(story: story, pageIndex: 0, characters: characters)){
+            NavigationLink(destination: StoryViewAdult(story: story, pageIndex: 0, characters: characters)){
                 Text("Continue to " + story.title)
                     .multilineTextAlignment(.leading)
                     .frame(maxWidth: .infinity, alignment: .leading)

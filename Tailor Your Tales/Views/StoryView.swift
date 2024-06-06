@@ -94,7 +94,7 @@ struct StoryView: View {
                                 .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                             //.frame(maxWidth: .infinity, alignment: .leading)
                                 .padding()
-                                .background(Color.gray.opacity(0.25))
+                                //.background(Color.gray.opacity(0.25))
                                 .cornerRadius(10)
                                 .font(.custom("Helvetica Bold", size: 35))
                                 .frame(width: 550, height: 70)
