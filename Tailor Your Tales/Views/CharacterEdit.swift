@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CharacterEdit: View {
     @State private var selectedImage: CharacterImage? = nil
+    @Environment(\.presentationMode) var presentationMode
     let charDesc = [
                     "alia": "person with dark brown bobbed hair wearing a white longsleeve shirt",
                     "bella": "person with brown curly hair and pink longsleeve shirt",
@@ -40,15 +41,32 @@ struct CharacterEdit: View {
     }
     var body: some View {
         VStack{
+            Spacer().navigationBarBackButtonHidden(true)
+            Button(action: {presentationMode.wrappedValue.dismiss()}, label: {
+                Text("Save").font(.custom("Helvetica Bold", size: 25))
+                    .frame(width: 200, height: 60)
+                    .background(Color(red: 0, green: 0.2667, blue: 0.7020))
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+                    //.offset(x: -60)
+                        //.padding(.top, 50)
+                    
+                    
+            }).padding(.trailing, UIScreen.main.bounds.size.width * 1.5 / 2).padding(.bottom, 20).padding(.leading, 30)
+            
+            Text("Make changes to your character and then press the blue save button!").font(.custom("Helvetica", size: 25))
+            
             HStack {
                 Text("Name:")
                     .padding(.leading)
+                    .font(.custom("Helvetica", size: 25))
                 TextField("Enter name", text: $character.name, onCommit: {
                     saveCharacter()
                 })
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .autocorrectionDisabled()
                     .padding()
+                    .font(.custom("Helvetica", size: 25))
                 
             }
             .padding()
@@ -94,6 +112,17 @@ struct CharacterEdit: View {
         .onAppear {
             selectedImage = character.image
         }
+        /*Button(action: {presentationMode.wrappedValue.dismiss()}, label: {
+            Text("Save Character Changes").font(.custom("Helvetica Bold", size: 25))
+                .frame(width: 350, height: 50)
+                .background(Color(red: 0, green: 0.2667, blue: 0.7020))
+                .foregroundColor(.white)
+                .cornerRadius(10)
+                //.offset(x: -60)
+                    //.padding(.top, 50)
+                //.padding(.trailing, UIScreen.main.bounds.size.width * 1.5 / 2)
+                
+        }).padding(.bottom, 20)//.padding(.leading, 100)*/
     }
     
     private func saveCharacter() {

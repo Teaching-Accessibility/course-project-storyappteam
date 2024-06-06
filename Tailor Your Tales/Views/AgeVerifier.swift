@@ -62,9 +62,9 @@ struct AgeVerifier: View {
                             .cornerRadius(10)
                             //.offset(x: -60)
                                 //.padding(.top, 50)
-                            .padding(.trailing, UIScreen.main.bounds.size.width * 1.5 / 2)
-                            
-                    })
+                                                        
+                    }).padding(.trailing, UIScreen.main.bounds.size.width * 1.5 / 2)
+
                     //.padding(.top, 15)
                     
                     

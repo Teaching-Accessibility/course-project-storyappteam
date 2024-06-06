@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CharacterView: View {
     @State private var isViewOnScreen = false
+    @Environment(\.presentationMode) var presentationMode
     
     let story: Story
     @State var characters: [String: Character]
@@ -22,8 +23,20 @@ struct CharacterView: View {
     
     var body: some View {
         VStack {
+            Spacer().navigationBarBackButtonHidden(true)
+            Button(action: {presentationMode.wrappedValue.dismiss()}, label: {
+                Text("Back").font(.custom("Helvetica Bold", size: 30))
+                    .frame(width: 150, height: 70)
+                    .background(Color(red: 0.5804, green: 0.0863, blue: 0))
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+                    //.offset(x: -60)
+                        //.padding(.top, 50)
+                    
+                    
+            }).padding(.bottom, 20).padding(.trailing, UIScreen.main.bounds.size.width * 1.5 / 2)
             Text("Tap on a character to edit them!")
-                .font(.custom("Helvetica Bold", size: 40))
+                .font(.custom("Helvetica Bold", size: 50))
             ScrollView(.vertical){
                 if characters.count != 0 {
                     ForEach(characters.keys.sorted(), id: \.self) {key in
@@ -31,10 +44,10 @@ struct CharacterView: View {
                             VStack {
                                 HStack{
                                     Text(characters[key]?.name ?? "")
-                                        .font(.system(size: 20))
+                                        .font(.custom("Helvetica Bold", size: 30))
                                     Text("(" + (characters[key]?.gender.rawValue ?? "") + ")").foregroundColor(.gray)
-                                        .font(.system(size: 20))
-                                }
+                                        .font(.custom("Helvetica Bold", size: 30))
+                                }.padding(.top, 40)
                             }
                         }
                     }
@@ -45,38 +58,54 @@ struct CharacterView: View {
                 }
             }
             Spacer()
-            
-            Button("Reset to Default Characters"){
-                showAlert=true
-            }
-            .alert(isPresented: $showAlert) {
-                Alert(
-                                title: Text("Are you sure you want to reset the characters to their default settings?"),
-                                message: Text("There is no way to undo a reset."),
-                                primaryButton: .destructive(Text("Reset")) {
-                                    print("Resetting...")
-                                    CoreDataManager.shared.deleteStoryCharacters(characters: characters)
-                                    characters = story.characters
-                                },
-                                secondaryButton: .cancel()
-                            )
-            }
-            .padding()
-            .foregroundColor(.white)
-            .background(Color.red)
-            .cornerRadius(8)
-            
-            Spacer()
-            
-            NavigationLink(destination: StoryViewAdult(story: story, pageIndex: 0, characters: characters)){
-                Text("Continue to " + story.title)
-                    .multilineTextAlignment(.leading)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding()
-                    .background(Color.gray.opacity(0.25))
-                    .cornerRadius(8)
-            }
-            .padding()
+            HStack {
+                
+                Button{
+                    showAlert=true
+                }label: {
+                    Text("Reset to Default Characters")
+                    
+                    .font(.custom("Helvetica Bold", size: 30))
+                    .frame(width: 420, height: 100)
+                }
+                
+                .foregroundColor(.white)
+                .background(Color(red: 0.5804, green: 0.0863, blue: 0))
+                .cornerRadius(10)
+                .alert(isPresented: $showAlert) {
+                    Alert(
+                        title: Text("Are you sure you want to reset the characters to their default settings?"),
+                        message: Text("There is no way to undo a reset."),
+                        primaryButton: .destructive(Text("Reset")) {
+                            print("Resetting...")
+                            CoreDataManager.shared.deleteStoryCharacters(characters: characters)
+                            characters = story.characters
+                        },
+                        secondaryButton: .cancel()
+                    )
+                }
+                .padding()
+                .padding(.leading, 20)
+                //.padding(.bottom, 20)
+                
+                Spacer()
+                
+                NavigationLink(destination: StoryViewAdult(story: story, pageIndex: 0, characters: characters)){
+                    Text("Continue to " + story.title)
+                        .multilineTextAlignment(.leading)
+                    //.frame(maxWidth: .infinity, alignment: .leading)
+                        //.padding()
+
+                        .font(.custom("Helvetica Bold", size: 30))
+                        .frame(width: 420, height: 100)
+                }
+                
+                .background(Color(red: 0.5412, green: 0.1490, blue: 0.6706))
+                .foregroundColor(.white)
+                .cornerRadius(10)
+                .padding()
+                .padding(.trailing, 20)
+            }.padding(.bottom, 40)
         }
         .onAppear {
             isViewOnScreen = true

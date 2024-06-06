@@ -61,8 +61,8 @@ struct StoryViewAdult: View {
                         .cornerRadius(10)
                         //.offset(y: -40)
                         //.padding(.top, 50)
-                        .padding(.trailing, UIScreen.main.bounds.size.width * 1.5 / 2)
-            }
+                        
+            }.padding(.trailing, UIScreen.main.bounds.size.width * 1.5 / 2)
             
             ScrollView {
                 Text(characterNames(from: story[pageIndex].text, with: characters))
