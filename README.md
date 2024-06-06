@@ -13,24 +13,28 @@ Daniel: Majority backend work, created skeleton for group members to work off of
 ## R2:
 Selah: Improving UI design (standardizing colors, making button names more intuitive, etc.). Increasing accessibility (adding alt text, testing bugs found with a screen reader). Helped with brainstorming and implementation for navigation and core data. App testing and rebuilding.
 
-Dion: 
+Dion: Improving UI design and navigation (story page destinations), collected, edited, and created story text, added new story pages and information as needed, README documentation, UI documentation
 
 Daniel: Added character images (with 5 emotions each) that are customizable. Added Core Data (local storage) which ensures that character changes persist between launches of the app and between different screens. Added redrawing of changed characters in pre-existing screens. 
 
 ## Implemented Features
 a.	Inclusive and accessible design: High contrast colors and large fonts have been utilized throughout the app to ensure readability for a wide range of users. 
-All interactive elements have been designed with clear labels, large touch targets and the included texts work with iOS’s integrated voice over technology.
+All interactive elements have been designed with clear labels, and large touch targets, and the included texts work with iOS’s integrated voice-over technology. All images also have alternative text and the app works seamlessly with a screen reader
 
-b.	Library of pre-created customizable positive and routine-focused stories: There are currently 3 base stories, 2 relevant to this implementation checkpoint. 
-The stories are positive, simple, easy to read and were sourced from both the participant and opensource stories on the internet. 
-The adult view of the stories page allows for character name and gender customizations.
+b.	Library of pre-created customizable positive and routine-focused stories: There are currently 7 stories. 
+The stories are positive, simple, easy to read, and were sourced from the participant, developing team, and open source stories on the internet. 
+The adult view of the stories page allows for character names and gender customizations.
 
-c.	Separate interfaces for child and adult: The adult’s interface provide more control over the customization of story characters, 
+c.	Separate interfaces for child and adult: The adult’s interface provides more control over the customization of story characters, 
 allowing them to adjust the content to suit their child’s story needs. The app opens directly to the child interface as they are the primary users of this app. 
 The child interface contains a button leading to the adult view, which contains an “age verifier” to ensure that the younger users aren’t accessing the view without permission. 
 
-d.	Child friendly UI: The base user interface consists of large buttons, simple words, vibrant colors, minimal text, and intuitive navigation. 
-This would help guarantee usability, keep the younger users engaged and promote independent interaction with the app.
+d.	Child-friendly UI: The base user interface consists of large buttons, simple words, vibrant colors, minimal text, and intuitive navigation. 
+This would help guarantee usability, keep the younger users engaged, and promote independent interaction with the app.
+
+e. Saving app data: Story edits in the adult view are saved locally to the app and the story customizations are persistent between the adult and child view. This ensures that the child is able to interact with the edited stories outside of the adult's view. 
+
+f. Library of pre-created characters: There are currently 11 pre-created character images with a decent range of diversity. The character images can be replaced to better fit the other story customizations. 
 
 
 ## Installation Instructions
@@ -42,8 +46,8 @@ This app is intended for use on an iPad.
 4) In an internet browser app on the iPad, such as Safari, enter this link: [https://testflight.apple.com/join/7CBzB4pd](https://testflight.apple.com/join/7CBzB4pd)
 5) This will take you to a page with installation instructions for the app. Below Step 2 there is a blue button that says Start Testing. Tap on that button.
 6) This will open the TestFlight app. You should see the name of our app, Tailor Your Tales, and below that, a blue button that says Install. Tap the Install button.
-7) You should see a white spining circle as the app is installed. Once it is installed, the blue text will change to the word Open. Tap on the Open button to open the app.
-8) Once the app is installed, you should also see the app's icon on the homescreen. You can also click to access the app from there.
+7) You should see a white spinning circle as the app is installed. Once it is installed, the blue text will change to the word Open. Tap on the Open button to open the app.
+8) Once the app is installed, you should also see the app's icon on the home screen. You can also click to access the app from there.
 9) Start using the app!
 
 ## UI Documentation
