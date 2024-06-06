@@ -101,7 +101,7 @@ struct StoryViewAdult: View {
             else {
                 HStack {
                     ForEach(story[pageIndex].choices, id: \Choice.text) { choice in
-                        NavigationLink(destination: StoryView(story: story, pageIndex: choice.destination, characters: characters)) {
+                        NavigationLink(destination: StoryViewAdult(story: story, pageIndex: choice.destination, characters: characters)) {
                             
                             Text(choice.text)
                                 .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
